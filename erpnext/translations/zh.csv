@@ -1375,11 +1375,11 @@ Let’s create your first Customer,让我们来创建你的第一个客户,
 Let’s create your first Material Request,让我们创建您的第一份物料申请,
 Let’s create your first Purchase Invoice,让我们创建您的第一张采购发票,
 Let’s create your first Purchase Order,让我们来创建你的第一个采购单,
-Let’s create your first Quotation,Lassen Sie uns Ihr erstes Angebot erstellen,
+Let’s create your first Quotation,让我们创建您的第一个报价单,
 Let’s create your first Supplier,让我们来创建你的第一个供应商,
-Let’s setup your first Letter Head,Lassen Sie uns Ihren ersten Briefkopf einrichten,
-Let’s walk-through Selling Settings,Lassen Sie uns die Verkaufseinstellungen durchgehen,
-Let’s walk-through few Buying Settings,Lass uns einige Einkaufseinstellungen durchgehen,
+Let’s setup your first Letter Head,让我们设置你的第一个信件抬头,
+Let’s walk-through Selling Settings,让我们来演练一下销售设置,
+Let’s walk-through few Buying Settings,我们来快速过一遍几个购买配置选项,
 Level (BOM),物料清单 (BOM),
 Main,主,
 Maintenance,维护,
@@ -8780,9 +8780,16 @@ Reject,拒绝,
 "# All about sales invoice
 
 A Sales Invoice is a bill that you send to your Customers against which the Customer makes the payment. Sales Invoice is an accounting transaction. On submission of Sales Invoice, the system updates the receivable and books income against a Customer Account.
-","# 关于销售单
 
-销售单是您发送给客户的账单，客户根据账单付款。销售单属于会计交易。提交销售单后，系统会更新应收账款，并将收入记入客户账户。",
+Here's the flow of how a sales invoice is generally created
+
+
+![Sales Flow](https://docs.erpnext.com/docs/assets/img/accounts/so-flow.png)","# 关于销售单
+
+销售单是您发送给客户的账单，客户根据账单付款。销售单属于会计交易。提交销售单后，系统会更新应收账款，并将收入记入客户账户。
+
+
+![Verkaufsfluss](https://docs.erpnext.com/docs/assets/img/accounts/so-flow.png)",
 "# Create a Customer
 
 The Customer master is at the heart of your sales transactions. Customers are linked in Quotations, Sales Orders, Invoices, and Payments. Customers can be either numbered or identified by name (you would typically do this based on the number of customers you have).
@@ -12284,3 +12291,83 @@ You have enabled {0} and {1} in {2}. This can lead to prices from the default pr
 {0} will be set as the {1} in subsequently scanned items,{0}将被设置为后续扫描物料中的{1},
 {0}: {1} is a group account.,{0}：{1}为组科目。,
 {} {} is not affecting bank account {},{} {}未影响银行账户{},
+"# Buying Settings
+
+
+Buying module’s features are highly configurable as per your business needs. Buying Settings is the place where you can set your preferences for:
+
+- Supplier naming and default values
+- Billing and shipping preference in buying transactions
+
+
+","# 采购设置
+
+
+采购模块的功能可根据您的业务需求高度定制。在采购设置中，您可以为以下项目设定偏好：
+
+- 供应商命名及默认值
+- 采购交易中的账单与配送偏好
+
+
+",
+"Track Material Request","跟踪物料需求",
+"Create first Purchase Order","创建你的第一个销售订单",
+"# Track Material Request
+
+
+Also known as Purchase Request or an Indent, is a document identifying a requirement of a set of items (products or services) for various purposes like procurement, transfer, issue, or manufacturing. Once the Material Request is validated, a purchase manager can take the next actions for purchasing items like requesting RFQ from a supplier or directly placing an order with an identified Supplier.
+
+","# 跟踪物料需求
+
+也被称为采购申请或订货单，是一种用于识别一系列物品（产品或服务）需求的文档，适用于采购、调拨、领用或生产等多种用途。一旦物料申请通过审核，采购经理便可采取下一步行动，例如向供应商询价或直接向指定供应商下订单。
+
+",
+"# Create first Purchase Order
+
+Purchase Order is at the heart of your buying transactions. In ERPNext, Purchase Order can can be created against a Purchase Material Request (indent) and Supplier Quotation as well.  Purchase Orders is also linked to Purchase Receipt and Purchase Invoices, allowing you to keep a birds-eye view on your purchase deals.
+
+","# 创建第一个销售订单
+
+采购订单是你采购交易的核心。在ERPNext中，采购订单可以根据采购物料申请（请购单）和供应商报价单来创建。采购订单还与采购收货单和采购发票相关联，让你能全面掌握采购交易的动态。
+
+",
+Review Chart of Accounts,会计科目表审阅,
+"# Chart Of Accounts
+
+ERPNext sets up a simple chart of accounts for each Company you create, but you can modify it according to business and legal requirements.","# 会计科目
+
+ERPNext会为您创建的每个公司自动生成一个简单的会计科目表，但您可以根据实际的业务需求和法规要求对其进行调整。",
+"# Setting up Taxes
+
+ERPNext lets you configure your taxes so that they are automatically applied in your buying and selling transactions. You can configure them globally or even on Items. ERPNext taxes are pre-configured for most regions.","# 税务设置
+
+ERPNext 能让你设置税项，这样在买卖交易中就能自动应用。你可以全局设置，甚至针对具体商品来配置。对于大多数地区，ERPNext 已经预先配置好了税项。",
+Manage Sales Tax Templates,管理销售税务模版,
+"# Account Settings
+
+In ERPNext, Accounting features are configurable as per your business needs. Accounts Settings is the place to define some of your accounting preferences like:
+
+ - Credit Limit and over billing settings
+ - Taxation preferences
+ - Deferred accounting preferences
+","# 账户设置
+
+在ERPNext中，会计功能可以根据您的业务需求进行配置。账户设置是定义您会计偏好的地方，例如：
+
+- 信用额度和超额开票设置
+- 税务偏好
+- 递延会计偏好
+",
+Cost Centers for Budgeting and Analysis,预算与分析用成本中心,
+Create Your First Purchase Invoice,创建您的首张采购发票,
+Updating Opening Balances,更新余额,
+"# 创建你的第一张采购发票
+
+A Purchase Invoice is a bill received from a Supplier for a product(s) or service(s) delivery to your company. You can track payables through Purchase Invoice and process Payment Entries against it.
+
+Purchase Invoices can also be created against a Purchase Order or Purchase Receipt.
+","# 创建你的第一张采购发票
+
+采购发票是供应商给你公司发货或提供服务后收到的账单。你可以通过采购发票跟踪应付账款，并据此处理付款记录。
+
+采购发票也可以根据采购订单或采购收据来创建。",

@@ -4440,7 +4440,7 @@ Payment Order Status,付款订单状态,
 Payment Ordered,付款订购,
 Payment From / To,支付自/至,
 Company Bank Account,公司银行账户,
-Party Bank Account,党银行账户,
+Party Bank Account,往来银行账户,
 Account Paid From,收款科目,
 Account Paid To,付款科目,
 Paid Amount (Company Currency),已支付的金额（公司货币）,
@@ -4543,7 +4543,7 @@ Is Cumulative,是累积的,
 Coupon Code Based,基于优惠券代码,
 Discount on Other Item,其他物品的折扣,
 Apply Rule On Other,在其他方面适用规则,
-Party Information,党的信息,
+Party Information,往来信息,
 Quantity and Amount,数量和金额,
 Min Qty,最小数量,
 Max Qty,最大数量,
@@ -5075,7 +5075,7 @@ Percentage you are allowed to transfer more against the quantity ordered. For ex
 PUR-ORD-.YYYY.-,PUR-ORD-.YYYY.-,
 Get Items from Open Material Requests,从未完成物料申请获取物料,
 Fetch items based on Default Supplier.,根据默认供应商获取项目。,
-Required By,必选,
+Required By,交货日期,
 Order Confirmation No,订单确认号,
 Order Confirmation Date,订单确认日期,
 Customer Mobile No,客户手机号码,
@@ -8779,11 +8779,10 @@ Reject,拒绝,
 """SN-01::10"" for ""SN-01"" to ""SN-10""",SN-01::10 代表 SN-01 到 SN-10,
 "# All about sales invoice
 
-A Sales Invoice is a bill that you send to your Customers against which the Customer makes the payment. Sales Invoice is an accounting transaction. On submission of Sales Invoice, the system updates the receivable and books income against a Customer Account."
-,"# 关于销售单
+A Sales Invoice is a bill that you send to your Customers against which the Customer makes the payment. Sales Invoice is an accounting transaction. On submission of Sales Invoice, the system updates the receivable and books income against a Customer Account.
+","# 关于销售单
 
-销售单是您发送给客户的账单，客户根据账单付款。销售单属于会计交易。提交销售单后，系统会更新应收账款，并将收入记入客户账户。"
-,
+销售单是您发送给客户的账单，客户根据账单付款。销售单属于会计交易。提交销售单后，系统会更新应收账款，并将收入记入客户账户。",
 "# Create a Customer
 
 The Customer master is at the heart of your sales transactions. Customers are linked in Quotations, Sales Orders, Invoices, and Payments. Customers can be either numbered or identified by name (you would typically do this based on the number of customers you have).

@@ -211,6 +211,7 @@ class TestPurchaseOrder(FrappeTestCase):
 
 		po.load_from_db()
 		existing_ordered_qty = get_ordered_qty()
+		existing_ordered_qty_in_new_warehouse = get_ordered_qty(warehouse="_Test Warehouse 2 - _TC")
 		first_item_of_po = po.get("items")[0]
 
 		trans_item = json.dumps(
@@ -221,16 +222,64 @@ class TestPurchaseOrder(FrappeTestCase):
 					"qty": first_item_of_po.qty,
 					"docname": first_item_of_po.name,
 				},
-				{"item_code": "_Test Item", "rate": 200, "qty": 7},
+				{"item_code": "_Test Item", "rate": 200, "qty": 7, "warehouse": "_Test Warehouse 2 - _TC"},
 			]
 		)
 		update_child_qty_rate("Purchase Order", trans_item, po.name)
 
 		po.reload()
 		self.assertEqual(len(po.get("items")), 2)
+		self.assertEqual(po.get("items")[-1].warehouse, "_Test Warehouse 2 - _TC")
 		self.assertEqual(po.status, "To Receive and Bill")
-		# ordered qty should increase on row addition
-		self.assertEqual(get_ordered_qty(), existing_ordered_qty + 7)
+		# ordered qty should increase on row addition, in the warehouse passed for the new row
+		self.assertEqual(get_ordered_qty(), existing_ordered_qty)
+		self.assertEqual(
+			get_ordered_qty(warehouse="_Test Warehouse 2 - _TC"),
+			existing_ordered_qty_in_new_warehouse + 7,
+		)
+
+	def test_update_child_adding_new_item_without_any_default_warehouse(self):
+		stock_item = make_item("_Test PO Item Without Default Warehouse", {"is_stock_item": 1}).name
+		service_item = make_item("_Test PO Item Non Stock", {"is_stock_item": 0}).name
+
+		po = create_purchase_order(do_not_save=1)
+		po.save()
+		po.submit()
+		first_item_of_po = po.get("items")[0]
+
+		stock_settings_default = frappe.db.get_single_value("Stock Settings", "default_warehouse")
+		frappe.db.set_single_value("Stock Settings", "default_warehouse", None)
+		self.addCleanup(
+			frappe.db.set_single_value, "Stock Settings", "default_warehouse", stock_settings_default
+		)
+
+		def get_trans_items(item_code):
+			return json.dumps(
+				[
+					{
+						"item_code": first_item_of_po.item_code,
+						"rate": first_item_of_po.rate,
+						"qty": first_item_of_po.qty,
+						"docname": first_item_of_po.name,
+					},
+					{"item_code": item_code, "rate": 200, "qty": 7},
+				]
+			)
+
+		self.assertRaisesRegex(
+			frappe.ValidationError,
+			"Cannot find a default warehouse",
+			update_child_qty_rate,
+			"Purchase Order",
+			get_trans_items(stock_item),
+			po.name,
+		)
+
+		update_child_qty_rate("Purchase Order", get_trans_items(service_item), po.name)
+
+		po.reload()
+		self.assertEqual(po.get("items")[-1].item_code, service_item)
+		self.assertFalse(po.get("items")[-1].warehouse)
 
 	def test_update_child_removing_item(self):
 		po = create_purchase_order(do_not_save=1)
@@ -288,6 +337,30 @@ class TestPurchaseOrder(FrappeTestCase):
 
 		# ordered qty should decrease (back to initial) on row deletion
 		self.assertEqual(get_ordered_qty(), existing_ordered_qty)
+
+	def test_discount_amount_partial_purchase_receipt(self):
+		po = create_purchase_order(qty=4, rate=100, do_not_save=1)
+		po.apply_discount_on = "Grand Total"
+		po.discount_amount = 120
+		po.save()
+		po.submit()
+
+		self.assertEqual(po.grand_total, 280)
+
+		pr1 = make_purchase_receipt(po.name)
+		pr1.items[0].qty = 3
+		pr1.save()
+		pr1.submit()
+
+		self.assertEqual(pr1.discount_amount, 120)
+		self.assertEqual(pr1.grand_total, 180)
+
+		pr2 = make_purchase_receipt(po.name)
+		pr2.save()
+		pr2.submit()
+
+		self.assertEqual(pr2.discount_amount, 0)
+		self.assertEqual(pr2.grand_total, 100)
 
 	def test_update_child_perm(self):
 		po = create_purchase_order(item_code="_Test Item", qty=4)
@@ -392,11 +465,13 @@ class TestPurchaseOrder(FrappeTestCase):
 					"item_code": item,
 					"rate": 100,
 					"qty": 1,
+					"warehouse": po.items[0].warehouse,
 				},  # added item whose tax account head already exists in PO
 				{
 					"item_code": new_item_with_tax.name,
 					"rate": 100,
 					"qty": 1,
+					"warehouse": po.items[0].warehouse,
 				},  # added item whose tax account head  is missing in PO
 			]
 		)
@@ -924,6 +999,8 @@ class TestPurchaseOrder(FrappeTestCase):
 		# self.assertEqual(po.payment_terms_template, pi.payment_terms_template)
 		compare_payment_schedules(self, po, pi)
 
+	@change_settings("Selling Settings", {"maintain_same_sales_rate": 1})
+	@change_settings("Buying Settings", {"maintain_same_rate": 1})
 	def test_internal_transfer_flow(self):
 		from erpnext.accounts.doctype.cost_center.test_cost_center import create_cost_center
 		from erpnext.accounts.doctype.sales_invoice.sales_invoice import (
@@ -934,9 +1011,6 @@ class TestPurchaseOrder(FrappeTestCase):
 			make_sales_invoice,
 		)
 		from erpnext.stock.doctype.delivery_note.delivery_note import make_inter_company_purchase_receipt
-
-		frappe.db.set_single_value("Selling Settings", "maintain_same_sales_rate", 1)
-		frappe.db.set_single_value("Buying Settings", "maintain_same_rate", 1)
 
 		prepare_data_for_internal_transfer()
 		supplier = "_Test Internal Supplier 2"
@@ -1345,6 +1419,35 @@ class TestPurchaseOrder(FrappeTestCase):
 		self.assertEqual(pi_1.status, "Paid")
 		self.assertEqual(pi_2.status, "Paid")
 		self.assertEqual(po.status, "Completed")
+
+	@change_settings("Buying Settings", {"maintain_same_rate": 0})
+	def test_purchase_order_over_billing_missing_item(self):
+		item1 = make_item(
+			"_Test Item for Overbilling",
+		).name
+
+		item2 = make_item(
+			"_Test Item for Overbilling 2",
+		).name
+
+		po = create_purchase_order(qty=10, rate=1000, item_code=item1, do_not_save=1)
+		po.append("items", {"item_code": item2, "qty": 5, "rate": 20, "warehouse": "_Test Warehouse - _TC"})
+		po.taxes = []
+		po.insert()
+		po.submit()
+
+		pi1 = make_pi_from_po(po.name)
+		pi1.items[0].qty = 8
+		pi1.items[0].rate = 1250
+		pi1.remove(pi1.items[1])
+		pi1.insert()
+		pi1.submit()
+
+		self.assertEqual(pi1.grand_total, 10000.0)
+		self.assertTrue(len(pi1.items) == 1)
+
+		pi2 = make_pi_from_po(po.name)
+		self.assertEqual(len(pi2.items), 2)
 
 
 def create_po_for_sc_testing():

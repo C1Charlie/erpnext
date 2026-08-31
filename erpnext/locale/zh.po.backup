@@ -25,7 +25,7 @@ msgid "\n"
 "\t\t\tIf it is not possible to make an adjustment entry, please enable 'Allow Negative Stock for Batch' in the batch {0} or in the Stock Settings to proceed.\n"
 "\t\t\tHowever, enabling this setting may lead to negative stock in the system.\n"
 "\t\t\tSo please ensure the stock levels are adjusted as soon as possible to maintain the correct valuation rate."
-msgstr "\n"
+msgstr ""
 "			物料 {1} 的批次 {0} 在仓库 {2}{3} 中出现负库存。"
 "			请补充 {4} 的库存数量以继续此操作。"
 "			如无法做调整单，请在批次 {0} 或库存设置中启用'允许批次负库存'。"
@@ -173,6 +173,7 @@ msgid "% Delivered"
 msgstr "已交付%"
 
 #: erpnext/manufacturing/doctype/bom/bom.js:1026
+#, python-format
 msgid "% Finished Item Quantity"
 msgstr "产成品完成率"
 
@@ -260,16 +261,19 @@ msgstr "已退货%"
 #. Description of the '% Amount Billed' (Percent) field in DocType 'Sales
 #. Order'
 #: erpnext/selling/doctype/sales_order/sales_order.json
+#, python-format
 msgid "% of materials billed against this Sales Order"
 msgstr "此销售订单%的物料已开票。"
 
 #. Description of the '% Delivered' (Percent) field in DocType 'Pick List'
 #: erpnext/stock/doctype/pick_list/pick_list.json
+#, python-format
 msgid "% of materials delivered against this Pick List"
 msgstr "本拣配清单的物料交付百分比"
 
 #. Description of the '%  Delivered' (Percent) field in DocType 'Sales Order'
 #: erpnext/selling/doctype/sales_order/sales_order.json
+#, python-format
 msgid "% of materials delivered against this Sales Order"
 msgstr "此销售订单% 的物料已出货。"
 
@@ -8793,7 +8797,7 @@ msgstr "当客户逾期金额超过客户上设置的逾期限额时，阻止创
 #: erpnext/selling/doctype/customer/customer.json
 msgid "Blocks all further accounting entries on this customer's account. Only users with the frozen-entries role can override.\n"
 msgstr ""
-"阻止该客户账户的所有后续会计分录。仅具有冻结分录角色的用户可以覆盖。\n"
+"阻止该客户账户的所有后续会计分录。仅具有冻结分录角色的用户可以覆盖。"
 
 #. Description of the 'Disabled' (Check) field in DocType 'Customer'
 #: erpnext/selling/doctype/customer/customer.json
@@ -10564,8 +10568,9 @@ msgstr "如不需从工单触发工单发料，请勾选"
 #. Description of the 'Not Applicable' (Check) field in DocType 'Item Tax
 #. Template Detail'
 #: erpnext/accounts/doctype/item_tax_template_detail/item_tax_template_detail.json
+#, python-format
 msgid "Check if this tax is not applicable to items (distinct from 0% rate)"
-msgstr "检查此税是否不适用于物料（与 0%% 税率不同）"
+msgstr "检查此税是否不适用于物料（与 0% 税率不同）"
 
 #: erpnext/accounts/doctype/journal_entry_template/journal_entry_template.py:58
 msgid "Check row {0} for account {1}: Party Type is only allowed for Receivable or Payable accounts"
@@ -24539,8 +24544,9 @@ msgid "In the case of multi-tier program, Customers will be auto assigned to the
 msgstr "对于多等级积分方案，系统会根据客户消费金额自动匹配相应积分等级"
 
 #: banking/src/components/features/BankReconciliation/Rules/RuleForm.tsx:753
+#, python-format
 msgid "In this case, the amount will be calculated as 25% of the transaction amount. If the transaction amount is 200, then this will be calculated as 200 * 0.25 = 50."
-msgstr "在此情况下，金额将按交易金额的 25%% 计算。如果交易金额为 200，则计算为 200 * 0.25 = 50。"
+msgstr "在此情况下，金额将按交易金额的 25% 计算。如果交易金额为 200，则计算为 200 * 0.25 = 50。"
 
 #: erpnext/stock/doctype/item/item.js:1310
 msgid "In this section, you can define Company-wide transaction-related defaults for this Item. Eg. Default Warehouse, Default Price List, Supplier, etc."
@@ -31064,6 +31070,7 @@ msgstr "最大值"
 
 #. Description of the 'Max Discount (%)' (Float) field in DocType 'Item'
 #: erpnext/stock/doctype/item/item.json
+#, python-format
 msgid "Maximum discount % allowed when selling this item. Eg: if set to 20%, a discount greater than 20% cannot be applied in sales transactions."
 msgstr "销售此物料时允许的最大折扣百分比。例如：如果设为 20%，销售交易中不能应用超过 20% 的折扣。"
 
@@ -31454,7 +31461,7 @@ msgstr "最小值"
 #: erpnext/stock/doctype/item/item.json
 msgid "Minimum quantity should be as per Stock UOM\n\n"
 msgstr ""
-"最低数量应按库存计量单位填写\n\n"
+"最低数量应按库存计量单位填写"
 
 #. Description of the 'Safety Stock' (Float) field in DocType 'Item'
 #: erpnext/stock/doctype/item/item.json
@@ -38825,12 +38832,12 @@ msgstr "请为联系人设置电子邮件/电话"
 #: erpnext/regional/italy/utils.py:257
 #, python-format
 msgid "Please set Fiscal Code for the customer '%s'"
-msgstr "请为客户&#39;%s&#39;设置财务代码"
+msgstr "请为客户&#39;％s&#39;设置财务代码"
 
 #: erpnext/regional/italy/utils.py:265
 #, python-format
 msgid "Please set Fiscal Code for the public administration '%s'"
-msgstr "请为公共管理&#39;%s&#39;设置财政代码"
+msgstr "请为公共管理&#39;％s&#39;设置财政代码"
 
 #: erpnext/assets/doctype/asset/depreciation.py:737
 msgid "Please set Fixed Asset Account in Asset Category {0}"
@@ -38852,7 +38859,7 @@ msgstr "请设置根类型"
 #: erpnext/regional/italy/utils.py:272
 #, python-format
 msgid "Please set Tax ID for the customer '%s'"
-msgstr "请为客户&#39;%s&#39;设置税号"
+msgstr "请为客户&#39;％s&#39;设置税号"
 
 #: erpnext/accounts/doctype/exchange_rate_revaluation/exchange_rate_revaluation.py:364
 msgid "Please set Unrealized Exchange Gain/Loss Account in Company {0}"
@@ -38893,7 +38900,7 @@ msgstr "请设置实际需求或销售预测以生成物料需求计划报表。
 #: erpnext/regional/italy/utils.py:227
 #, python-format
 msgid "Please set an Address on the Company '%s'"
-msgstr "请在公司&#39;%s&#39;上设置地址"
+msgstr "请在公司&#39;％s&#39;上设置地址"
 
 #: erpnext/controllers/stock_controller.py:1056
 msgid "Please set an Expense Account in the Items table"
@@ -40702,6 +40709,7 @@ msgid "Profitability Analysis"
 msgstr "盈利能力分析"
 
 #: erpnext/projects/doctype/task/task.py:157
+#, python-format
 msgid "Progress % for a task cannot be more than 100."
 msgstr "为任务进度百分比不能超过100个。"
 
@@ -46558,8 +46566,9 @@ msgid "Row #{0}: Please update deferred revenue/expense account in item row or d
 msgstr "行号#{0}：请更新物料行的递延收入/费用科目或公司主数据的默认科目"
 
 #: erpnext/manufacturing/doctype/bom/bom.py:346
+#, python-format
 msgid "Row #{0}: Process Loss Percentage should be less than 100% for {1} Item {2}"
-msgstr "第 #{0} 行：{1} 物料 {2} 的工艺损耗百分比应小于 100%%"
+msgstr "第 #{0} 行：{1} 物料 {2} 的工艺损耗百分比应小于 100%"
 
 #: erpnext/public/js/utils/barcode_scanner.js:433
 msgid "Row #{0}: Qty increased by {1}"
@@ -63283,6 +63292,7 @@ msgid "{0}% Delivered"
 msgstr "{0}％已出库"
 
 #: erpnext/accounts/doctype/payment_term/payment_term.js:15
+#, python-format
 msgid "{0}% of total invoice value will be given as discount."
 msgstr "将按发票总额的{0}%作为折扣发放"
 

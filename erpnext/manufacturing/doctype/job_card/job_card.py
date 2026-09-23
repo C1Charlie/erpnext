@@ -31,6 +31,9 @@ from erpnext.manufacturing.doctype.bom.bom import add_additional_cost, get_bom_i
 from erpnext.manufacturing.doctype.manufacturing_settings.manufacturing_settings import (
 	get_mins_between_operations,
 )
+from erpnext.manufacturing.doctype.production_plan.work_order_quantities import (
+	ProductionPlanWorkOrderQuantities,
+)
 from erpnext.manufacturing.doctype.workstation_type.workstation_type import get_workstations
 from erpnext.subcontracting.doctype.subcontracting_bom.subcontracting_bom import (
 	get_subcontracting_boms_for_finished_goods,
@@ -246,15 +249,16 @@ class JobCard(Document):
 
 		wo_qty = wo_qty + (wo_qty * over_production_percentage / 100)
 
-		job_card_qty = frappe.get_all(
-			"Job Card",
-			fields=[{"SUM": "for_quantity"}],
-			filters={
-				"work_order": self.work_order,
-				"operation_id": self.operation_id,
-				"docstatus": ["!=", 2],
-			},
-			as_list=1,
+		job_card = frappe.qb.DocType("Job Card")
+		job_card_qty = (
+			frappe.qb.from_(job_card)
+			.select(Sum(job_card.for_quantity - IfNull(job_card.pending_qty, 0)))
+			.where(
+				(job_card.work_order == self.work_order)
+				& (job_card.operation_id == self.operation_id)
+				& (job_card.docstatus != 2)
+			)
+			.run()
 		)
 
 		job_card_qty = flt(job_card_qty[0][0]) if job_card_qty else 0
@@ -292,10 +296,10 @@ class JobCard(Document):
 			fetch_exploded=0,
 			fetch_secondary_items=1,
 		)
-		for item_code, values in items_dict.items():
+		for values in items_dict.values():
 			values = frappe._dict(values)
 			secondary_item = {
-				"item_code": item_code,
+				"item_code": values.item_code,
 				"stock_qty": values.qty,
 				"item_name": values.item_name,
 				"stock_uom": values.stock_uom,
@@ -303,11 +307,10 @@ class JobCard(Document):
 				"bom_secondary_item": values.name,
 			}
 
-			if not values.is_legacy:
-				secondary_item["stock_qty"] -= flt(
-					secondary_item["stock_qty"] * (values.process_loss_per / 100),
-					self.precision("for_quantity"),
-				)
+			secondary_item["stock_qty"] -= flt(
+				secondary_item["stock_qty"] * (flt(values.process_loss_per) / 100),
+				self.precision("for_quantity"),
+			)
 
 			self.append("secondary_items", secondary_item)
 
@@ -990,6 +993,10 @@ class JobCard(Document):
 		if not self.operation_id:
 			return
 
+		work_order = frappe.get_doc("Work Order", self.work_order)
+		if work_order.production_plan:
+			ProductionPlanWorkOrderQuantities(work_order.production_plan).lock_plan_row(work_order)
+
 		job_cards = frappe.get_all(
 			"Job Card",
 			filters={
@@ -1004,14 +1011,13 @@ class JobCard(Document):
 		completed_qty = sum(max(flt(row.manufactured_qty), flt(row.total_completed_qty)) for row in job_cards)
 
 		frappe.db.set_value("Work Order Operation", self.operation_id, "completed_qty", completed_qty)
-		if (
-			self.finished_good
-			and frappe.get_cached_value("Work Order", self.work_order, "production_item")
-			== self.finished_good
-		):
-			_wo_doc = frappe.get_doc("Work Order", self.work_order)
-			_wo_doc.db_set("produced_qty", sum(flt(row.manufactured_qty) for row in job_cards))
-			_wo_doc.db_set("status", _wo_doc.get_status())
+		if self.finished_good and work_order.production_item == self.finished_good:
+			work_order.db_set("produced_qty", sum(flt(row.manufactured_qty) for row in job_cards))
+			if work_order.production_plan:
+				ProductionPlanWorkOrderQuantities(work_order.production_plan).validate_work_order(
+					work_order, process_loss_qty=work_order.process_loss_qty
+				)
+			work_order.db_set("status", work_order.get_status())
 
 	def update_corrective_in_work_order(self, wo):
 		wo.corrective_operation_cost = 0.0
@@ -1757,7 +1763,7 @@ class JobCard(Document):
 		ste.stock_entry.pro_doc = frappe.get_doc("Work Order", self.work_order)
 		ste.stock_entry.set_secondary_items_from_job_card()
 		for row in ste.stock_entry.items:
-			if (row.secondary_item_type or row.is_legacy_scrap_item) and not row.t_warehouse:
+			if (row.secondary_item_type or row.valuation_type) and not row.t_warehouse:
 				row.t_warehouse = self.target_warehouse
 
 		if auto_submit:
@@ -1900,6 +1906,9 @@ def make_stock_entry(source_name: str, target_doc: Document | str | None = None)
 			target.qty = pending_rm_qty
 
 	def set_missing_values(source, target):
+		if not source.items:
+			frappe.throw(_("This Job Card has no raw materials to transfer."))
+
 		if source.finished_good and not source.target_warehouse:
 			frappe.throw(_("Please set the Target Warehouse in the Job Card"))
 

@@ -272,6 +272,8 @@ class AccountsController(TransactionBase):
 		if self.get("_action") and self._action != "update_after_submit":
 			self.set_missing_values(for_validate=True)
 
+		self.validate_price_list()
+
 		if self.get("_action") == "submit":
 			self.remove_bundle_for_non_stock_invoices()
 
@@ -401,6 +403,28 @@ class AccountsController(TransactionBase):
 	@staticmethod
 	def is_drop_ship(items):
 		return any(item.delivered_by_supplier for item in items)
+
+	def validate_price_list(self):
+		price_list_field = "selling_price_list" if self.get("selling_price_list") else "buying_price_list"
+		price_list = self.get(price_list_field)
+		if not price_list or frappe.db.get_value("Price List", price_list, "enabled"):
+			return
+
+		# Returns retain a submitted voucher's pricing even if its price list is now disabled.
+		if (
+			self.get("is_return")
+			and self.get("return_against")
+			and price_list
+			== frappe.db.get_value(
+				self.doctype, {"name": self.return_against, "docstatus": 1}, price_list_field
+			)
+		):
+			return
+
+		frappe.throw(
+			_("Price List {0} is disabled").format(get_link_to_form("Price List", price_list)),
+			title=_("Disabled Price List"),
+		)
 
 	def set_default_letter_head(self):
 		if hasattr(self, "letter_head") and not self.letter_head:
@@ -1305,6 +1329,11 @@ class AccountsController(TransactionBase):
 		if self.get("taxes") or self.get("is_pos"):
 			return
 
+		# set by the Opening Invoice Creation Tool, where the outstanding amount
+		# entered against a party is already inclusive of tax
+		if self.flags.dont_auto_add_taxes:
+			return
+
 		if frappe.get_single_value(
 			"Accounts Settings", "add_taxes_from_taxes_and_charges_template"
 		) and hasattr(self, "taxes_and_charges"):
@@ -1421,9 +1450,12 @@ class AccountsController(TransactionBase):
 		dimension_dict = frappe._dict()
 
 		for dimension in accounting_dimensions:
-			dimension_dict[dimension] = self.get(dimension)
+			value = self.get(dimension)
 			if item and item.get(dimension):
-				dimension_dict[dimension] = item.get(dimension)
+				value = item.get(dimension)
+			if isinstance(value, list | dict):
+				continue
+			dimension_dict[dimension] = value
 
 		gl_dict.update(dimension_dict)
 		gl_dict.update(args)

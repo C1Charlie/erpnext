@@ -10,6 +10,7 @@ import json
 import frappe
 import frappe.defaults
 from frappe import _, msgprint
+from frappe.model.document import Document
 from frappe.model.mapper import get_mapped_doc
 from frappe.query_builder import Order
 from frappe.query_builder.functions import Sum
@@ -26,10 +27,12 @@ from frappe.utils import (
 
 from erpnext.buying.utils import check_on_hold_or_closed_status, validate_for_items
 from erpnext.controllers.buying_controller import BuyingController
+from erpnext.controllers.mapper import get_qty_already_mapped
 from erpnext.manufacturing.doctype.work_order.work_order import get_item_details
 from erpnext.setup.doctype.brand.brand import get_brand_defaults
 from erpnext.setup.doctype.item_group.item_group import get_item_group_defaults
 from erpnext.stock.doctype.item.item import get_item_defaults
+from erpnext.stock.doctype.price_list.price_list import is_price_list_enabled
 from erpnext.stock.get_item_details import get_default_supplier, get_price_list_rate_for
 from erpnext.stock.stock_balance import get_indented_qty, update_bin_qty
 from erpnext.subcontracting.doctype.subcontracting_bom.subcontracting_bom import (
@@ -123,6 +126,22 @@ class MaterialRequest(BuyingController):
 	def check_if_already_pulled(self):
 		pass
 
+	def validate_with_previous_doc(self):
+		super().validate_with_previous_doc(
+			{
+				"Sales Order": {
+					"ref_dn_field": "sales_order",
+					"compare_fields": [["company", "="]],
+				},
+				"Sales Order Item": {
+					"ref_dn_field": "sales_order_item",
+					"compare_fields": [["item_code", "="], ["uom", "="], ["conversion_factor", "="]],
+					"is_child_table": True,
+					"allow_duplicate_prev_row_id": True,
+				},
+			}
+		)
+
 	def validate_qty_against_so(self):
 		so_items = {}  # Format --> {'SO/00001': {'Item/001': 120, 'Item/002': 24}}
 		for d in self.get("items"):
@@ -165,6 +184,7 @@ class MaterialRequest(BuyingController):
 
 		self.validate_schedule_date()
 		self.check_for_on_hold_or_closed_status("Sales Order", "sales_order")
+		self.validate_with_previous_doc()
 		self.validate_uom_is_integer("uom", "qty")
 		self.validate_material_request_type()
 
@@ -200,14 +220,20 @@ class MaterialRequest(BuyingController):
 		self.reset_default_field_value("set_from_warehouse", "items", "from_warehouse")
 
 		self.validate_pp_qty()
+		self.set_buying_price_list()
 
-		if self.buying_price_list and not frappe.get_value("Price List", self.buying_price_list, "buying"):
+	def set_buying_price_list(self):
+		if not is_valid_buying_price_list(self.buying_price_list):
 			self.buying_price_list = None
 
-		if not self.buying_price_list:
-			buying_price_list = frappe.defaults.get_defaults().buying_price_list
-			if frappe.has_permission("Price List", "read", buying_price_list):
-				self.buying_price_list = buying_price_list
+		if self.buying_price_list:
+			return
+
+		default_price_list = frappe.defaults.get_defaults().buying_price_list
+		if is_valid_buying_price_list(default_price_list) and frappe.has_permission(
+			"Price List", "read", default_price_list
+		):
+			self.buying_price_list = default_price_list
 
 	def on_update(self):
 		if not self.is_new() and self.buying_price_list and self.has_value_changed("buying_price_list"):
@@ -464,8 +490,13 @@ class MaterialRequest(BuyingController):
 
 		for production_plan in production_plans:
 			doc = frappe.get_doc("Production Plan", production_plan)
+			doc.flags.ignore_permissions = True
 			doc.set_status()
 			doc.db_set("status", doc.status)
+
+
+def is_valid_buying_price_list(price_list: str | None) -> bool:
+	return is_price_list_enabled(price_list) and bool(frappe.get_value("Price List", price_list, "buying"))
 
 
 def update_completed_and_requested_qty(stock_entry, method):
@@ -564,6 +595,8 @@ def make_purchase_order(source_name, target_doc=None, args=None):
 	if isinstance(args, str):
 		args = json.loads(args)
 
+	mapped_qty_by_item = get_qty_already_mapped(target_doc, "material_request_item", "stock_qty")
+
 	is_subcontracted = (
 		frappe.db.get_value("Material Request", source_name, "material_request_type") == "Subcontracting"
 	)
@@ -585,7 +618,7 @@ def make_purchase_order(source_name, target_doc=None, args=None):
 		filtered_items = args.get("filtered_children", [])
 		child_filter = d.name in filtered_items if filtered_items else True
 
-		qty = d.ordered_qty or d.received_qty
+		qty = (d.ordered_qty or d.received_qty) + flt(mapped_qty_by_item.get(d.name, 0))
 
 		return qty < d.stock_qty and child_filter
 
@@ -746,7 +779,16 @@ def make_purchase_orders_by_supplier(source_name: str, item_suppliers: str | lis
 
 
 @frappe.whitelist()
-def make_request_for_quotation(source_name, target_doc=None):
+def make_request_for_quotation(source_name: str, target_doc: str | dict | Document | None = None):
+	def update_item(obj, target, source_parent):
+		qty = obj.ordered_qty or obj.received_qty
+		target.qty = flt(flt(obj.stock_qty) - flt(qty)) / target.conversion_factor
+		target.stock_qty = target.qty * target.conversion_factor
+
+	def select_item(d):
+		qty = d.ordered_qty or d.received_qty
+		return qty < d.stock_qty
+
 	doclist = get_mapped_doc(
 		"Material Request",
 		source_name,
@@ -762,6 +804,8 @@ def make_request_for_quotation(source_name, target_doc=None):
 					["parent", "material_request"],
 					["project", "project_name"],
 				],
+				"postprocess": update_item,
+				"condition": select_item,
 			},
 		},
 		target_doc,

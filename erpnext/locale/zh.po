@@ -63392,3 +63392,21 @@ msgstr "{} {} 已经关联了 {} {}"
 msgid "{} {} is not affecting bank account {}"
 msgstr "{} {}未影响银行账户{}"
 
+#: erpnext/stock/doctype/stock_ledger_entry/stock_ledger_entry.py:318
+msgid "Stock cannot exist for Item {0} since has variants"
+msgstr "物料 {0} 是含变体的模板物料，不能直接存有库存"
+#: erpnext/stock/doctype/stock_ledger_entry/stock_ledger_entry.py:314
+msgid "Item {0} not found"
+msgstr "找不到物料 {0}"
+
+#: erpnext/stock/doctype/stock_ledger_entry/stock_ledger_entry.py:323
+msgid "Item {0} must be a stock Item"
+msgstr "物料 {0} 必须为库存物料"
+
+#: erpnext/stock/doctype/stock_ledger_entry/stock_ledger_entry.py:327
+msgid "Serial No / Batch No are mandatory for Item {0}"
+msgstr "物料 {0} 必须填写序列号/批次号"
+
+#: erpnext/stock/doctype/stock_ledger_entry/stock_ledger_entry.py:330
+msgid "Serial No and Batch No are not allowed for Item {0}"
+msgstr "物料 {0} 不允许填写序列号和批次号"

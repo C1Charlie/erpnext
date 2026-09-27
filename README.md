@@ -1,4 +1,4 @@
-## custom version 16.1
+## custom version 16.2
 <div align="center">
     <a href="https://frappe.io/erpnext">
 	<img src="./erpnext/public/images/v16/erpnext.svg" alt="ERPNext Logo" height="80px" width="80xp"/>

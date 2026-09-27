@@ -770,12 +770,11 @@ class SerialandBatchBundle(Document):
 
 	def validate_negative_batch(self, batch_no, available_qty):
 		if available_qty < 0 and not self.is_stock_reco_for_valuation_adjustment(available_qty):
-			msg = f"""Batch No {bold(batch_no)} of an Item {bold(self.item_code)}
-				has negative stock
-				of quantity {bold(available_qty)} in the
-				warehouse {self.warehouse}"""
+			msg = _(
+				"Batch No {0} of an Item {1} has negative stock of quantity {2} in the warehouse {3}"
+			).format(bold(batch_no), bold(self.item_code), bold(available_qty), self.warehouse)
 
-			frappe.throw(_(msg), BatchNegativeStockError)
+			frappe.throw(msg, BatchNegativeStockError)
 
 	def is_stock_reco_for_valuation_adjustment(self, available_qty):
 		if (
@@ -1269,8 +1268,8 @@ class SerialandBatchBundle(Document):
 
 	def validate_serial_and_batch_no(self):
 		if self.item_code and not self.has_serial_no and not self.has_batch_no:
-			msg = f"The Item {self.item_code} does not have Serial No or Batch No"
-			frappe.throw(_(msg))
+			msg = _("The Item {0} does not have Serial No or Batch No").format(self.item_code)
+			frappe.throw(msg)
 
 		serial_nos = []
 		batch_nos = []
@@ -1847,9 +1846,10 @@ class SerialandBatchBundle(Document):
 			and self.voucher_detail_no
 			and frappe.db.exists(child_doctype, self.voucher_detail_no)
 		):
-			msg = f"""The {self.voucher_type} {bold(self.voucher_no)}
-				is in submitted state, please cancel it first"""
-			frappe.throw(_(msg))
+			msg = _("The {0} {1} is in submitted state, please cancel it first").format(
+				self.voucher_type, bold(self.voucher_no)
+			)
+			frappe.throw(msg)
 
 	def on_trash(self):
 		self.validate_voucher_no_docstatus()

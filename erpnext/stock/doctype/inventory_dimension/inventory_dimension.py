@@ -85,10 +85,11 @@ class InventoryDimension(Document):
 			if field.fieldname not in allow_to_edit_fields and old_doc.get(field.fieldname) != self.get(
 				field.fieldname
 			):
-				msg = f"""The user can not change value of the field {bold(field.label)} because
-					stock transactions exists against the dimension {bold(self.name)}."""
+				msg = _(
+					"The user can not change value of the field {0} because stock transactions exists against the dimension {1}."
+				).format(bold(field.label), bold(self.name))
 
-				frappe.throw(_(msg), DoNotChangeError)
+				frappe.throw(msg, DoNotChangeError)
 
 	def on_trash(self):
 		self.delete_custom_fields()
@@ -112,8 +113,8 @@ class InventoryDimension(Document):
 		for field in frappe.get_all("Custom Field", filters=filters):
 			frappe.delete_doc("Custom Field", field.name)
 
-		msg = f"Deleted custom fields related to the dimension {self.name}"
-		frappe.msgprint(_(msg))
+		msg = _("Deleted custom fields related to the dimension {0}").format(self.name)
+		frappe.msgprint(msg)
 
 	def reset_value(self):
 		if self.apply_to_all_doctypes:
@@ -125,12 +126,14 @@ class InventoryDimension(Document):
 
 	def validate_reference_document(self):
 		if frappe.get_cached_value("DocType", self.reference_document, "istable") == 1:
-			msg = f"The reference document {self.reference_document} can not be child table."
-			frappe.throw(_(msg), CanNotBeChildDoc)
+			msg = _("The reference document {0} can not be child table.").format(self.reference_document)
+			frappe.throw(msg, CanNotBeChildDoc)
 
 		if self.reference_document in ["Batch", "Serial No", "Warehouse", "Item"]:
-			msg = f"The reference document {self.reference_document} can not be an Inventory Dimension."
-			frappe.throw(_(msg), CanNotBeDefaultDimension)
+			msg = _("The reference document {0} can not be an Inventory Dimension.").format(
+				self.reference_document
+			)
+			frappe.throw(msg, CanNotBeDefaultDimension)
 
 	def set_source_and_target_fieldname(self) -> None:
 		if not self.source_fieldname:

@@ -690,12 +690,11 @@ class StockEntry(StockController, SubcontractingInwardController):
 			if row.job_card_item or not row.s_warehouse:
 				continue
 
-			msg = f"""Row #{row.idx}: The job card item reference
-				is missing. Kindly create the stock entry
-				from the job card. If you have added the row manually
-				then you won't be able to add job card item reference."""
+			msg = _(
+				"Row #{0}: The job card item reference is missing. Kindly create the stock entry from the job card. If you have added the row manually then you won't be able to add job card item reference."
+			).format(row.idx)
 
-			frappe.throw(_(msg))
+			frappe.throw(msg)
 
 	def validate_work_order_status(self):
 		pro_doc = frappe.get_doc("Work Order", self.work_order)
@@ -2510,13 +2509,13 @@ class StockEntry(StockController, SubcontractingInwardController):
 		def _validate_work_order(pro_doc):
 			msg, title = "", ""
 			if flt(pro_doc.docstatus) != 1:
-				msg = f"Work Order {self.work_order} must be submitted"
+				msg = _("Work Order {0} must be submitted").format(self.work_order)
 
 			if pro_doc.status == "Stopped":
-				msg = f"Transaction not allowed against stopped Work Order {self.work_order}"
+				msg = _("Transaction not allowed against stopped Work Order {0}").format(self.work_order)
 
 			if msg:
-				frappe.throw(_(msg), title=title)
+				frappe.throw(msg, title=title)
 
 		if self.job_card:
 			job_doc = frappe.get_doc("Job Card", self.job_card)

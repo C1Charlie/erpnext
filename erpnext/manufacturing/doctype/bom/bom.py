@@ -1369,7 +1369,9 @@ class BOM(WebsiteGenerator):
 			frappe.throw(_("Process Loss Percentage cannot be greater than 100"))
 
 		if process_loss_qty and must_be_whole_number and process_loss_qty % 1 != 0:
-			msg = f"Item: {frappe.bold(item_code)} with Stock UOM: {frappe.bold(uom)} can't have fractional process loss qty as UOM {frappe.bold(uom)} is a whole Number."
+			msg = _(
+				"Item: {0} with Stock UOM: {1} can't have fractional process loss qty as UOM {2} is a whole Number."
+			).format(frappe.bold(item_code), frappe.bold(uom), frappe.bold(uom))
 			frappe.throw(msg, title=_("Invalid Process Loss Configuration"))
 
 	def has_scrap_items(self):

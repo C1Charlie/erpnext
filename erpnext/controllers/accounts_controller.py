@@ -915,8 +915,10 @@ class AccountsController(TransactionBase):
 
 			for row in self.get("items"):
 				if not row.get(field):
-					msg = f"At Row {row.idx}: The field {bold(label)} is mandatory for internal transfer"
-					frappe.throw(_(msg), title=_("Internal Transfer Reference Missing"))
+					msg = _("At Row {0}: The field {1} is mandatory for internal transfer").format(
+						row.idx, bold(label)
+					)
+					frappe.throw(msg, title=_("Internal Transfer Reference Missing"))
 
 	def validate_internal_transaction(self):
 		if not cint(frappe.get_single_value("Accounts Settings", "maintain_same_internal_transaction_rate")):

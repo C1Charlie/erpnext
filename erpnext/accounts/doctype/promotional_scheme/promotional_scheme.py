@@ -157,8 +157,8 @@ class PromotionalScheme(Document):
 			applicable_for = frappe.scrub(self.applicable_for)
 
 			if not self.get(applicable_for):
-				msg = f"The field {frappe.bold(self.applicable_for)} is required"
-				frappe.throw(_(msg))
+				msg = _("The field {0} is required").format(frappe.bold(self.applicable_for))
+				frappe.throw(msg)
 
 	def validate_pricing_rules(self):
 		if self.is_new():
@@ -259,11 +259,12 @@ class PromotionalScheme(Document):
 
 
 def raise_for_transaction_exists(name):
-	msg = f"""You can't change the {frappe.bold(_('Applicable For'))}
-		because transactions are present against the Promotional Scheme {frappe.bold(name)}. """
-	msg += "Kindly disable this Promotional Scheme and create new for new Applicable For."
+	msg = _(
+		"You can't change the {0} because transactions are present against the Promotional Scheme {1}. "
+	).format(frappe.bold(_("Applicable For")), frappe.bold(name))
+	msg += _("Kindly disable this Promotional Scheme and create new for new Applicable For.")
 
-	frappe.throw(_(msg), TransactionExists)
+	frappe.throw(msg, TransactionExists)
 
 
 def get_pricing_rules(doc, rules=None):

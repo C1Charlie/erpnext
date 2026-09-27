@@ -394,8 +394,8 @@ def create_file(doc, compressed_content):
 def validate_item_warehouse(args):
 	for field in ["item_code", "warehouse", "posting_date", "posting_time"]:
 		if args.get(field) in [None, ""]:
-			validation_msg = f"The field {frappe.unscrub(field)} is required for the reposting"
-			frappe.throw(_(validation_msg))
+			validation_msg = _("The field {0} is required for the reposting").format(frappe.unscrub(field))
+			frappe.throw(validation_msg)
 
 
 def get_items_to_be_repost(voucher_type=None, voucher_no=None, doc=None, reposting_data=None):
@@ -1755,7 +1755,9 @@ class update_entries_after:
 							msg, frappe.bold(self.reserved_stock), frappe.bold(allowed_qty)
 						)
 					else:
-						msg = f"{msg} As the full stock is reserved for other transactions, you're not allowed to consume the stock."
+						msg = _(
+							"{0} As the full stock is reserved for other transactions, you're not allowed to consume the stock."
+						).format(msg)
 
 				msg_list.append(msg)
 

@@ -428,9 +428,9 @@ def validate_item_details(ctx: ItemDetailsCtx, item):
 	validate_end_of_life(item.name, item.end_of_life, item.disabled)
 
 	if cint(item.has_variants):
-		msg = f"Item {item.name} is a template, please select one of its variants"
+		msg = _("Item {0} is a template, please select one of its variants").format(item.name)
 
-		throw(_(msg), title=_("Template Item Selected"))
+		throw(msg, title=_("Template Item Selected"))
 
 	elif ctx.doctype != "Material Request":
 		if ctx.is_subcontracted:

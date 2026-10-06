@@ -51932,6 +51932,11 @@ msgid ""
 "changing warehouse."
 msgstr "仓库{1}下物料{0}的序列号不可用，请尝试更换仓库。"
 
+#. Description of the 'Valuation Method' (Select) field in DocType 'Item'
+#: erpnext/stock/doctype/item/item.json
+msgid "Serialized items are valued at Moving Average once stock transactions exist and Serial No Wise Valuation is disabled."
+msgstr "当已存在库存交易且未启用序列号计价时，序列号物料按移动平均法计价。"
+
 #. Label of the series_for_depreciation_entry (Data) field in DocType
 #. 'Company'
 #: erpnext/setup/doctype/company/company.json

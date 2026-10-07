@@ -7517,7 +7517,7 @@ msgstr "物料清单号"
 #. Name of a report
 #: erpnext/manufacturing/report/bom_explorer/bom_explorer.json
 msgid "BOM Explorer"
-msgstr "BOM Explorer"
+msgstr "物料清单浏览器"
 
 #. Name of a DocType
 #: erpnext/manufacturing/doctype/bom_explosion_item/bom_explosion_item.json
@@ -68435,3 +68435,3579 @@ msgstr "年度开始日期"
 
 msgid "zero_balance"
 msgstr "零余额"
+
+msgid "A band of scores, and what happens to suppliers in it."
+msgstr "按分数区间对供应商进行评级，并定义各区间对应的处理措施。"
+
+msgid "A bank account of yours or of a customer or supplier."
+msgstr "您自己、客户或供应商的银行账户。"
+
+msgid "A bank you or your customers and suppliers hold accounts with."
+msgstr "您或您的客户、供应商开立账户的银行。"
+
+msgid "A batch of payments to send to your bank."
+msgstr "待发送给银行的一批付款指令。"
+
+msgid "A bill from a supplier for what you bought."
+msgstr "供应商就所购货物或服务开具的账单。"
+
+msgid "A bill to a customer for what you sold."
+msgstr "就所售货物或服务向客户开具的账单。"
+
+msgid "A branch of your company."
+msgstr "您公司下属的分支机构。"
+
+msgid "A brand your items are sold under."
+msgstr "您销售物料所使用的品牌。"
+
+msgid ""
+"A business or person you buy from. See "
+"[Supplier](https://docs.frappe.io/erpnext/user/manual/en/supplier)."
+msgstr ""
+"您向其采购物料或服务的单位或个人。参见[供应商](https://docs.frappe.io/erpnext/user/manual/en/supplier)。"
+
+msgid ""
+"A business or person you sell to. See "
+"[Customer](https://docs.frappe.io/erpnext/user/manual/en/customer)."
+msgstr ""
+"您向其销售物料或服务的单位或个人。参见[客户](https://docs.frappe.io/erpnext/user/manual/en/customer)。"
+
+msgid "A certificate that lets you withhold less tax from a supplier."
+msgstr "允许对供应商少扣缴税款的证明。"
+
+msgid "A channel customers reach you on, like a phone line."
+msgstr "客户联系您的渠道，如电话线路。"
+
+msgid "A class of shares, like equity or preference."
+msgstr "股份类别，如普通股或优先股。"
+
+msgid "A code customers enter to get a discount from a pricing rule."
+msgstr "客户录入后可根据定价规则享受折扣的代码。"
+
+msgid "A code from a code list and what it maps to."
+msgstr "代码表中的代码及其对应的映射关系。"
+
+msgid "A company or person you buy goods or services from."
+msgstr "您向其采购物料或服务的公司或个人。"
+
+msgid "A company or person you sell goods or services to."
+msgstr "您向其销售物料或服务的公司或个人。"
+
+msgid "A company that makes the items you buy or sell."
+msgstr "生产您所采购物料或销售物料的制造商。"
+
+msgid "A company you are trying to win as a customer, with its leads."
+msgstr "您正在争取的潜在客户公司及其相关线索。"
+
+msgid "A customer's claim to repair or replace an item under warranty."
+msgstr "客户就保修期内的物料提出的维修或更换请求。"
+
+msgid "A customer's confirmed order."
+msgstr "客户已确认的订单。"
+
+msgid "A date range you can close so no one posts into it."
+msgstr "可关闭的日期区间，关闭后禁止再录入该期间的凭证。"
+
+msgid "A department of your company."
+msgstr "您公司下属的部门。"
+
+msgid "A direct entry in your books, for anything without its own form."
+msgstr "直接录入账簿的凭证，用于没有专属单据的业务。"
+
+msgid "A distributor, dealer or reseller who sells for you on commission."
+msgstr "以佣金方式为您代销的分销商、经销商或渠道商。"
+
+msgid "A finer grouping of bank accounts, like savings or current."
+msgstr "银行账户的更细分类，如储蓄账户或活期账户。"
+
+msgid "A group of tax withholding categories that apply together."
+msgstr "可组合适用的一组预扣税类别。"
+
+msgid "A group of units of an item made or received together."
+msgstr "同一批次生产或入库的物料单元组。"
+
+msgid "A grouping of bank accounts, like checking or credit card."
+msgstr "银行账户的分类，如支票账户或信用卡账户。"
+
+msgid "A grouping of calls, like sales or support."
+msgstr "电话的分类，如销售来电或支持来电。"
+
+msgid "A grouping of inspection parameters."
+msgstr "检验参数的分组。"
+
+msgid "A grouping of issues, like billing or technical."
+msgstr "问题的分类，如账单问题或技术问题。"
+
+msgid "A grouping of projects, like internal or external."
+msgstr "项目的分类，如内部项目或外部项目。"
+
+msgid "A grouping of tasks, like bug or feature."
+msgstr "任务的分类，如缺陷或功能。"
+
+msgid "A grouping of units, like weight or length."
+msgstr "计量单位的分类，如重量单位或长度单位。"
+
+msgid "A grouping of warehouses, like transit or store."
+msgstr "仓库的分类，如在途仓或门店仓。"
+
+msgid ""
+"A guarantee a bank gives on your behalf, or on a customer's or supplier's."
+msgstr "银行代表您、客户或供应商出具的保函。"
+
+msgid "A job title, like manager or accountant."
+msgstr "职位名称，如经理或会计。"
+
+msgid "A kind of stock entry, like material transfer or manufacture."
+msgstr "库存出入库的一种类型，如物料调拨或生产入库。"
+
+msgid "A kind of work you track time against, like design or support."
+msgstr "用于工时统计的工作类型，如设计或支持。"
+
+msgid "A kind of workstation, with its costs."
+msgstr "一种工站类型及其成本信息。"
+
+msgid "A ledger in your chart of accounts that entries are posted to."
+msgstr "会计科目表中的明细账，凭证将过账到该科目。"
+
+msgid "A legal entity with its own books, like your business or a subsidiary."
+msgstr "拥有独立账簿的法人实体，如您的公司或子公司。"
+
+msgid "A line from your bank statement, ready to be matched with a payment."
+msgstr "银行对账单中的一行记录，可与付款进行匹配。"
+
+msgid "A machine or place where operations are done."
+msgstr "执行工序的机器或场所。"
+
+msgid "A marketing campaign, to see which leads and sales it brought in."
+msgstr "市场营销活动，用于追踪其带来的线索和销售。"
+
+msgid "A meeting booked with a lead or customer."
+msgstr "与线索或客户预约的会议。"
+
+msgid "A meeting to review quality, with its agenda and minutes."
+msgstr "质量评审会议，含议程和会议纪要。"
+
+msgid "A parcel size you ship often."
+msgstr "常用发货的包裹尺寸规格。"
+
+msgid "A parcel you send through a carrier."
+msgstr "通过承运商发出的包裹。"
+
+msgid ""
+"A part of your business you track income and expenses for, like a branch or "
+"product line."
+msgstr "用于归集收入和费用的业务单元，如分公司或产品线。"
+
+msgid "A periodic check of how a quality goal is going."
+msgstr "对质量目标进展情况的定期检查。"
+
+msgid "A person or company that owns shares in your company."
+msgstr "持有您公司股份的个人或公司。"
+
+msgid "A phone call made or received."
+msgstr "呼出或呼入的电话。"
+
+msgid "A piece of work to be done, often part of a project."
+msgstr "待完成的工作项，通常属于某个项目。"
+
+msgid "A piece of work with tasks, time and costs."
+msgstr "包含任务、工时和成本的工作项目。"
+
+msgid "A place where you keep stock."
+msgstr "存放库存的场所。"
+
+msgid "A place where your assets are kept."
+msgstr "存放资产的场所。"
+
+msgid "A potential sale to a lead or customer."
+msgstr "面向线索或客户的潜在销售机会。"
+
+msgid "A problem or question raised by a customer."
+msgstr "客户提出的问题或疑问。"
+
+msgid ""
+"A product or a service you sell. See "
+"[Item](https://docs.frappe.io/erpnext/user/manual/en/item)."
+msgstr "您销售的产品或服务。参见[物料](https://docs.frappe.io/erpnext/user/manual/en/item)。"
+
+msgid "A product or service you buy, sell or keep in stock."
+msgstr "您采购、销售或库存管理的产品或服务。"
+
+msgid "A progress update collected from the project team."
+msgstr "从项目团队收集的进展汇报。"
+
+msgid "A property item variants differ by, like size or colour."
+msgstr "多规格物料之间相区分的属性，如尺寸或颜色。"
+
+msgid ""
+"A published list of codes, like units or tax categories, used in "
+"e-invoicing."
+msgstr "已发布的代码表，如单位或税种代码，用于电子发票。"
+
+msgid "A record of maintenance done on an asset."
+msgstr "资产维修记录。"
+
+msgid "A record of shares issued, bought back or moved between shareholders."
+msgstr "股份发行、回购或在股东之间转让的记录。"
+
+msgid "A region you sell in, to group customers and set targets."
+msgstr "销售区域，用于归组客户并设定目标。"
+
+msgid "A regular email summing up how the business is doing."
+msgstr "定期发送的业务经营汇总邮件。"
+
+msgid "A reminder to a customer about an overdue invoice."
+msgstr "向客户发送的逾期账单催款提醒。"
+
+msgid "A repair made to an asset, and what it cost."
+msgstr "资产的维修记录及其费用。"
+
+msgid "A request to buy, transfer or make items."
+msgstr "请求采购、调拨或生产物料。"
+
+msgid "A sale made at the point of sale."
+msgstr "在销售终端（POS）完成的销售。"
+
+msgid "A saved set of accounts to start journal entries from."
+msgstr "保存的科目组合，用于快速创建日记账凭证。"
+
+msgid ""
+"A separate set of books, for example to depreciate assets under another "
+"rule."
+msgstr "独立的一套账簿，例如用于按其他规则计提资产折旧。"
+
+msgid "A series of emails sent to leads or contacts on a schedule."
+msgstr "按预定计划向线索或联系人发送的一系列邮件。"
+
+msgid "A set of discounts and free items, like buy two get one free."
+msgstr "一组折扣和赠品规则，如买二送一。"
+
+msgid "A set of item prices for buying, selling or both."
+msgstr "一套用于采购、销售或两者的物料价格。"
+
+msgid "A set of payment terms to apply to invoices and orders."
+msgstr "应用于发票和订单的一组付款条款。"
+
+msgid "A set of tasks to start new projects from."
+msgstr "用于快速启动新项目的任务模板。"
+
+msgid "A single unit of an item, tracked by its own number."
+msgstr "物料的单个计量单元，按独立序列号追踪。"
+
+msgid "A step in making an item, like cutting or assembly."
+msgstr "制造物料的一个工序，如切割或装配。"
+
+msgid "A step in your sales process, like qualification or negotiation."
+msgstr "销售流程中的一个阶段，如资格审查或商务谈判。"
+
+msgid "A unit you measure items in, like kg or box."
+msgstr "物料的计量单位，如千克或箱。"
+
+msgid "A value a scorecard criterion is calculated from."
+msgstr "计分卡评估标准计算所依据的数值。"
+
+msgid "A vehicle's route to deliver to several customers."
+msgstr "车辆向多个客户送货的行驶路线。"
+
+msgid "A view of your workstations and what each is doing."
+msgstr "工站总览视图，显示每个工站的工作状态。"
+
+msgid "A visit to service or repair what a customer bought."
+msgstr "上门为客户所购产品提供保养或维修的服务。"
+
+msgid "A way you pay or get paid, like cash, bank transfer or card."
+msgstr "收付款方式，如现金、银行转账或银行卡。"
+
+msgid "API"
+msgstr "API"
+
+msgid "API Endpoint"
+msgstr "API 接口地址"
+
+msgid "API Key"
+msgstr "API 密钥"
+
+msgid "Access"
+msgstr "权限"
+
+msgid "Account"
+msgstr "科目"
+
+msgid "Account Balance Timeline"
+msgstr "科目余额趋势"
+
+msgid "Accounts Payable Ageing"
+msgstr "应付账款账龄"
+
+msgid "Accounts Payable Standard"
+msgstr "应付账款标准格式"
+
+msgid "Accounts Payable Summary Standard"
+msgstr "应付账款汇总标准格式"
+
+msgid "Accounts Receivable / Payable Report"
+msgstr "应收/应付账款报表"
+
+msgid "Accounts Receivable Ageing"
+msgstr "应收账款账龄"
+
+msgid "Accounts Receivable Standard"
+msgstr "应收账款标准格式"
+
+msgid "Accounts Receivable Summary Standard"
+msgstr "应收账款汇总标准格式"
+
+msgid ""
+"Accumulated profits and other reserves created from profits or share "
+"premium. Examples: General reserves, retained earnings, statutory reserves, "
+"share premium."
+msgstr "由利润或股本溢价累积形成的留存收益及其他公积金。例如：一般公积、留存收益、法定公积、股本溢价。"
+
+msgid "Action"
+msgstr "操作"
+
+msgid "Actions"
+msgstr "处理措施"
+
+msgid "Active Customers"
+msgstr "活跃客户"
+
+msgid "Active Suppliers"
+msgstr "活跃供应商"
+
+msgid "Activity"
+msgstr "活动"
+
+msgid "Add Bank Account"
+msgstr "添加银行账户"
+
+msgid "Add Template"
+msgstr "添加模板"
+
+msgid "Add a customer"
+msgstr "添加客户"
+
+msgid "Add a product you make"
+msgstr "添加自制产品"
+
+msgid "Add a raw material"
+msgstr "添加原材料"
+
+msgid "Add a supplier"
+msgstr "添加供应商"
+
+msgid "Add a supplier, order from them and pay their bill."
+msgstr "添加供应商、向其下单并支付货款。"
+
+msgid "Add an asset item"
+msgstr "添加资产物料"
+
+msgid "Add an item and a customer, bill them and collect the payment."
+msgstr "添加物料和客户，向客户开票并收款。"
+
+msgid "Add an item you buy"
+msgstr "添加采购物料"
+
+msgid "Add an item you sell"
+msgstr "添加销售物料"
+
+msgid "Add an item you stock"
+msgstr "添加库存物料"
+
+msgid "Add the bank account you use"
+msgstr "添加您在用的银行账户"
+
+msgid "Add the people you work with and choose what they can see."
+msgstr "添加与您协作的同事，并设置其可见范围。"
+
+msgid "Address"
+msgstr "地址"
+
+msgid "Address Line 1"
+msgstr "地址行 1"
+
+msgid "Address Line 2"
+msgstr "地址行 2"
+
+msgid "Address Title"
+msgstr "地址标题"
+
+msgid "Address Type"
+msgstr "地址类型"
+
+msgid "Adds freight, duty and other charges to the cost of received items."
+msgstr "将运费、关税及其他费用分摊到入库物料的成本中。"
+
+msgid "Advanced Settings"
+msgstr "高级设置"
+
+msgid "Amended From"
+msgstr "修订自"
+
+msgid ""
+"Amounts due from customers for goods sold or services provided in ordinary "
+"course of business. Examples: Accounts receivable, notes receivable from "
+"customers, unbilled revenue."
+msgstr "日常经营活动中因销售商品或提供服务应向客户收取的款项。例如：应收账款、客户应收票据、未开票收入。"
+
+msgid ""
+"Amounts owed to suppliers. Examples: Supplier invoices, accrued purchases, "
+"bills payable."
+msgstr "应付供应商的款项。例如：供应商发票、暂估应付款、应付票据。"
+
+msgid "An agreement to buy or sell an item at a fixed price over a period."
+msgstr "在一定期限内按固定价格采购或销售物料的框架协议。"
+
+msgid "An agreement with a customer, supplier or employee."
+msgstr "与客户、供应商或员工签订的合同。"
+
+msgid ""
+"An extra way to tag entries, like branch or region, beyond cost centers."
+msgstr "除成本中心外，为凭证附加分类标签的方式，如按分公司或区域。"
+
+msgid "An extra way to tag stock, like a rack or bin."
+msgstr "为库存附加额外标签的方式，如货架或货位。"
+
+msgid "An item you can use in place of another."
+msgstr "可替代其他物料使用的备选物料。"
+
+msgid "An order for a subcontractor to make items from your materials."
+msgstr "委托加工商使用我方提供的物料生产产品的委外加工订单。"
+
+msgid "An order to make a quantity of an item."
+msgstr "下达生产一定数量物料的生产工单。"
+
+msgid "An order to make items for a customer from materials they send."
+msgstr "使用客户提供的物料为其加工产品的订单。"
+
+msgid "An order you place with a supplier."
+msgstr "您向供应商下达的采购订单。"
+
+msgid "Analytics"
+msgstr "分析"
+
+msgid "Annual Purchase"
+msgstr "年度采购额"
+
+msgid "Annual Sales"
+msgstr "年度销售额"
+
+msgid ""
+"Anything with a start and an end: a client job, an installation, an internal"
+" initiative. See "
+"[Project](https://docs.frappe.io/erpnext/user/manual/en/project)."
+msgstr ""
+"任何有开始和结束的工作：客户项目、安装工程、内部专项等。参见[项目](https://docs.frappe.io/erpnext/user/manual/en/project)。"
+
+msgid ""
+"Anything you keep on shelves and count. See "
+"[Item](https://docs.frappe.io/erpnext/user/manual/en/item)."
+msgstr ""
+"存放在货架上并进行数量管理的任何物品。参见[物料](https://docs.frappe.io/erpnext/user/manual/en/item)。"
+
+msgid "Applicable For"
+msgstr "适用范围"
+
+msgid "Applies a tax template automatically when its conditions match."
+msgstr "当满足条件时自动套用相应的税务模板。"
+
+msgid "Appointment Booking"
+msgstr "预约预订"
+
+msgid "Ask a customer to pay, by email with a payment link."
+msgstr "通过邮件向客户发送付款链接，请其付款。"
+
+msgid "Ask suppliers for prices on the items you need."
+msgstr "就所需物料向供应商询价。"
+
+msgid "Asset Maintenance Report"
+msgstr "资产保养报表"
+
+msgid "Asset Onboarding"
+msgstr "资产模块引导"
+
+msgid "Asset Reports"
+msgstr "资产报表"
+
+msgid "Asset-Disposed"
+msgstr "资产-已处置"
+
+msgid "Asset-Drafts"
+msgstr "资产-草稿"
+
+msgid "Asset-Fully Depreciated"
+msgstr "资产-已提足折旧"
+
+msgid "Asset-In Use"
+msgstr "资产-在用"
+
+msgid "Asset-Needs Attention"
+msgstr "资产-需要关注"
+
+msgid ""
+"Assets, liabilities and equity on any date, straight from your ledger. See "
+"[Balance Sheet](https://docs.frappe.io/erpnext/user/manual/en/balance-"
+"sheet)."
+msgstr ""
+"随时基于总账生成指定日期的资产、负债和权益报表。参见[资产负债表](https://docs.frappe.io/erpnext/user/manual/en/balance-"
+"sheet)。"
+
+msgid "Assign To"
+msgstr "指派给"
+
+msgid "Attachment"
+msgstr "附件"
+
+msgid "Audit Reports"
+msgstr "审计报表"
+
+msgid "Auto Map Raw Materials to Finished Goods"
+msgstr "自动映射原材料与产成品"
+
+msgid "Auto Repeat"
+msgstr "自动重复"
+
+msgid "Automation"
+msgstr "自动化"
+
+msgid "Average Sales Order Value"
+msgstr "平均销售订单金额"
+
+msgid "BOM - Manufacturing"
+msgstr "物料清单 - 制造"
+
+msgid "BOM Reports"
+msgstr "物料清单报表"
+
+msgid "BOM-Default BOMs"
+msgstr "物料清单-默认物料清单"
+
+msgid "BOM-Drafts"
+msgstr "物料清单-草稿"
+
+msgid "BOM-Inactive"
+msgstr "物料清单-已停用"
+
+msgid "Backflush Materials from WIP Warehouse"
+msgstr "从在制品仓库倒冲原材料"
+
+msgid "Balance Sheet Standard"
+msgstr "资产负债表标准格式"
+
+msgid "Bank Reconciliation (old)"
+msgstr "银行对账（旧版）"
+
+msgid "Bank and Cash Payment Voucher"
+msgstr "银行及现金付款凭证"
+
+msgid "Banking Setup"
+msgstr "银行设置"
+
+msgid "Barcode"
+msgstr "条码"
+
+msgid "Base URL"
+msgstr "基础 URL"
+
+msgid "Based On"
+msgstr "依据"
+
+msgid "Batch - Stock"
+msgstr "批次 - 库存"
+
+msgid "Batch-Expiring Soon"
+msgstr "批次-即将到期"
+
+msgid "Batch-In Stock"
+msgstr "批次-有库存"
+
+msgid ""
+"Bill your customer for the item. Submit it, then use **Print** to see it on "
+"paper or send it as a PDF. See [Sales "
+"Invoice](https://docs.frappe.io/erpnext/user/manual/en/sales-invoice)."
+msgstr ""
+"就该物料向客户开具账单。提交后点击**打印**可输出纸质单据或发送 "
+"PDF。参见[销售发票](https://docs.frappe.io/erpnext/user/manual/en/sales-invoice)。"
+
+msgid "Billing"
+msgstr "计费"
+
+msgid "Bills a customer or supplier for the same things on a schedule."
+msgstr "按固定周期向客户或供应商开具相同项目的账单。"
+
+msgid "Blanket Order - Manufacturing"
+msgstr "总括订单 - 制造"
+
+msgid ""
+"Blocks new transactions and further accounting entries on this customer's "
+"account. Only users with the role set in Company's \"Roles Allowed to Set "
+"and Edit Frozen Account Entries\" can transact."
+msgstr "冻结该客户账户，禁止新增业务单据和会计凭证。仅拥有公司“允许设置和编辑冻结科目分录的角色”的用户可进行操作。"
+
+msgid "Body"
+msgstr "正文"
+
+msgid "Books deferred revenue or expense for a period."
+msgstr "为指定期间确认递延收入或费用。"
+
+msgid "Brand"
+msgstr "品牌"
+
+msgid "Break a project into tasks and log the time your team spends."
+msgstr "将项目拆分为任务，并记录团队投入的工时。"
+
+msgid "Break it into tasks"
+msgstr "拆分为任务"
+
+msgid "Bring in a bank statement to match its lines against your books."
+msgstr "导入银行对账单，并将其明细与账面记录进行匹配。"
+
+msgid "Budgeting"
+msgstr "预算管理"
+
+msgid "Build a multi-level BOM in one place."
+msgstr "在一个界面中构建多级物料清单。"
+
+msgid "Buying Onboarding"
+msgstr "采购模块引导"
+
+msgid "CC"
+msgstr "抄送"
+
+msgid "Campaign"
+msgstr "营销活动"
+
+msgid "Cash Flow Statement Standard"
+msgstr "现金流量表标准格式"
+
+msgid "Category"
+msgstr "类别"
+
+msgid "Category Name"
+msgstr "类别名称"
+
+msgid "Category-wise Asset Value"
+msgstr "按类别统计资产价值"
+
+msgid "Changes"
+msgstr "变更"
+
+msgid "Changes a price or gives a discount when its conditions are met."
+msgstr "当满足条件时调整价格或给予折扣。"
+
+msgid "Changes an asset's value outside its depreciation."
+msgstr "在折旧之外对资产价值进行调整。"
+
+msgid ""
+"Changes how many shifts an asset works, which changes its depreciation."
+msgstr "调整资产的工作班次数量，从而影响其折旧计提。"
+
+msgid "Check"
+msgstr "支票"
+
+msgid "Check its depreciation"
+msgstr "查看折旧情况"
+
+msgid "Check what you owe"
+msgstr "查看应付账款"
+
+msgid ""
+"Check your chart of accounts and taxes, and add the bank account you use."
+msgstr "检查会计科目表和税种设置，并添加您在用的银行账户。"
+
+msgid "Check your profit"
+msgstr "查看利润情况"
+
+msgid "Check your stock levels"
+msgstr "查看库存余量"
+
+msgid "Checks an item against its quality parameters."
+msgstr "按质量参数对物料进行检验。"
+
+msgid "Cheque Printing Format"
+msgstr "支票打印格式"
+
+msgid "City"
+msgstr "城市"
+
+msgid "City/Town"
+msgstr "城市/城镇"
+
+msgid "Closed"
+msgstr "已关闭"
+
+msgid "Closes a POS shift and totals what was collected."
+msgstr "结束 POS 班次并汇总当班收款金额。"
+
+msgid "Closes a fiscal year by moving its profit or loss to equity."
+msgstr "通过将本年利润或亏损结转到权益科目来关闭会计年度。"
+
+msgid "Closes stock balances for a period so reports run faster."
+msgstr "结算指定期间的库存余额，以加快报表运算速度。"
+
+msgid "Code"
+msgstr "代码"
+
+msgid "Color"
+msgstr "颜色"
+
+msgid "Combine two or more accounts into one."
+msgstr "将两个或多个科目合并为一个科目。"
+
+msgid "Comments"
+msgstr "备注"
+
+msgid "Communication"
+msgstr "沟通"
+
+msgid "Company Letterhead"
+msgstr "公司信头"
+
+msgid "Company Letterhead - Grey"
+msgstr "公司信头 - 灰色"
+
+msgid "Company Letterhead Report"
+msgstr "公司信头报表"
+
+msgid "Company Name"
+msgstr "公司名称"
+
+msgid ""
+"Compare the results against the goal, and decide what to change. See "
+"[Quality Management](https://docs.frappe.io/erpnext/user/manual/en/quality-"
+"management)."
+msgstr ""
+"将实际结果与质量目标进行对比，并决定改进方向。参见[质量管理](https://docs.frappe.io/erpnext/user/manual/en/quality-"
+"management)。"
+
+msgid "Complete Accounting Onboarding"
+msgstr "完成财务模块引导"
+
+msgid "Complete Asset Onboarding"
+msgstr "完成资产模块引导"
+
+msgid "Complete Buying Onboarding"
+msgstr "完成采购模块引导"
+
+msgid "Complete Manufacturing Onboarding"
+msgstr "完成制造模块引导"
+
+msgid "Complete Projects Onboarding"
+msgstr "完成项目模块引导"
+
+msgid "Complete Quality Onboarding"
+msgstr "完成质量模块引导"
+
+msgid "Complete Selling Onboarding"
+msgstr "完成销售模块引导"
+
+msgid "Complete Stock Onboarding"
+msgstr "完成库存模块引导"
+
+msgid "Completed"
+msgstr "已完成"
+
+msgid ""
+"Computers, vehicles, furniture: how each kind depreciates, and which "
+"accounts it posts to. See [Asset "
+"Category](https://docs.frappe.io/erpnext/user/manual/en/asset-category)."
+msgstr ""
+"电脑、车辆、家具等资产类别的折旧方式及其对应科目。参见[资产类别](https://docs.frappe.io/erpnext/user/manual/en/asset-"
+"category)。"
+
+msgid "Condition"
+msgstr "条件"
+
+msgid "Configuration"
+msgstr "配置"
+
+msgid "Confirm a sales order"
+msgstr "确认销售订单"
+
+msgid ""
+"Confirm what the customer ordered and when it is due. Deliver and invoice "
+"from the order itself. See [Sales "
+"Order](https://docs.frappe.io/erpnext/user/manual/en/sales-order)."
+msgstr ""
+"确认客户订购的内容和交期，并直接基于订单发货和开票。参见[销售订单](https://docs.frappe.io/erpnext/user/manual/en/sales-"
+"order)。"
+
+msgid "Connections"
+msgstr "关联"
+
+msgid "Contact"
+msgstr "联系人"
+
+msgid "Contact Email"
+msgstr "联系人邮箱"
+
+msgid "Contacts"
+msgstr "联系人"
+
+msgid "Content"
+msgstr "内容"
+
+msgid "Content Type"
+msgstr "内容类型"
+
+msgid ""
+"Costs incurred in ordinary business operations excluding direct costs. "
+"Examples: Selling expenses, administrative costs, marketing, utilities, "
+"rent."
+msgstr "日常经营活动中发生的、除直接成本以外的费用。例如：销售费用、管理费用、市场推广费、水电费、租金。"
+
+msgid "Count"
+msgstr "数量"
+
+msgid "Country"
+msgstr "国家"
+
+msgid "Create Accounting Purchase Invoice"
+msgstr "创建账务采购发票"
+
+msgid "Create Asset Maintenance"
+msgstr "创建资产保养"
+
+msgid "Create Asset Movement"
+msgstr "创建资产移动"
+
+msgid "Create Buying Item"
+msgstr "创建采购物料"
+
+msgid "Create Maintenance Schedule"
+msgstr "创建保养计划"
+
+msgid "Create Non Conformance"
+msgstr "创建不合格项"
+
+msgid "Create Opening Stock"
+msgstr "创建期初库存"
+
+msgid "Create Production Plan"
+msgstr "创建生产计划"
+
+msgid "Create Project Template"
+msgstr "创建项目模板"
+
+msgid "Create Quality Goal"
+msgstr "创建质量目标"
+
+msgid "Create Quality Inspection"
+msgstr "创建质检单"
+
+msgid "Create Quality Inspection Template"
+msgstr "创建质检模板"
+
+msgid "Create Quality Procedure"
+msgstr "创建质量程序"
+
+msgid "Create Quality Review"
+msgstr "创建质量评审"
+
+msgid "Create Selling Item"
+msgstr "创建销售物料"
+
+msgid "Currency"
+msgstr "货币"
+
+msgid "Current Index"
+msgstr "当前索引"
+
+msgid ""
+"Current and deferred income tax obligations. Examples: Current tax "
+"provision, deferred tax expense, withholding taxes."
+msgstr "当期及递延所得税负债。例如：当期所得税计提、递延所得税费用、代扣代缴税款。"
+
+msgid ""
+"Current assets not classified elsewhere including prepaid expenses and "
+"advances. Examples: Prepaid insurance, prepaid rent, advance to suppliers, "
+"security deposits recoverable within one year."
+msgstr "未列入其他类别的流动资产，含预付费用和预付款项。例如：预付保险费、预付租金、预付供应商款项、一年内可收回的保证金。"
+
+msgid "Custom?"
+msgstr "自定义？"
+
+msgid "Customer Form Tour"
+msgstr "客户表单向导"
+
+msgid "Customer Reports"
+msgstr "客户报表"
+
+msgid "Customer-Active"
+msgstr "客户-活跃"
+
+msgid "Customer-Companies"
+msgstr "客户-公司"
+
+msgid "Customer-Disabled"
+msgstr "客户-已停用"
+
+msgid "Customer-Individuals"
+msgstr "客户-个人"
+
+msgid "Dashboard"
+msgstr "数据面板"
+
+msgid "Data"
+msgstr "数据"
+
+msgid "Data Import"
+msgstr "数据导入"
+
+msgid "Date"
+msgstr "日期"
+
+msgid "Day of Week"
+msgstr "星期"
+
+msgid ""
+"Decide how many to make. The raw materials you need are worked out from the "
+"BOM. See [Work Order](https://docs.frappe.io/erpnext/user/manual/en/work-"
+"order)."
+msgstr ""
+"决定生产数量，所需原材料由物料清单自动计算。参见[生产工单](https://docs.frappe.io/erpnext/user/manual/en/work-"
+"order)。"
+
+msgid "Decide what to check"
+msgstr "确定检验项目"
+
+msgid "Default"
+msgstr "默认"
+
+msgid "Default Letter Head"
+msgstr "默认信头"
+
+msgid "Default Value"
+msgstr "默认值"
+
+msgid "Default source Warehouse"
+msgstr "默认源仓库"
+
+msgid "Defaults"
+msgstr "默认设置"
+
+msgid "Deleted"
+msgstr "已删除"
+
+msgid "Deletes a company's transactions, keeping its masters."
+msgstr "删除公司全部业务单据，保留基础主数据。"
+
+msgid "Delivery Note - Stock"
+msgstr "送货单 - 库存"
+
+msgid "Delivery Note Bordered"
+msgstr "送货单（带边框）"
+
+msgid "Delivery Note Classic"
+msgstr "送货单（经典）"
+
+msgid "Delivery Note Modern"
+msgstr "送货单（现代）"
+
+msgid "Delivery Note Modern with Images"
+msgstr "送货单（现代，含图片）"
+
+msgid "Delivery Note Standard"
+msgstr "送货单标准格式"
+
+msgid "Delivery Note with Item Image"
+msgstr "送货单（含物料图片）"
+
+msgid "Delivery Note-Drafts"
+msgstr "送货单-草稿"
+
+msgid "Delivery Note-Returns"
+msgstr "送货单-退货"
+
+msgid "Delivery Note-To Bill"
+msgstr "送货单-待开票"
+
+msgid "Delivery Status"
+msgstr "发货状态"
+
+msgid "Delivery Trends"
+msgstr "发货趋势"
+
+msgid "Delivery Trip - Stock"
+msgstr "配送路线 - 库存"
+
+msgid "Department"
+msgstr "部门"
+
+msgid "Dependencies"
+msgstr "依赖关系"
+
+msgid ""
+"Depreciation is posted on schedule, asset by asset, without a journal entry "
+"from you. See "
+"[Depreciation](https://docs.frappe.io/erpnext/user/manual/en/asset-"
+"depreciation)."
+msgstr ""
+"系统按计划自动逐项资产计提折旧，无需手工录入凭证。参见[折旧](https://docs.frappe.io/erpnext/user/manual/en/asset-"
+"depreciation)。"
+
+msgid "Description"
+msgstr "描述"
+
+msgid "Designation"
+msgstr "职位"
+
+msgid "Detailed Tax Invoice"
+msgstr "含税明细发票"
+
+msgid "Details"
+msgstr "明细"
+
+msgid ""
+"Direct costs attributable to cost of goods sold. Examples: Raw materials, "
+"stock in trade."
+msgstr "归属于所售商品成本的直接成本。例如：原材料、库存商品。"
+
+msgid ""
+"Direct costs excluding cost of goods sold. Examples: Direct labor, "
+"manufacturing overhead, freight inward."
+msgstr "除所售商品成本以外的直接成本。例如：直接人工、制造费用、进货运费。"
+
+msgid "Disable"
+msgstr "停用"
+
+msgid "Disable \"Consider Accounting Dimension\" Filter"
+msgstr "停用“考虑会计维度”筛选器"
+
+msgid "Disabled"
+msgstr "已停用"
+
+msgid "DocField"
+msgstr "字段定义"
+
+msgid "DocType"
+msgstr "单据类型"
+
+msgid "Doctype"
+msgstr "单据类型"
+
+msgid "Document Name"
+msgstr "单据名称"
+
+msgid "Document Naming"
+msgstr "单据命名"
+
+msgid "Document Type"
+msgstr "单据类型"
+
+msgid "Domain"
+msgstr "域名"
+
+msgid "Don't Send Emails"
+msgstr "不发送邮件"
+
+msgid "Done"
+msgstr "已完成"
+
+msgid "Drop Shipping Format"
+msgstr "直发（Drop Shipping）格式"
+
+msgid "Due Date"
+msgstr "到期日"
+
+msgid "Due Date Based On"
+msgstr "到期日依据"
+
+msgid "Duration"
+msgstr "时长"
+
+msgid "Email"
+msgstr "邮箱"
+
+msgid "Email Account"
+msgstr "邮箱账户"
+
+msgid "Email Address"
+msgstr "邮箱地址"
+
+msgid "Email Group"
+msgstr "邮件组"
+
+msgid "Email ID"
+msgstr "邮箱地址"
+
+msgid "Email Id"
+msgstr "邮箱地址"
+
+msgid "Email Sent"
+msgstr "邮件已发送"
+
+msgid "Email Settings"
+msgstr "邮件设置"
+
+msgid "Email Template"
+msgstr "邮件模板"
+
+msgid "Emails customers their statements on a schedule."
+msgstr "按计划自动向客户发送对账单邮件。"
+
+msgid "Enable Item Search Index"
+msgstr "启用物料搜索索引"
+
+msgid "Enabled"
+msgstr "已启用"
+
+msgid ""
+"Enabling this option prevents the creation of a new Sales Invoice when the "
+"customer has an overdue limit set and their outstanding overdue amount "
+"exceeds that limit."
+msgstr "启用此选项后，若客户设置了逾期额度上限且其逾期未付金额超过该上限，则禁止为该客户创建新的销售发票。"
+
+msgid "End Date"
+msgstr "结束日期"
+
+msgid "Enter a supplier's bill"
+msgstr "录入供应商账单"
+
+msgid "Enter the Full Name of the Customer"
+msgstr "输入客户全称"
+
+msgid "Enter the Full Name of the Supplier"
+msgstr "输入供应商全称"
+
+msgid "Enter the stock you have today"
+msgstr "录入当前库存数量"
+
+msgid "Enter their bill"
+msgstr "录入供应商账单"
+
+msgid "Entity Type"
+msgstr "实体类型"
+
+msgid "Error"
+msgstr "错误"
+
+msgid "Error Log"
+msgstr "错误日志"
+
+msgid "Error Message"
+msgstr "错误信息"
+
+msgid "Event"
+msgstr "事件"
+
+msgid ""
+"Every movement of every item, in and out, with the balance after each. See "
+"[Stock Ledger](https://docs.frappe.io/erpnext/user/manual/en/stock-ledger)."
+msgstr ""
+"每一笔物料的出入库明细及每次变动后的结存。参见[库存分类账](https://docs.frappe.io/erpnext/user/manual/en/stock-"
+"ledger)。"
+
+msgid ""
+"Every posting from your invoices and payments, with its debit and credit. "
+"See [General Ledger](https://docs.frappe.io/erpnext/user/manual/en/general-"
+"ledger)."
+msgstr ""
+"发票和付款产生的每一笔记账分录及其借贷方向。参见[总账](https://docs.frappe.io/erpnext/user/manual/en/general-"
+"ledger)。"
+
+msgid ""
+"Every work order, how far along it is, and what is running late. See [Work "
+"Order Summary](https://docs.frappe.io/erpnext/user/manual/en/work-order-"
+"summary)."
+msgstr ""
+"每张生产工单的进度及逾期情况一览。参见[生产工单汇总](https://docs.frappe.io/erpnext/user/manual/en/work-"
+"order-summary)。"
+
+msgid "Experimental"
+msgstr "实验性功能"
+
+msgid "Failed"
+msgstr "失败"
+
+msgid "Fax"
+msgstr "传真"
+
+msgid "Feedback"
+msgstr "反馈"
+
+msgid "Feedback on your quality from a customer or employee."
+msgstr "来自客户或员工的质量反馈。"
+
+msgid "Field"
+msgstr "字段"
+
+msgid "Field Name"
+msgstr "字段名称"
+
+msgid "Fieldname"
+msgstr "字段名"
+
+msgid "Fields"
+msgstr "字段"
+
+msgid "Fieldtype"
+msgstr "字段类型"
+
+msgid "File"
+msgstr "文件"
+
+msgid "Filters"
+msgstr "筛选器"
+
+msgid "Financial Ratios Analysis"
+msgstr "财务比率分析"
+
+msgid ""
+"Financial instruments held for short-term investment purposes, readily "
+"convertible to cash. Examples: Marketable securities, fixed deposits >3 "
+"months, mutual funds."
+msgstr "为短期投资持有、可随时变现的金融工具。例如：有价证券、三个月以上定期存款、货币基金。"
+
+msgid "Finish Work Order"
+msgstr "完成生产工单"
+
+msgid "Finish making it"
+msgstr "完成生产入库"
+
+msgid "Finished Good Batch No"
+msgstr "产成品批号"
+
+msgid "Finished Good Serial No"
+msgstr "产成品序列号"
+
+msgid ""
+"Finished good batch this raw material was consumed into (Manufacture / "
+"Repack)"
+msgstr "该原材料被消耗所生成的产成品批次（生产/重新包装）"
+
+msgid ""
+"Finished good serial no this raw material was consumed into (Manufacture / "
+"Repack)"
+msgstr "该原材料被消耗所生成的产成品序列号（生产/重新包装）"
+
+msgid "First Name"
+msgstr "名"
+
+msgid "Follow every movement"
+msgstr "追踪每笔库存变动"
+
+msgid "Follow up on unpaid invoices"
+msgstr "跟进未付发票"
+
+msgid ""
+"For anything that isn't an invoice or a payment: accruals, depreciation, or "
+"fixing a mistake. See [Journal "
+"Entry](https://docs.frappe.io/erpnext/user/manual/en/journal-entry)."
+msgstr ""
+"用于发票和付款以外的所有账务处理：计提、折旧或错账更正。参见[日记账凭证](https://docs.frappe.io/erpnext/user/manual/en/journal-"
+"entry)。"
+
+msgid "Frequency"
+msgstr "频率"
+
+msgid "From"
+msgstr "从"
+
+msgid "From Date"
+msgstr "开始日期"
+
+msgid ""
+"From the store to the shop floor, or between branches. See [Stock "
+"Entry](https://docs.frappe.io/erpnext/user/manual/en/stock-entry)."
+msgstr ""
+"在仓库与车间之间调拨，或在各分支机构之间移库。参见[库存出入库](https://docs.frappe.io/erpnext/user/manual/en/stock-"
+"entry)。"
+
+msgid ""
+"Frozen suppliers block new transactions and ledger entries until unfrozen. "
+"Only users with the role set in Company's \"Roles Allowed to Set and Edit "
+"Frozen Account Entries\" can transact."
+msgstr "被冻结的供应商在解除冻结前禁止新增业务单据和会计凭证。仅拥有公司“允许设置和编辑冻结科目分录的角色”的用户可进行操作。"
+
+msgid "Full Name"
+msgstr "全称"
+
+msgid "Gender"
+msgstr "性别"
+
+msgid "General Ledger Report"
+msgstr "总账报表"
+
+msgid "General Ledger Standard"
+msgstr "总账标准格式"
+
+msgid "Get Items"
+msgstr "获取明细"
+
+msgid "Get paid"
+msgstr "完成收款"
+
+msgid "Get to know ERPNext"
+msgstr "了解 ERPNext"
+
+msgid "Get your books ready"
+msgstr "初始化账务设置"
+
+msgid "Goal"
+msgstr "目标"
+
+msgid ""
+"Goods or services you buy from suppliers. See "
+"[Item](https://docs.frappe.io/erpnext/user/manual/en/item)."
+msgstr ""
+"向供应商采购的货物或服务。参见[物料](https://docs.frappe.io/erpnext/user/manual/en/item)。"
+
+msgid "Groups accounts into the lines your financial statements show."
+msgstr "将科目归组为财务报表中列示的项目。"
+
+msgid "Groups assets that share accounts and depreciation rules."
+msgstr "将共用相同科目和折旧规则的资产归为一类。"
+
+msgid "Groups customers, for pricing and reporting."
+msgstr "对客户进行分组，用于定价和报表统计。"
+
+msgid "Groups items, for pricing, defaults and reporting."
+msgstr "对物料进行分组，用于定价、默认设置和报表统计。"
+
+msgid "Groups suppliers, for terms and reporting."
+msgstr "对供应商进行分组，用于条款管理和报表统计。"
+
+msgid "Hand it to a person or place"
+msgstr "移交给指定人员或地点"
+
+msgid "Heatmap"
+msgstr "热力图"
+
+msgid "Help"
+msgstr "帮助"
+
+msgid "Help Article"
+msgstr "帮助文章"
+
+msgid "Home"
+msgstr "主页"
+
+msgid "Horizontal Balance Sheet (Columnar)"
+msgstr "横向资产负债表（多栏式）"
+
+msgid "Horizontal Profit and Loss (Columnar)"
+msgstr "横向利润表（多栏式）"
+
+msgid "How fast issues must be answered and resolved."
+msgstr "问题必须在多快时间内响应和解决。"
+
+msgid "How items, warehouses and stock transactions work."
+msgstr "物料、仓库和库存业务的运作方式。"
+
+msgid "How leads, opportunities and appointments work."
+msgstr "线索、商机和预约的运作方式。"
+
+msgid "How long it takes to get or make an item."
+msgstr "采购物料或生产物料所需的提前期。"
+
+msgid "How many of one unit make another, like 1000 g in a kg."
+msgstr "单位之间的换算关系，如 1 千克等于 1000 克。"
+
+msgid "How much a cost center or project may spend over a fiscal year."
+msgstr "成本中心或项目在单个会计年度内的支出限额。"
+
+msgid "How much faster an asset depreciates on a given shift."
+msgstr "资产在指定班次下折旧加快的倍数。"
+
+msgid "How much of each item to make, and when."
+msgstr "每种物料的生产数量和生产时间。"
+
+msgid "How much you expect to sell, to plan production."
+msgstr "预期销售量，用于指导生产计划。"
+
+msgid "How quotations, sales orders and pricing work."
+msgstr "报价单、销售订单和定价的运作方式。"
+
+msgid "How urgent an issue is."
+msgstr "问题的紧急程度。"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "IP Address"
+msgstr "IP 地址"
+
+msgid "IRS 1099 Form"
+msgstr "IRS 1099 表单"
+
+msgid ""
+"Identifiable non-monetary assets without physical substance. Examples: "
+"Software, patents, trademarks, licenses, development costs."
+msgstr "无实物形态的可辨认非货币性资产。例如：软件、专利、商标、许可、开发支出。"
+
+msgid ""
+"If your CSV uses a different delimiter, add that character here, ensuring no"
+" spaces or additional characters are included."
+msgstr "如果您的 CSV 文件使用其他分隔符，请在此填入该字符，注意不含空格或其他多余字符。"
+
+msgid "Image"
+msgstr "图片"
+
+msgid "Image View"
+msgstr "图片视图"
+
+msgid "Import File"
+msgstr "导入文件"
+
+msgid "Import File Errors and Warnings"
+msgstr "导入文件错误和警告"
+
+msgid "Import Log"
+msgstr "导入日志"
+
+msgid "Import Log Preview"
+msgstr "导入日志预览"
+
+msgid "Import Preview"
+msgstr "导入预览"
+
+msgid "Import Type"
+msgstr "导入类型"
+
+msgid "Import Warnings"
+msgstr "导入警告"
+
+msgid ""
+"Import a statement from your bank and pair each line with a payment, so your"
+" books agree with it. See [Bank "
+"Reconciliation](https://docs.frappe.io/erpnext/user/manual/en/bank-"
+"reconciliation)."
+msgstr ""
+"导入银行对账单并将每笔明细与付款记录匹配，使账面与银行一致。参见[银行对账](https://docs.frappe.io/erpnext/user/manual/en/bank-"
+"reconciliation)。"
+
+msgid "Import from Google Sheets"
+msgstr "从 Google 表格导入"
+
+msgid "In Days"
+msgstr "按天计"
+
+msgid "In Minutes"
+msgstr "按分钟计"
+
+msgid ""
+"Incidental income related to business operations but not core revenue. "
+"Examples: Scrap sales, government grants, insurance claims, foreign exchange"
+" gains."
+msgstr "与经营相关但非核心收入的偶发性收益。例如：废料销售、政府补助、保险理赔、汇兑收益。"
+
+msgid ""
+"Income against expenses for any period, built from every invoice and payment"
+" you have recorded."
+msgstr "基于已录入的每张发票和每笔付款，对比任意期间的收入与费用。"
+
+msgid ""
+"Income from primary business activities in ordinary course. Examples: Sales "
+"of goods, service revenue, commission income, royalty income."
+msgstr "日常主要经营活动中产生的收入。例如：商品销售收入、服务收入、佣金收入、特许权使用费收入。"
+
+msgid ""
+"Income tax obligations for current and prior periods. Examples: Provision "
+"for income tax, advance tax paid, tax deducted at source."
+msgstr "本期及以前期间的所得税负债。例如：所得税计提、预缴税款、源泉扣缴税款。"
+
+msgid "Incoming Bills (Purchase Invoice)"
+msgstr "应付账单（采购发票）"
+
+msgid "Incoming Leads"
+msgstr "新增线索"
+
+msgid "Indent"
+msgstr "请购单"
+
+msgid "Index"
+msgstr "索引"
+
+msgid "Indicator Color"
+msgstr "指示灯颜色"
+
+msgid "Inspect goods coming in or going out"
+msgstr "对出入库货物进行质检"
+
+msgid "Instructions"
+msgstr "加工要求"
+
+msgid "Integrations"
+msgstr "集成"
+
+msgid ""
+"Interest and financing-related expenses. Examples: Interest on borrowings, "
+"bank charges, lease interest, foreign exchange losses."
+msgstr "利息及融资相关费用。例如：借款利息、银行手续费、租赁利息、汇兑损失。"
+
+msgid ""
+"Interest-bearing debt obligations due within one year. Examples: Bank "
+"overdrafts, short-term loans, current portion of long-term debt."
+msgstr "一年内到期的有息债务。例如：银行透支、短期借款、长期借款的当期部分。"
+
+msgid ""
+"Interest-bearing debt obligations with maturity beyond one year. Examples: "
+"Term loans, bonds, debentures, mortgages."
+msgstr "一年以上到期的有息债务。例如：长期借款、债券、抵押借款。"
+
+msgid "Introduction"
+msgstr "简介"
+
+msgid ""
+"Inventory and stock-related assets including raw materials, work in "
+"progress, finished goods, and stock in trade. Examples: Raw materials, "
+"finished goods, trading merchandise, consumables."
+msgstr "存货及相关资产，含原材料、在制品、产成品和库存商品。例如：原材料、产成品、贸易商品、低值易耗品。"
+
+msgid ""
+"Investments held for strategic purposes or extended periods. Examples: "
+"Equity investments, bonds, associates, joint ventures, deposits."
+msgstr "为战略目的或长期持有而进行的投资。例如：股权投资、债券、联营企业、合营企业、定期存款。"
+
+msgid "Invite your team"
+msgstr "邀请团队成员"
+
+msgid "Invoicing & Payments"
+msgstr "开票与收付款"
+
+msgid "Is Active"
+msgstr "是否启用"
+
+msgid "Is Default"
+msgstr "是否默认"
+
+msgid "Is Group"
+msgstr "是否分组"
+
+msgid "Is Standard"
+msgstr "是否标准"
+
+msgid "Is System Generated"
+msgstr "系统生成"
+
+msgid "Issue-Open"
+msgstr "问题-待处理"
+
+msgid "Issue-SLA Failed"
+msgstr "问题-SLA 违约"
+
+msgid "Issue-Unassigned"
+msgstr "问题-未指派"
+
+msgid "Issue-Waiting on Customer"
+msgstr "问题-等待客户"
+
+msgid "Issues Opened"
+msgstr "新登记问题"
+
+msgid ""
+"It clears their bill and takes the money out of your bank or cash account. "
+"See [Payment Entry](https://docs.frappe.io/erpnext/user/manual/en/payment-"
+"entry)."
+msgstr ""
+"核销供应商账单并从银行账户或现金账户支付款项。参见[付款凭证](https://docs.frappe.io/erpnext/user/manual/en/payment-"
+"entry)。"
+
+msgid ""
+"It posts the expense, and what you owe the supplier, to your ledger. See "
+"[Purchase Invoice](https://docs.frappe.io/erpnext/user/manual/en/purchase-"
+"invoice)."
+msgstr ""
+"将费用和应付供应商款项过账到总账。参见[采购发票](https://docs.frappe.io/erpnext/user/manual/en/purchase-"
+"invoice)。"
+
+msgid "Item - Stock"
+msgstr "物料 - 库存"
+
+msgid "Item Price - Stock"
+msgstr "物料价格 - 库存"
+
+msgid "Item Reports"
+msgstr "物料报表"
+
+msgid "Item Shortage Summary"
+msgstr "物料缺货汇总"
+
+msgid "Item Standard Cost"
+msgstr "物料标准成本"
+
+msgid "Item Variant - Stock"
+msgstr "多规格物料 - 库存"
+
+msgid "Item-Batch Tracked"
+msgstr "物料-批次管理"
+
+msgid "Item-Disabled"
+msgstr "物料-已停用"
+
+msgid "Item-Fixed Assets"
+msgstr "物料-固定资产"
+
+msgid "Item-Serialized"
+msgstr "物料-序列号管理"
+
+msgid "Item-Services"
+msgstr "物料-服务"
+
+msgid "Item-Stock Items"
+msgstr "物料-库存物料"
+
+msgid "Item-Templates"
+msgstr "物料-模板"
+
+msgid "Item-wise Annual Sales"
+msgstr "物料年度销售统计"
+
+msgid "Items"
+msgstr "物料"
+
+msgid "Items received from a subcontractor."
+msgstr "从委外加工商处收回的物料。"
+
+msgid "Items received from a supplier."
+msgstr "从供应商处收到的物料。"
+
+msgid "Items shipped to a customer."
+msgstr "发给客户的物料。"
+
+msgid "Job Card-In Progress"
+msgstr "作业单-进行中"
+
+msgid "Job Card-On Hold"
+msgstr "作业单-已暂停"
+
+msgid "Job Card-Open"
+msgstr "作业单-待处理"
+
+msgid "Journal Auditing Voucher"
+msgstr "记账凭证（审计格式）"
+
+msgid "Journal Entry-Bank and Cash"
+msgstr "日记账凭证-银行及现金"
+
+msgid "Journal Entry-Depreciation"
+msgstr "日记账凭证-折旧"
+
+msgid "Journal Entry-Drafts"
+msgstr "日记账凭证-草稿"
+
+msgid "Journal Entry-Opening Entries"
+msgstr "日记账凭证-期初分录"
+
+msgid "Keep quality in check"
+msgstr "把控质量"
+
+msgid "Keep track of your stock"
+msgstr "管理库存"
+
+msgid "Key"
+msgstr "密钥"
+
+msgid "Know what you own and owe"
+msgstr "了解资产和负债状况"
+
+msgid "Label"
+msgstr "标签"
+
+msgid "Language"
+msgstr "语言"
+
+msgid "Last Name"
+msgstr "姓"
+
+msgid "Lead-Converted"
+msgstr "线索-已转化"
+
+msgid "Lead-New This Week"
+msgstr "线索-本周新增"
+
+msgid "Lead-Open"
+msgstr "线索-待跟进"
+
+msgid "Lead-Unassigned"
+msgstr "线索-未分配"
+
+msgid "Ledger Tools"
+msgstr "总账工具"
+
+msgid "Letter Head"
+msgstr "信头"
+
+msgid "Level"
+msgstr "级别"
+
+msgid "Likes"
+msgstr "点赞"
+
+msgid "Links"
+msgstr "链接"
+
+msgid "Location"
+msgstr "位置"
+
+msgid "Location-wise Asset Value"
+msgstr "按位置统计资产价值"
+
+msgid "Log a problem"
+msgstr "登记质量问题"
+
+msgid "Log time against it"
+msgstr "记录工时"
+
+msgid ""
+"Long-term assets not classified elsewhere. Examples: Security deposits, "
+"long-term prepayments, advances for capital goods."
+msgstr "未列入其他类别的长期资产。例如：保证金、长期预付款、购建固定资产预付款。"
+
+msgid ""
+"Long-term obligations not classified elsewhere. Examples: Long-term "
+"deposits, deferred income, government grants."
+msgstr "未列入其他类别的长期负债。例如：长期押金、递延收益、政府补助。"
+
+msgid "Maintenance Manager"
+msgstr "保养负责人"
+
+msgid "Make your first sale"
+msgstr "完成第一笔销售"
+
+msgid "Mandatory"
+msgstr "必填"
+
+msgid "Manufacturing Onboarding"
+msgstr "制造模块引导"
+
+msgid "Margin"
+msgstr "毛利"
+
+msgid "Mask"
+msgstr "掩码"
+
+msgid "Match your bank statement"
+msgstr "完成对账"
+
+msgid "Matches payments to invoices in the background."
+msgstr "在后台自动将付款与发票进行匹配。"
+
+msgid "Material Request - Stock"
+msgstr "物料申请 - 库存"
+
+msgid "Material Request Analysis"
+msgstr "物料申请分析"
+
+msgid "Material Request Receipt Notification"
+msgstr "物料申请到货通知"
+
+msgid "Material Request-Drafts"
+msgstr "物料申请-草稿"
+
+msgid "Material Request-Required in 7 Days"
+msgstr "物料申请-7 天内需求"
+
+msgid "Material Request-To Order"
+msgstr "物料申请-待采购"
+
+msgid "Material Request-To Transfer"
+msgstr "物料申请-待调拨"
+
+msgid "Medium"
+msgstr "媒介"
+
+msgid "Meetings & Feedback"
+msgstr "会议与反馈"
+
+msgid "Message"
+msgstr "消息"
+
+msgid "Message Examples"
+msgstr "消息示例"
+
+msgid "Middle Name"
+msgstr "中间名"
+
+msgid "Mobile"
+msgstr "手机"
+
+msgid "Mobile No"
+msgstr "手机号"
+
+msgid "Money you received or paid, matched against invoices."
+msgstr "已收或已付的款项，并与发票进行核销。"
+
+msgid "Month"
+msgstr "月份"
+
+msgid "Monthly Completed Work Order"
+msgstr "本月完工工单"
+
+msgid "Monthly Quality Inspection"
+msgstr "本月质检单数"
+
+msgid "Monthly Total Work Order"
+msgstr "本月工单总数"
+
+msgid "More Info"
+msgstr "更多信息"
+
+msgid "More Information"
+msgstr "更多信息"
+
+msgid "Move stock between warehouses"
+msgstr "仓库间移库"
+
+msgid "Movement Reports"
+msgstr "出入库报表"
+
+msgid "Moves an asset to another location or person."
+msgstr "将资产转移到其他地点或使用人。"
+
+msgid "Moves, receives, issues or manufactures stock."
+msgstr "对库存进行移库、收货、发料或生产加工。"
+
+msgid "Name"
+msgstr "名称"
+
+msgid "Naming Series"
+msgstr "编号规则"
+
+msgid "New Assets (This Year)"
+msgstr "新增资产（本年）"
+
+msgid ""
+"Nominal value of issued and paid-up equity shares. Examples: Common stock, "
+"ordinary shares, preference shares."
+msgstr "已发行且缴足股本的股权面值。例如：普通股、优先股。"
+
+msgid ""
+"Non-trade amounts due to the entity excluding financing arrangements. "
+"Examples: Employee advances, insurance claims, tax refunds, deposits "
+"recoverable."
+msgstr "除融资安排外应收回的非经营性款项。例如：员工借款、保险理赔、退税、可收回押金。"
+
+msgid ""
+"Non-trade payables and obligations to parties other than suppliers. "
+"Examples: Employee payables, accrued expenses, customer advances, security "
+"deposits received."
+msgstr "应付供应商以外的非经营性款项。例如：应付员工款、预提费用、客户预收款、收取的押金。"
+
+msgid "Note"
+msgstr "备注"
+
+msgid ""
+"Note down a price a supplier offered, so you can compare suppliers before "
+"you order. See [Supplier "
+"Quotation](https://docs.frappe.io/erpnext/user/manual/en/supplier-"
+"quotation)."
+msgstr ""
+"记录供应商的报价，便于下单前进行对比。参见[供应商报价单](https://docs.frappe.io/erpnext/user/manual/en/supplier-"
+"quotation)。"
+
+msgid "Notification for new fiscal year"
+msgstr "新会计年度通知"
+
+msgid "Oldest Items"
+msgstr "库龄最长物料"
+
+msgid ""
+"On submit of a Manufacture / Repack entry, map the raw material serial / "
+"batch nos that were not mapped in draft to the finished goods, in order"
+msgstr "提交生产/重新包装单据时，将草稿中未映射的原材料序列号/批号按顺序映射到产成品。"
+
+msgid ""
+"Once the customer agrees, turn it into a sales order or an invoice from the "
+"quotation itself. See "
+"[Quotation](https://docs.frappe.io/erpnext/user/manual/en/quotation)."
+msgstr ""
+"客户确认后，可直接基于报价单转为销售订单或发票。参见[报价单](https://docs.frappe.io/erpnext/user/manual/en/quotation)。"
+
+msgid "Ongoing Job Card"
+msgstr "进行中作业单"
+
+msgid "Open Banking"
+msgstr "开放银行对账"
+
+msgid "Open Non Conformances"
+msgstr "待处理不合格项"
+
+msgid "Open Opportunity"
+msgstr "进行中的商机"
+
+msgid "Open Quality Actions"
+msgstr "待处理质量措施"
+
+msgid "Open Quality Reviews"
+msgstr "待进行质量评审"
+
+msgid "Opens a POS shift with the cash in the drawer."
+msgstr "以钱箱中的现金余额开启 POS 班次。"
+
+msgid "Operation"
+msgstr "工序"
+
+msgid "Opportunities via Campaigns"
+msgstr "按营销活动统计商机"
+
+msgid "Opportunity Trends"
+msgstr "商机趋势"
+
+msgid "Opportunity-Closing This Month"
+msgstr "商机-本月成交"
+
+msgid "Opportunity-Lost"
+msgstr "商机-已丢失"
+
+msgid "Opportunity-Open"
+msgstr "商机-进行中"
+
+msgid ""
+"Optional group warehouse. Raw material availability is checked across its "
+"child warehouses; material is still received into For Warehouse."
+msgstr "可选的分组仓库。检查原材料可用量时会汇总其下级仓库；物料仍入库到指定仓库。"
+
+msgid "Options"
+msgstr "选项"
+
+msgid "Order Status Reports"
+msgstr "订单状态报表"
+
+msgid ""
+"Order from the supplier. When the goods arrive, receive them and record the "
+"bill from the order itself. See [Purchase "
+"Order](https://docs.frappe.io/erpnext/user/manual/en/purchase-order)."
+msgstr ""
+"向供应商下单，货物到货后基于订单直接收货并登记账单。参见[采购订单](https://docs.frappe.io/erpnext/user/manual/en/purchase-"
+"order)。"
+
+msgid "Order from your suppliers"
+msgstr "向供应商采购"
+
+msgid "Organization Onboarding"
+msgstr "组织初始化引导"
+
+msgid "Orientation"
+msgstr "纸张方向"
+
+msgid "Other"
+msgstr "其他"
+
+msgid "Outgoing Bills (Sales Invoice)"
+msgstr "应收账单（销售发票）"
+
+msgid "Overdue Issues"
+msgstr "逾期问题"
+
+msgid "Overview"
+msgstr "概览"
+
+msgid "P&L Statement Standard"
+msgstr "损益表标准格式"
+
+msgid "POS Invoice Bordered"
+msgstr "POS 小票（带边框）"
+
+msgid "POS Invoice Classic"
+msgstr "POS 小票（经典）"
+
+msgid "POS Invoice Modern"
+msgstr "POS 小票（现代）"
+
+msgid "POS Invoice Modern with Images"
+msgstr "POS 小票（现代，含图片）"
+
+msgid "POS Invoice Standard"
+msgstr "POS 小票标准格式"
+
+msgid "POS Invoice with Item Image"
+msgstr "POS 小票（含物料图片）"
+
+msgid "Page Break"
+msgstr "分页符"
+
+msgid "Parameter"
+msgstr "参数"
+
+msgid "Parent"
+msgstr "上级"
+
+msgid "Party Account - Accounts"
+msgstr "往来单位科目 - 账务"
+
+msgid "Path"
+msgstr "路径"
+
+msgid "Pay Supplier"
+msgstr "支付供应商"
+
+msgid "Pay your supplier"
+msgstr "支付供应商货款"
+
+msgid "Payment Entry - Accounts"
+msgstr "付款凭证 - 账务"
+
+msgid "Payment Entry-Drafts"
+msgstr "付款凭证-草稿"
+
+msgid "Payment Entry-Paid"
+msgstr "付款凭证-已支付"
+
+msgid "Payment Entry-Received"
+msgstr "付款凭证-已收到"
+
+msgid "Payment Entry-Transfers"
+msgstr "付款凭证-转账"
+
+msgid "Payment Entry-Unallocated"
+msgstr "付款凭证-未分配"
+
+msgid "Payment Entry-Unreconciled"
+msgstr "付款凭证-未对账"
+
+msgid "Payment Receipt Voucher"
+msgstr "收款凭证"
+
+msgid "Pending qty"
+msgstr "待加工数量"
+
+msgid "Percent"
+msgstr "百分比"
+
+msgid "Phone"
+msgstr "电话"
+
+msgid ""
+"Physical assets used in business operations including property, plant, and "
+"equipment. Examples: Land, buildings, machinery, equipment, vehicles, "
+"furniture, capital work in progress."
+msgstr "经营活动使用的实物资产，含房产、厂房和设备。例如：土地、建筑物、机器设备、运输工具、家具、在建工程。"
+
+msgid "Pick List - Stock"
+msgstr "拣货单 - 库存"
+
+msgid "Pick List-For Delivery"
+msgstr "拣货单-待发货"
+
+msgid "Pick List-Open"
+msgstr "拣货单-待处理"
+
+msgid "Picks the right tax template for a customer, supplier or address."
+msgstr "为客户、供应商或地址自动选择适用的税务模板。"
+
+msgid "Place a purchase order"
+msgstr "下达采购订单"
+
+msgid "Plan a work order"
+msgstr "创建生产工单"
+
+msgid "Plan and deliver projects"
+msgstr "规划并交付项目"
+
+msgid "Plan and run production"
+msgstr "规划并执行生产"
+
+msgid "Plan maintenance visits"
+msgstr "制定保养计划"
+
+msgid "Plan production from your orders"
+msgstr "按订单排产"
+
+msgid "Planned visits to service what a customer bought."
+msgstr "按计划上门保养客户所购产品。"
+
+msgid "Planning Reports"
+msgstr "计划报表"
+
+msgid "Plans the work orders and materials needed for your demand."
+msgstr "根据需求规划所需的生产工单和物料。"
+
+msgid "Point Of Sale"
+msgstr "销售终端（POS）"
+
+msgid "Points a customer earned or spent under a loyalty program."
+msgstr "客户在忠诚度计划中赚取或消费积分。"
+
+msgid "Portal"
+msgstr "门户"
+
+msgid "Post a journal entry"
+msgstr "录入日记账凭证"
+
+msgid "Postal Code"
+msgstr "邮政编码"
+
+msgid "Preferred Billing Address"
+msgstr "首选开票地址"
+
+msgid "Preferred Shipping Address"
+msgstr "首选收货地址"
+
+msgid ""
+"Present obligations beyond one year with uncertain timing/amount. Examples: "
+"Asset retirement obligations, environmental remediation, legal settlements."
+msgstr "金额或偿付时间不确定的一年以上义务。例如：资产弃置义务、环境修复支出、法律和解款。"
+
+msgid ""
+"Present obligations due within one year with uncertain timing or amount. "
+"Examples: Warranty provisions, legal claims, restructuring costs."
+msgstr "金额或偿付时间不确定的一年内义务。例如：保修准备、未决诉讼、重组费用。"
+
+msgid "Prevent Sales Invoice when Customer is Overdue"
+msgstr "客户逾期未付时禁止开具销售发票"
+
+msgid "Preview"
+msgstr "预览"
+
+msgid "Prices a supplier offered you."
+msgstr "供应商向您提供的价格。"
+
+msgid "Prices you offer a customer or lead."
+msgstr "您向客户或潜在客户报出的价格。"
+
+msgid "Primary Address"
+msgstr "主要地址"
+
+msgid "Primary Contact"
+msgstr "主要联系人"
+
+msgid "Print Format"
+msgstr "打印格式"
+
+msgid "Print Heading"
+msgstr "打印标题"
+
+msgid "Print Language"
+msgstr "打印语言"
+
+msgid "Print Settings"
+msgstr "打印设置"
+
+msgid "Printing"
+msgstr "打印"
+
+msgid "Priority"
+msgstr "优先级"
+
+msgid "Process Loss qty"
+msgstr "工艺损耗数量"
+
+msgid "Product Bundle - Selling"
+msgstr "产品组合 - 销售"
+
+msgid "Production Plan - Manufacturing"
+msgstr "生产计划 - 制造"
+
+msgid "Production Reports"
+msgstr "生产报表"
+
+msgid "Profile"
+msgstr "个人资料"
+
+msgid "Progress"
+msgstr "进度"
+
+msgid "Progress, hours and costs for every project."
+msgstr "每个项目的进度、工时和成本一览。"
+
+msgid "Project"
+msgstr "项目"
+
+msgid "Project Reports"
+msgstr "项目报表"
+
+msgid "Project-Completed"
+msgstr "项目-已完成"
+
+msgid "Project-Due This Month"
+msgstr "项目-本月到期"
+
+msgid "Project-Open"
+msgstr "项目-进行中"
+
+msgid "Projects Onboarding"
+msgstr "项目模块引导"
+
+msgid "Provider"
+msgstr "服务商"
+
+msgid ""
+"Pull in open sales orders and work out what to make, and what to buy, to "
+"fill them."
+msgstr "拉取未完成的销售订单，自动计算需要生产什么、采购什么来满足订单。"
+
+msgid "Purchase Auditing Voucher"
+msgstr "采购记账凭证（审计格式）"
+
+msgid "Purchase Invoice - Accounts"
+msgstr "采购发票 - 账务"
+
+msgid "Purchase Invoice Bordered"
+msgstr "采购发票（带边框）"
+
+msgid "Purchase Invoice Classic"
+msgstr "采购发票（经典）"
+
+msgid "Purchase Invoice Modern"
+msgstr "采购发票（现代）"
+
+msgid "Purchase Invoice Modern with Images"
+msgstr "采购发票（现代，含图片）"
+
+msgid "Purchase Invoice Standard"
+msgstr "采购发票标准格式"
+
+msgid "Purchase Invoice Taxes"
+msgstr "采购发票税额"
+
+msgid "Purchase Invoice with Item Image"
+msgstr "采购发票（含物料图片）"
+
+msgid "Purchase Invoice-Debit Notes"
+msgstr "采购发票-借记单"
+
+msgid "Purchase Invoice-Drafts"
+msgstr "采购发票-草稿"
+
+msgid "Purchase Invoice-On Hold"
+msgstr "采购发票-已挂起"
+
+msgid "Purchase Invoice-Overdue"
+msgstr "采购发票-已逾期"
+
+msgid "Purchase Invoice-To Pay"
+msgstr "采购发票-待付款"
+
+msgid "Purchase Order - Buying"
+msgstr "采购订单 - 采购"
+
+msgid "Purchase Order Bordered"
+msgstr "采购订单（带边框）"
+
+msgid "Purchase Order Classic"
+msgstr "采购订单（经典）"
+
+msgid "Purchase Order Modern"
+msgstr "采购订单（现代）"
+
+msgid "Purchase Order Modern with Images"
+msgstr "采购订单（现代，含图片）"
+
+msgid "Purchase Order Standard"
+msgstr "采购订单标准格式"
+
+msgid "Purchase Order Taxes"
+msgstr "采购订单税额"
+
+msgid "Purchase Order with Item Image"
+msgstr "采购订单（含物料图片）"
+
+msgid "Purchase Order-Drafts"
+msgstr "采购订单-草稿"
+
+msgid "Purchase Order-Subcontracted"
+msgstr "采购订单-委外加工"
+
+msgid "Purchase Order-To Bill"
+msgstr "采购订单-待开票"
+
+msgid "Purchase Order-To Receive"
+msgstr "采购订单-待收货"
+
+msgid "Purchase Receipt - Stock"
+msgstr "采购入库单 - 库存"
+
+msgid "Purchase Receipt Serial and Batch Bundle Print"
+msgstr "采购入库单序列号/批号明细打印"
+
+msgid "Purchase Receipt-Drafts"
+msgstr "采购入库单-草稿"
+
+msgid "Purchase Receipt-Returns"
+msgstr "采购入库单-退货"
+
+msgid "Purchase Receipt-To Bill"
+msgstr "采购入库单-待开票"
+
+msgid "Purchase Reports"
+msgstr "采购报表"
+
+msgid "Purchase eInvoice"
+msgstr "采购电子发票"
+
+msgid "Quality Onboarding"
+msgstr "质量模块引导"
+
+msgid "Quality Reports"
+msgstr "质量报表"
+
+msgid "Query Options"
+msgstr "查询选项"
+
+msgid "Quotation - Selling"
+msgstr "报价单 - 销售"
+
+msgid "Quotation Bordered"
+msgstr "报价单（带边框）"
+
+msgid "Quotation Classic"
+msgstr "报价单（经典）"
+
+msgid "Quotation Modern"
+msgstr "报价单（现代）"
+
+msgid "Quotation Modern with Images"
+msgstr "报价单（现代，含图片）"
+
+msgid "Quotation Standard"
+msgstr "报价单标准格式"
+
+msgid "Quotation Taxes"
+msgstr "报价单税额"
+
+msgid "Quotation with Item Image"
+msgstr "报价单（含物料图片）"
+
+msgid "Quotation-Drafts"
+msgstr "报价单-草稿"
+
+msgid "Quotation-Expiring in 7 Days"
+msgstr "报价单-7 天内到期"
+
+msgid "Quotation-Lost"
+msgstr "报价单-已丢失"
+
+msgid "Quotation-Open"
+msgstr "报价单-进行中"
+
+msgid "Quote a price"
+msgstr "向客户报价"
+
+msgid "Raise money against unpaid sales invoices."
+msgstr "以未收款的销售发票进行融资。"
+
+msgid "Range"
+msgstr "范围"
+
+msgid "Rate at which Price List Currency is converted to Company Currency"
+msgstr "价格表货币换算为公司货币的汇率"
+
+msgid "Rate at which document currency is converted to company currency"
+msgstr "单据货币换算为公司货币的汇率"
+
+msgid "Rates a supplier over time on criteria you choose."
+msgstr "按您设定的评估标准对供应商进行持续评分。"
+
+msgid "Rates and thresholds for tax withheld on payments, like TDS."
+msgstr "付款时预扣税的税率和门槛，如 TDS。"
+
+msgid "Rating"
+msgstr "评分"
+
+msgid ""
+"Raw materials come out of stock and the finished products go in. From the "
+"work order, **Finish** fills this in for you. See [Stock "
+"Entry](https://docs.frappe.io/erpnext/user/manual/en/stock-entry)."
+msgstr ""
+"原材料从仓库领出，产成品入库。在生产工单上点击**完工**，系统会自动生成相关单据。参见[库存出入库](https://docs.frappe.io/erpnext/user/manual/en/stock-"
+"entry)。"
+
+msgid "Read Only"
+msgstr "只读"
+
+msgid "Rebuilds the ledger entries of transactions that were posted wrongly."
+msgstr "重建错误过账业务的会计分录。"
+
+msgid "Rebuilds the payment ledger so outstanding amounts are right again."
+msgstr "重建付款台账，使未核销金额恢复正常。"
+
+msgid "Recalculates stock values after a backdated change."
+msgstr "补录单据后重新计算库存价值。"
+
+msgid "Receivables & Payables"
+msgstr "应收与应付"
+
+msgid "Receive goods from a supplier"
+msgstr "接收供应商货物"
+
+msgid "Recipient"
+msgstr "接收人"
+
+msgid "Recipients"
+msgstr "接收人"
+
+msgid "Reconciliation"
+msgstr "对账"
+
+msgid "Record a supplier's quote"
+msgstr "登记供应商报价"
+
+msgid "Record an asset and see what it's worth year by year."
+msgstr "登记资产并逐年查看其价值变化。"
+
+msgid "Record an asset you already own"
+msgstr "登记已有资产"
+
+msgid ""
+"Record the hours spent on tasks. Bill them to the customer or use them to "
+"cost the project. See "
+"[Timesheet](https://docs.frappe.io/erpnext/user/manual/en/timesheets)."
+msgstr ""
+"记录任务工时，可向客户开票或用于项目成本核算。参见[工时单](https://docs.frappe.io/erpnext/user/manual/en/timesheets)。"
+
+msgid ""
+"Record the results against a receipt or a delivery, and accept or reject the"
+" goods. See [Quality "
+"Inspection](https://docs.frappe.io/erpnext/user/manual/en/quality-"
+"inspection)."
+msgstr ""
+"针对收货或发货记录检验结果，并判定接收或拒收。参见[质检单](https://docs.frappe.io/erpnext/user/manual/en/quality-"
+"inspection)。"
+
+msgid ""
+"Record who has it and where it is, so you always know. See [Asset "
+"Movement](https://docs.frappe.io/erpnext/user/manual/en/asset-movement)."
+msgstr ""
+"登记资产的使用人和所在位置，随时掌握资产去向。参见[资产移动](https://docs.frappe.io/erpnext/user/manual/en/asset-"
+"movement)。"
+
+msgid "Reference"
+msgstr "参考"
+
+msgid "Reference Date"
+msgstr "参考日期"
+
+msgid "Reference Doctype"
+msgstr "参考单据类型"
+
+msgid "Reference Document"
+msgstr "参考单据"
+
+msgid "Reference Document Name"
+msgstr "参考单据名称"
+
+msgid "Reference Document Type"
+msgstr "参考单据类型"
+
+msgid "Reference Name"
+msgstr "参考单据编号"
+
+msgid "Reference Type"
+msgstr "参考类型"
+
+msgid "References"
+msgstr "参考信息"
+
+msgid "Refresh Google Sheet"
+msgstr "刷新 Google 表格"
+
+msgid "Registers & Profitability"
+msgstr "账簿与盈利分析"
+
+msgid ""
+"Regular service visits for equipment you sold, planned ahead for the whole "
+"contract. See [Maintenance "
+"Schedule](https://docs.frappe.io/erpnext/user/manual/en/maintenance-"
+"schedule)."
+msgstr ""
+"为所售设备制定整个合同期内的定期保养计划。参见[保养计划](https://docs.frappe.io/erpnext/user/manual/en/maintenance-"
+"schedule)。"
+
+msgid "Replace a BOM everywhere it is used, or update the cost of all BOMs."
+msgstr "全局替换某物料清单的所有引用，或更新全部物料清单的成本。"
+
+msgid "Report"
+msgstr "报表"
+
+msgid "Report Filters"
+msgstr "报表筛选条件"
+
+msgid "Report Type"
+msgstr "报表类型"
+
+msgid "Reports"
+msgstr "报表"
+
+msgid "Repost Item Valuation - Stock"
+msgstr "重新过账库存估值 - 库存"
+
+msgid "Request for Quotation - Buying"
+msgstr "询价单 - 采购"
+
+msgid "Request for Quotation Bordered"
+msgstr "询价单（带边框）"
+
+msgid "Request for Quotation Classic"
+msgstr "询价单（经典）"
+
+msgid "Request for Quotation Modern"
+msgstr "询价单（现代）"
+
+msgid "Request for Quotation Modern with Images"
+msgstr "询价单（现代，含图片）"
+
+msgid "Request for Quotation with Item Image"
+msgstr "询价单（含物料图片）"
+
+msgid "Requires approval for transactions above a limit."
+msgstr "超过限额的交易需经审批。"
+
+msgid "Resolved Issues"
+msgstr "已解决问题"
+
+msgid "Restates foreign currency balances at today's exchange rate."
+msgstr "按当日汇率重估外币余额。"
+
+msgid "Return POS Invoice"
+msgstr "POS 退货小票"
+
+msgid ""
+"Returns generated from financial investments and cash management. Examples: "
+"Interest income, dividend income, rental income, fair value gains."
+msgstr "金融投资和资金管理产生的收益。例如：利息收入、股息收入、租金收入、公允价值变动收益。"
+
+msgid "Reuse it as a template"
+msgstr "保存为模板重复使用"
+
+msgid "Review Taxes"
+msgstr "检查税种设置"
+
+msgid "Review how a goal is going"
+msgstr "评审目标进展"
+
+msgid "Review your taxes"
+msgstr "检查税种设置"
+
+msgid "Review your warehouses"
+msgstr "检查仓库设置"
+
+msgid "Rewards customers with points they can spend on later purchases."
+msgstr "客户消费可获得积分，用于抵扣后续购买。"
+
+msgid "Role"
+msgstr "角色"
+
+msgid "Role Permissions"
+msgstr "角色权限"
+
+msgid "Route"
+msgstr "路由"
+
+msgid "SMS Log"
+msgstr "短信日志"
+
+msgid "SMS Settings"
+msgstr "短信设置"
+
+msgid "Sales Auditing Voucher"
+msgstr "销售记账凭证（审计格式）"
+
+msgid "Sales Invoice - Accounts"
+msgstr "销售发票 - 账务"
+
+msgid "Sales Invoice Bordered"
+msgstr "销售发票（带边框）"
+
+msgid "Sales Invoice Classic"
+msgstr "销售发票（经典）"
+
+msgid "Sales Invoice Modern"
+msgstr "销售发票（现代）"
+
+msgid "Sales Invoice Modern with Images"
+msgstr "销售发票（现代，含图片）"
+
+msgid "Sales Invoice Return"
+msgstr "销售退货发票"
+
+msgid "Sales Invoice Standard"
+msgstr "销售发票标准格式"
+
+msgid "Sales Invoice Taxes"
+msgstr "销售发票税额"
+
+msgid "Sales Invoice with Item Image"
+msgstr "销售发票（含物料图片）"
+
+msgid "Sales Invoice-Credit Notes"
+msgstr "销售发票-贷记单"
+
+msgid "Sales Invoice-Drafts"
+msgstr "销售发票-草稿"
+
+msgid "Sales Invoice-Overdue"
+msgstr "销售发票-已逾期"
+
+msgid "Sales Invoice-This Month"
+msgstr "销售发票-本月"
+
+msgid "Sales Invoice-Unpaid"
+msgstr "销售发票-未收款"
+
+msgid "Sales Order - Selling"
+msgstr "销售订单 - 销售"
+
+msgid "Sales Order Bordered"
+msgstr "销售订单（带边框）"
+
+msgid "Sales Order Classic"
+msgstr "销售订单（经典）"
+
+msgid "Sales Order Modern"
+msgstr "销售订单（现代）"
+
+msgid "Sales Order Modern with Images"
+msgstr "销售订单（现代，含图片）"
+
+msgid "Sales Order Standard"
+msgstr "销售订单标准格式"
+
+msgid "Sales Order Taxes"
+msgstr "销售订单税额"
+
+msgid "Sales Order with Item Image"
+msgstr "销售订单（含物料图片）"
+
+msgid "Sales Order-Drafts"
+msgstr "销售订单-草稿"
+
+msgid "Sales Order-On Hold"
+msgstr "销售订单-已挂起"
+
+msgid "Sales Order-To Bill"
+msgstr "销售订单-待开票"
+
+msgid "Sales Order-To Deliver"
+msgstr "销售订单-待发货"
+
+msgid "Sales Orders Count"
+msgstr "销售订单数"
+
+msgid "Sales Reports"
+msgstr "销售报表"
+
+msgid "Sales Team Reports"
+msgstr "销售团队报表"
+
+msgid ""
+"Sales by customer, item or territory, over any period. See [Sales "
+"Analytics](https://docs.frappe.io/erpnext/user/manual/en/sales-analytics)."
+msgstr ""
+"按客户、物料或区域统计任意期间的销售情况。参见[销售分析](https://docs.frappe.io/erpnext/user/manual/en/sales-"
+"analytics)。"
+
+msgid "Salutation"
+msgstr "称谓"
+
+msgid ""
+"Save the tasks you repeat on every job, and start the next project from "
+"them."
+msgstr "保存每个项目都会重复用到的任务，以后直接套用启动新项目。"
+
+msgid "Schedule"
+msgstr "计划"
+
+msgid "Schedule its upkeep"
+msgstr "制定保养计划"
+
+msgid "Scheduled Job"
+msgstr "定时任务"
+
+msgid "Scheduling & Costing"
+msgstr "排程与成本"
+
+msgid "See everything you own"
+msgstr "查看全部资产"
+
+msgid "See how production is going"
+msgstr "查看生产进度"
+
+msgid "Select DocType"
+msgstr "选择单据类型"
+
+msgid "Selling Onboarding"
+msgstr "销售模块引导"
+
+msgid "Sells several items together as one item."
+msgstr "将多个物料组合为一个整体销售。"
+
+msgid "Send your first invoice"
+msgstr "开具第一张发票"
+
+msgid "Sender"
+msgstr "发件人"
+
+msgid "Sent"
+msgstr "已发送"
+
+msgid "Sequence Id"
+msgstr "序号"
+
+msgid "Serial & Batch"
+msgstr "序列号与批次"
+
+msgid "Serial & Batch Reports"
+msgstr "序列号/批次报表"
+
+msgid "Serial No-Delivered"
+msgstr "序列号-已发货"
+
+msgid "Serial No-In Stock"
+msgstr "序列号-在库"
+
+msgid "Serial No-Warranty Expiring"
+msgstr "序列号-保修即将到期"
+
+msgid "Series"
+msgstr "编号系列"
+
+msgid ""
+"Servicing, inspections and calibration, with reminders to the team doing it."
+" See [Asset "
+"Maintenance](https://docs.frappe.io/erpnext/user/manual/en/asset-"
+"maintenance)."
+msgstr ""
+"保养、点检和校准管理，并自动提醒执行团队。参见[资产保养](https://docs.frappe.io/erpnext/user/manual/en/asset-"
+"maintenance)。"
+
+msgid "Set a quality goal"
+msgstr "设定质量目标"
+
+msgid ""
+"Set automatically to the day after the previous Stock Closing Entry, or to "
+"the first stock transaction's date"
+msgstr "自动设为上一个库存结算单的次日，或最早一笔库存业务单据的日期"
+
+msgid "Set up an asset category"
+msgstr "设置资产类别"
+
+msgid "Set up an inspection and record your first check."
+msgstr "设置质检模板并录入首次检验。"
+
+msgid "Set up your warehouses and enter the stock you have today."
+msgstr "设置仓库并录入当前库存。"
+
+msgid ""
+"Sets stock quantities and values to what is actually in your warehouses."
+msgstr "将账面库存数量和金额调整为仓库实际存量。"
+
+msgid "Settings"
+msgstr "设置"
+
+msgid ""
+"Settings for a point of sale, like its warehouse, price list and payment "
+"methods."
+msgstr "销售终端（POS）参数设置，如仓库、价格表和收款方式。"
+
+msgid "Setup"
+msgstr "设置"
+
+msgid "Ship to a customer"
+msgstr "发货给客户"
+
+msgid "Shipping Address"
+msgstr "收货地址"
+
+msgid ""
+"Short-term obligations not classified elsewhere. Examples: Accrued expenses,"
+" statutory liabilities, employee payables."
+msgstr "未列入其他类别的短期负债。例如：预提费用、法定税费、应付职工薪酬。"
+
+msgid "Shows which POS invoices were merged into a sales invoice."
+msgstr "显示哪些 POS 小票已合并为销售发票。"
+
+msgid "Simplified Tax Invoice"
+msgstr "简易税务发票"
+
+msgid "Someone who might buy from you."
+msgstr "有可能向您购买产品的潜在客户。"
+
+msgid "Someone who sells for you, with targets and commission."
+msgstr "为您销售产品的人员，可设定销售目标和提成。"
+
+msgid "Something a supplier is scored on, like on-time delivery."
+msgstr "供应商评分的考核项，如准时交付率。"
+
+msgid "Something an item is checked for, like weight or colour."
+msgstr "物料的检验项目，如重量或颜色。"
+
+msgid "Something that did not meet your quality standard."
+msgstr "未达到质量标准的异常事项。"
+
+msgid ""
+"Something you bought before using ERPNext, with what you paid, where it is, "
+"and how much has already depreciated. See "
+"[Asset](https://docs.frappe.io/erpnext/user/manual/en/asset)."
+msgstr ""
+"录入使用 ERPNext "
+"之前购置的资产，包括原值、所在位置和已计提折旧。参见[资产](https://docs.frappe.io/erpnext/user/manual/en/asset)。"
+
+msgid ""
+"Something you measure and improve on a schedule, like on-time delivery."
+msgstr "按周期持续衡量和改进的指标，如准时交付率。"
+
+msgid ""
+"Something you use to make your products, kept in the Raw Material group. See"
+" [Item](https://docs.frappe.io/erpnext/user/manual/en/item)."
+msgstr ""
+"用于生产产品的原材料，归入原材料物料组。参见[物料](https://docs.frappe.io/erpnext/user/manual/en/item)。"
+
+msgid ""
+"Something your business owns and uses over time, like a machine or a laptop."
+msgstr "企业拥有并长期使用的资产，如机器设备或笔记本电脑。"
+
+msgid "Source"
+msgstr "来源"
+
+msgid "Source Name"
+msgstr "来源名称"
+
+msgid "Spacer"
+msgstr "占位符"
+
+msgid "Splits one cost center's amounts across others by percentage."
+msgstr "按百分比将一个成本中心的金额分摊到其他成本中心。"
+
+msgid "Spot delayed tasks"
+msgstr "发现延期任务"
+
+msgid "Spot your best sellers"
+msgstr "找出畅销物料"
+
+msgid ""
+"Spreads a yearly budget or target across months for seasonal businesses."
+msgstr "将年度预算或目标按月度分解，适用于季节性经营的企业。"
+
+msgid "Stage"
+msgstr "阶段"
+
+msgid "Standard Balance Sheet (IFRS)"
+msgstr "标准资产负债表（IFRS）"
+
+msgid "Standard Cash Flow Statement (IFRS)"
+msgstr "标准现金流量表（IFRS）"
+
+msgid "Standard Profit and Loss (IFRS)"
+msgstr "标准利润表（IFRS）"
+
+msgid "Standard terms to add to quotes, orders and invoices."
+msgstr "可添加到报价单、订单和发票的标准条款。"
+
+msgid "Start Date"
+msgstr "开始日期"
+
+msgid "Start Time"
+msgstr "开始时间"
+
+msgid "Start a project"
+msgstr "创建项目"
+
+msgid "State/Province"
+msgstr "省/州"
+
+msgid "Status"
+msgstr "状态"
+
+msgid "Stock Entries"
+msgstr "库存出入库单"
+
+msgid "Stock Entry - Stock"
+msgstr "库存出入库 - 库存"
+
+msgid "Stock Entry-Drafts"
+msgstr "库存出入库-草稿"
+
+msgid "Stock Entry-In Transit"
+msgstr "库存出入库-在途"
+
+msgid "Stock Entry-Issues and Receipts"
+msgstr "库存出入库-领料与收货"
+
+msgid "Stock Entry-Manufacturing"
+msgstr "库存出入库-生产业务"
+
+msgid "Stock Entry-Transfers"
+msgstr "库存出入库-调拨"
+
+msgid "Stock Ledger Entries of Cancelled Vouchers"
+msgstr "已取消单据的库存分类账"
+
+msgid "Stock Ledger Entry - Stock"
+msgstr "库存分类账分录 - 库存"
+
+msgid "Stock Onboarding"
+msgstr "库存模块引导"
+
+msgid "Stock Reposting"
+msgstr "库存重新过账"
+
+msgid "Stock Reservation Entry - Stock"
+msgstr "库存预留 - 库存"
+
+msgid "Stock Valuation Comparison"
+msgstr "库存估值对比"
+
+msgid ""
+"Stock goes down as the goods leave, and the invoice can be made from the "
+"delivery. See [Delivery "
+"Note](https://docs.frappe.io/erpnext/user/manual/en/delivery-note)."
+msgstr ""
+"货物发出后库存减少，可直接基于送货单开具发票。参见[送货单](https://docs.frappe.io/erpnext/user/manual/en/delivery-"
+"note)。"
+
+msgid ""
+"Stock goes up in the warehouse you receive into, and the bill can be made "
+"from the receipt. See [Purchase "
+"Receipt](https://docs.frappe.io/erpnext/user/manual/en/purchase-receipt)."
+msgstr ""
+"收货后对应仓库库存增加，可直接基于入库单登记账单。参见[采购入库单](https://docs.frappe.io/erpnext/user/manual/en/purchase-"
+"receipt)。"
+
+msgid "Stock set aside for a sales order or production."
+msgstr "为销售订单或生产预留的库存。"
+
+msgid "Subcontracting Inward Order - Subcontracting"
+msgstr "客供料委外加工订单 - 委外加工"
+
+msgid "Subcontracting Order - Subcontracting"
+msgstr "委外加工订单 - 委外加工"
+
+msgid "Subcontracting Reports"
+msgstr "委外加工报表"
+
+msgid "Subject"
+msgstr "主题"
+
+msgid "Submit After Import"
+msgstr "导入后自动提交"
+
+msgid "Subscription - Accounts"
+msgstr "订阅 - 账务"
+
+msgid "Summary"
+msgstr "汇总"
+
+msgid "Supplier Form Tour"
+msgstr "供应商表单向导"
+
+msgid "Supplier Quotation - Buying"
+msgstr "供应商报价单 - 采购"
+
+msgid "Supplier Quotation Taxes"
+msgstr "供应商报价单税额"
+
+msgid "Supplier Quotation-Drafts"
+msgstr "供应商报价单-草稿"
+
+msgid "Supplier Quotation-Open"
+msgstr "供应商报价单-进行中"
+
+msgid "Supplier Reports"
+msgstr "供应商报表"
+
+msgid "Supplier-Active"
+msgstr "供应商-活跃"
+
+msgid "Supplier-Disabled"
+msgstr "供应商-已停用"
+
+msgid "Supplier-On Hold"
+msgstr "供应商-已冻结"
+
+msgid "Symbol"
+msgstr "符号"
+
+msgid "System"
+msgstr "系统"
+
+msgid "System Settings"
+msgstr "系统设置"
+
+msgid "Target"
+msgstr "目标值"
+
+msgid "Task"
+msgstr "任务"
+
+msgid "Task Name"
+msgstr "任务名称"
+
+msgid "Task-Due in 7 Days"
+msgstr "任务-7 天内到期"
+
+msgid "Task-Open"
+msgstr "任务-进行中"
+
+msgid "Task-Overdue"
+msgstr "任务-已逾期"
+
+msgid "Task-Pending Review"
+msgstr "任务-待评审"
+
+msgid "Tasks"
+msgstr "任务"
+
+msgid "Tasks past their due date, and how late each one is."
+msgstr "查看已逾期的任务及各自逾期时长。"
+
+msgid "Tax & Compliance"
+msgstr "税务与合规"
+
+msgid "Tax Invoice"
+msgstr "税务发票"
+
+msgid "Tax rates for items that are taxed differently from the rest."
+msgstr "适用于特殊税率物料的税率设置。"
+
+msgid "Template"
+msgstr "模板"
+
+msgid "Template Name"
+msgstr "模板名称"
+
+msgid "Template Options"
+msgstr "模板选项"
+
+msgid "Template Warnings"
+msgstr "模板警告"
+
+msgid "Territory Wise Opportunity Count"
+msgstr "按区域统计商机数"
+
+msgid "Territory Wise Sales"
+msgstr "按区域统计销售额"
+
+msgid "The VAT accounts to report in the South Africa VAT audit report."
+msgstr "南非增值税审计报告中需申报的增值税科目。"
+
+msgid ""
+"The account your customers pay into and you pay from, linked to its account "
+"in your chart of accounts. See [Bank "
+"Account](https://docs.frappe.io/erpnext/user/manual/en/bank-account)."
+msgstr ""
+"客户付款存入、您对外付款所使用的账户，并与会计科目表中的科目关联。参见[银行账户](https://docs.frappe.io/erpnext/user/manual/en/bank-"
+"account)。"
+
+msgid ""
+"The bill your supplier sent, so you know what you owe and when it is due. "
+"See [Purchase "
+"Invoice](https://docs.frappe.io/erpnext/user/manual/en/purchase-invoice)."
+msgstr ""
+"登记供应商发来的账单，掌握应付金额和到期日。参见[采购发票](https://docs.frappe.io/erpnext/user/manual/en/purchase-"
+"invoice)。"
+
+msgid "The contents and weight of each package in a delivery."
+msgstr "每笔发货中每个包裹的内容物和重量。"
+
+msgid "The holidays and weekly offs of a company or employee."
+msgstr "公司或员工的节假日和每周休息日设置。"
+
+msgid "The items and quantities to pick from the warehouse."
+msgstr "需从仓库拣配的物料及数量。"
+
+msgid ""
+"The kind of thing you own, marked as a fixed asset. See "
+"[Item](https://docs.frappe.io/erpnext/user/manual/en/item)."
+msgstr ""
+"您拥有的、标记为固定资产的物料。参见[物料](https://docs.frappe.io/erpnext/user/manual/en/item)。"
+
+msgid "The materials a subcontractor uses to make an item for you."
+msgstr "委外加工商用于为您生产产品的物料清单。"
+
+msgid "The materials and operations it takes to make an item."
+msgstr "生产物料所需的原材料和工序。"
+
+msgid "The order of operations to make an item."
+msgstr "生产物料的工序顺序。"
+
+msgid "The parameters to check an item for."
+msgstr "物料检验所依据的检验参数。"
+
+msgid ""
+"The parameters to inspect and what counts as a pass, reused on every "
+"inspection. See [Quality Inspection "
+"Template](https://docs.frappe.io/erpnext/user/manual/en/quality-inspection-"
+"template)."
+msgstr ""
+"每次检验通用的检验项目及合格标准。参见[质检模板](https://docs.frappe.io/erpnext/user/manual/en/quality-"
+"inspection-template)。"
+
+msgid "The people responsible for maintaining assets."
+msgstr "负责资产保养的人员团队。"
+
+msgid "The price of an item in a price list."
+msgstr "物料在价格表中的价格。"
+
+msgid "The progress of a BOM replacement or cost update."
+msgstr "物料清单替换或成本更新的执行进度。"
+
+msgid "The questions to ask when collecting quality feedback."
+msgstr "收集质量反馈时所使用的问题模板。"
+
+msgid "The rate to convert one currency into another."
+msgstr "两种货币之间的兑换汇率。"
+
+msgid "The result of creating or submitting many documents at once."
+msgstr "批量创建或提交单据的执行结果。"
+
+msgid "The rows and formulas of a custom financial statement."
+msgstr "自定义财务报表的行次和计算公式。"
+
+msgid "The serial numbers and batches moved in a transaction."
+msgstr "业务单据中涉及的序列号和批次。"
+
+msgid "The steps of a process you follow to keep quality in check."
+msgstr "为把控质量而执行的标准化流程步骤。"
+
+msgid ""
+"The steps your team follows, so it is done the same way every time. See "
+"[Quality Management](https://docs.frappe.io/erpnext/user/manual/en/quality-"
+"management)."
+msgstr ""
+"团队遵循的标准操作步骤，确保每次执行方式一致。参见[质量管理](https://docs.frappe.io/erpnext/user/manual/en/quality-"
+"management)。"
+
+msgid "The tariff code an item is declared under at customs."
+msgstr "物料在海关申报时适用的税则号列。"
+
+msgid ""
+"The taxes and charges, like shipping or insurance, to add to purchases."
+msgstr "采购时附加的税费，如运费或保险费。"
+
+msgid "The taxes and charges, like shipping or insurance, to add to sales."
+msgstr "销售时附加的税费，如运费或保险费。"
+
+msgid "The upkeep tasks an asset needs, and who does them."
+msgstr "资产所需的保养任务及执行人。"
+
+msgid "The wording and fee for a kind of payment reminder."
+msgstr "某类催款通知的措辞和费用标准。"
+
+msgid "The work done for one operation of a work order."
+msgstr "生产工单中某道工序的加工记录。"
+
+msgid "The year your books are kept and closed for."
+msgstr "账簿记录和结账所依据的会计年度。"
+
+msgid "Time"
+msgstr "时间"
+
+msgid "Time a workstation stood idle, and why."
+msgstr "工站停机时长及停机原因。"
+
+msgid "Time logs"
+msgstr "工时记录"
+
+msgid "Time spent on tasks and activities, to bill or cost."
+msgstr "在任务和活动上投入的工时，可用于开票或成本核算。"
+
+msgid "Timesheet - Projects"
+msgstr "工时单 - 项目"
+
+msgid "Timesheet Working Hours"
+msgstr "工时单工时统计"
+
+msgid "Timesheet-Drafts"
+msgstr "工时单-草稿"
+
+msgid "Timesheet-This Week"
+msgstr "工时单-本周"
+
+msgid "Timesheet-To Bill"
+msgstr "工时单-待开票"
+
+msgid "Title"
+msgstr "标题"
+
+msgid "To"
+msgstr "换算为"
+
+msgid "To Date"
+msgstr "结束日期"
+
+msgid "Top Customers"
+msgstr "客户排行"
+
+msgid "Top Suppliers"
+msgstr "供应商排行"
+
+msgid "Total"
+msgstr "合计"
+
+msgid "Total Assets"
+msgstr "资产总额"
+
+msgid "Total Completed qty"
+msgstr "累计完工数量"
+
+msgid "Total Incoming Bills"
+msgstr "应付账单总额"
+
+msgid "Total Incoming Payment"
+msgstr "收款总额"
+
+msgid "Total Outgoing Bills"
+msgstr "应收账单总额"
+
+msgid "Total Outgoing Payment"
+msgstr "付款总额"
+
+msgid "Totals"
+msgstr "合计"
+
+msgid "Trace every posting"
+msgstr "追踪每笔分录"
+
+msgid "Traceback"
+msgstr "错误堆栈"
+
+msgid "Track progress and costs"
+msgstr "跟踪进度与成本"
+
+msgid "Track what your business owns"
+msgstr "管理企业资产"
+
+msgid "Track your orders"
+msgstr "跟踪采购订单"
+
+msgid "Transaction"
+msgstr "事务"
+
+msgid "Trial Balance Standard"
+msgstr "试算平衡表标准格式"
+
+msgid ""
+"Turns stock items or services into an asset, or one asset into another."
+msgstr "将库存物料或服务转为资产，或将一项资产转为另一项资产。"
+
+msgid "Type"
+msgstr "类型"
+
+msgid "URL"
+msgstr "URL"
+
+msgid "UTM Source"
+msgstr "UTM 来源"
+
+msgid "Undo a payment's match against invoices."
+msgstr "撤销付款与发票的核销关系。"
+
+msgid "Unsubscribed"
+msgstr "已退订"
+
+msgid "Use HTML"
+msgstr "使用 HTML"
+
+msgid "Use Serial No Wise Valuation"
+msgstr "按序列号计价"
+
+msgid "Used"
+msgstr "已使用"
+
+msgid "User"
+msgstr "用户"
+
+msgid "User Details"
+msgstr "用户信息"
+
+msgid "User ID"
+msgstr "用户 ID"
+
+msgid "User Permissions"
+msgstr "用户权限"
+
+msgid "Users"
+msgstr "用户"
+
+msgid "Validity"
+msgstr "有效期"
+
+msgid "Valuation Type"
+msgstr "估值类型"
+
+msgid "Value"
+msgstr "数值"
+
+msgid "Value Changes"
+msgstr "价值变动"
+
+msgid "Version"
+msgstr "版本"
+
+msgid "View Accounts Payable"
+msgstr "查看应付账款"
+
+msgid "View Accounts Receivable"
+msgstr "查看应收账款"
+
+msgid "View Asset Depreciation"
+msgstr "查看资产折旧"
+
+msgid "View Delayed Tasks"
+msgstr "查看延期任务"
+
+msgid "View Fixed Asset Register"
+msgstr "查看固定资产台账"
+
+msgid "View General Ledger"
+msgstr "查看总账"
+
+msgid "View Profit and Loss"
+msgstr "查看损益情况"
+
+msgid "View Sales Analytics"
+msgstr "查看销售分析"
+
+msgid "Views"
+msgstr "浏览量"
+
+msgid "Visual Plant Floor"
+msgstr "可视化车间"
+
+msgid "Warehouse"
+msgstr "仓库"
+
+msgid "Warehouse wise Stock Value"
+msgstr "按仓库统计库存价值"
+
+msgid ""
+"We created a few to start with. Rename them, or add the places you actually "
+"keep stock. See "
+"[Warehouse](https://docs.frappe.io/erpnext/user/manual/en/warehouse)."
+msgstr ""
+"系统已预建几个仓库供您上手，可将其改名或添加实际存放库存的地点。参见[仓库](https://docs.frappe.io/erpnext/user/manual/en/warehouse)。"
+
+msgid "Website"
+msgstr "网站"
+
+msgid "Weight"
+msgstr "权重"
+
+msgid "Welcome email sent"
+msgstr "欢迎邮件已发送"
+
+msgid "What a subscription bills for, and at what price."
+msgstr "订阅业务的计费内容和价格。"
+
+msgid "What an employee costs and bills per hour for an activity."
+msgstr "员工从事某项活动的小时成本和计费标准。"
+
+msgid ""
+"What comes out at the end of production, kept in the Products group. See "
+"[Item](https://docs.frappe.io/erpnext/user/manual/en/item)."
+msgstr ""
+"生产完工后产出的成品，归入产品物料组。参见[物料](https://docs.frappe.io/erpnext/user/manual/en/item)。"
+
+msgid "What you did to fix or prevent a quality problem."
+msgstr "为解决或预防质量问题所采取的措施。"
+
+msgid "What you have in each warehouse, and what it is worth."
+msgstr "各仓库的库存数量及其价值。"
+
+msgid "What you ordered, what has arrived, and what is still to come."
+msgstr "已下单的采购、已到货的部分和待到货的部分。"
+
+msgid "What you own, where it is, and what it is worth today."
+msgstr "您拥有的资产、所在位置和当前价值。"
+
+msgid "When an asset depreciates, and by how much."
+msgstr "资产的折旧计划及每期折旧金额。"
+
+msgid "When part of an invoice is due, like 50% in 30 days."
+msgstr "发票部分款项的到期时间，如 30 天内支付 50%。"
+
+msgid ""
+"When something falls short of the procedure, note what happened, the cause, "
+"and what you will do about it. See [Non "
+"Conformance](https://docs.frappe.io/erpnext/user/manual/en/non-conformance)."
+msgstr ""
+"当执行不符合程序要求时，记录事实、原因和改进措施。参见[不合格项](https://docs.frappe.io/erpnext/user/manual/en/non-"
+"conformance)。"
+
+msgid ""
+"When your customer pays, record it here. It is matched against their "
+"invoice, so you can see what is still owed. See [Payment "
+"Entry](https://docs.frappe.io/erpnext/user/manual/en/payment-entry)."
+msgstr ""
+"客户付款后在此登记，系统会自动与发票核销，随时掌握未收余额。参见[付款凭证](https://docs.frappe.io/erpnext/user/manual/en/payment-"
+"entry)。"
+
+msgid "Where each detail goes when you print on your bank's cheque."
+msgstr "在银行支票上打印时各栏位的对应位置。"
+
+msgid "Which warehouse received items go to."
+msgstr "入库物料存放的目标仓库。"
+
+msgid "Who answers incoming calls, and when."
+msgstr "来电由谁接听及接听时段。"
+
+msgid ""
+"Who does what, by when. Tasks roll up into the project's progress. See "
+"[Task](https://docs.frappe.io/erpnext/user/manual/en/task)."
+msgstr ""
+"明确分工和截止时间，任务进度自动汇总为项目进度。参见[任务](https://docs.frappe.io/erpnext/user/manual/en/task)。"
+
+msgid ""
+"Who owes you, how much, and for how long. See [Accounts "
+"Receivable](https://docs.frappe.io/erpnext/user/manual/en/accounts-"
+"receivable)."
+msgstr ""
+"客户欠款金额及账龄一目了然。参见[应收账款](https://docs.frappe.io/erpnext/user/manual/en/accounts-"
+"receivable)。"
+
+msgid "Who you owe, how much, and when each bill is due."
+msgstr "欠哪家供应商多少金额、每张账单的到期日。"
+
+msgid "Work Order - Manufacturing"
+msgstr "生产工单 - 制造"
+
+msgid "Work Order-Completed This Month"
+msgstr "生产工单-本月完工"
+
+msgid "Work Order-Due in 7 Days"
+msgstr "生产工单-7 天内到期"
+
+msgid "Work Order-In Process"
+msgstr "生产工单-进行中"
+
+msgid "Work Order-Not Started"
+msgstr "生产工单-未开始"
+
+msgid "Works out the shipping charge on a sale or purchase."
+msgstr "按规则计算销售或采购业务中的运费。"
+
+msgid "Write down how the work is done"
+msgstr "编写标准作业程序"
+
+msgid "Write down what goes into a product and make it with a work order."
+msgstr "编制产品物料清单，并通过生产工单组织生产。"
+
+msgid "Write its bill of materials"
+msgstr "编制物料清单"
+
+msgid "Your calling preferences, like when you take calls."
+msgstr "您的通话偏好设置，如可接听来电的时段。"
+
+msgid "How far along your open projects are."
+msgstr "进行中的项目完成进度。"
+
+msgid "How long your customers' unpaid invoices have been due."
+msgstr "客户未付发票的逾期时长。"
+
+msgid "How long your open work orders have been waiting."
+msgstr "未完工工单的等待时长。"
+
+msgid "How long your unpaid supplier bills have been due."
+msgstr "未付供应商账单的逾期时长。"
+
+msgid "How long your workstations were down last month."
+msgstr "上月工站停机时长。"
+
+msgid "How many inspections you run each month."
+msgstr "每月执行的质检次数。"
+
+msgid "How many of your inspections pass or fail."
+msgstr "质检的合格与不合格数量。"
+
+msgid "How many opportunities each territory brings in."
+msgstr "各区域带来的商机数量。"
+
+msgid "How much money sits in your bank accounts, month by month."
+msgstr "每月银行账户资金余额。"
+
+msgid "How much you order from suppliers each month."
+msgstr "每月向供应商的采购金额。"
+
+msgid "How much you produce each month."
+msgstr "每月生产数量。"
+
+msgid "How much your customers order each month."
+msgstr "客户每月下单金额。"
+
+msgid "Items you're about to run short of."
+msgstr "即将缺货的物料。"
+
+msgid "New leads coming in each week."
+msgstr "每周新增线索。"
+
+msgid "New opportunities coming in each week."
+msgstr "每周新增商机。"
+
+msgid "Operations completed on your work orders each quarter."
+msgstr "每季度生产工单已完工的工序数。"
+
+msgid "Sales orders still waiting to be delivered or billed."
+msgstr "待发货或待开票的销售订单。"
+
+msgid "Support issues opened each month."
+msgstr "每月新登记的支持问题。"
+
+msgid "The opportunities you win each month."
+msgstr "每月成交的商机。"
+
+msgid "The projects you finish each month."
+msgstr "每月完成的项目。"
+
+msgid "The stock that has sat longest in your warehouses."
+msgstr "在仓库存放时间最长的物料。"
+
+msgid "The value of opportunities you win in each territory."
+msgstr "各区域成交商机的金额。"
+
+msgid "What you bill your customers each month."
+msgstr "每月向客户开具的账单金额。"
+
+msgid "What you deliver to your customers each month."
+msgstr "每月向客户的交付量。"
+
+msgid "What you receive from suppliers each month."
+msgstr "每月从供应商的收货量。"
+
+msgid "What you send out for subcontracting each month."
+msgstr "每月委外加工的发料量。"
+
+msgid "What your assets are worth, by category."
+msgstr "按类别统计的资产价值。"
+
+msgid "What your assets are worth, by location."
+msgstr "按位置统计的资产价值。"
+
+msgid "What your assets are worth, year by year."
+msgstr "资产的逐年价值变化。"
+
+msgid "What your stock is worth in each warehouse."
+msgstr "各仓库的库存价值。"
+
+msgid "What your stock is worth, by item group."
+msgstr "按物料组统计的库存价值。"
+
+msgid "What your suppliers bill you each month."
+msgstr "供应商每月向您开具的账单金额。"
+
+msgid "What your work orders planned against what they produced."
+msgstr "生产工单的计划量与实际产量对比。"
+
+msgid "Where your leads come from."
+msgstr "线索的来源分布。"
+
+msgid "Where your purchase orders stand: to receive, to bill, or done."
+msgstr "采购订单的执行状态：待收货、待开票或已完成。"
+
+msgid "Which campaigns bring in your opportunities."
+msgstr "带来商机的营销活动。"
+
+msgid "Your best-selling items over the year."
+msgstr "全年畅销物料排行。"
+
+msgid "Your budgets against what you actually spent."
+msgstr "预算与实际支出对比。"
+
+msgid "Your customers, ranked by what you deliver to them."
+msgstr "按交付量排名的客户。"
+
+msgid "Your income and expenses over the year, and what's left as profit."
+msgstr "全年收入与费用对比及利润。"
+
+msgid "Your job cards each month, by status."
+msgstr "按月统计的作业单状态分布。"
+
+msgid "Your material requests by status, from pending to ordered."
+msgstr "物料申请的状态分布，从待处理到已下单。"
+
+msgid "Your suppliers, ranked by what they deliver to you."
+msgstr "按供货量排名的供应商。"
+
+msgid "Your work orders by status, from planned to completed."
+msgstr "生产工单的状态分布，从已计划到已完工。"

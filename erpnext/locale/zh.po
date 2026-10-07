@@ -907,7 +907,7 @@ msgstr "<li>以下行{0}的清算日期必须晚于支票日期：</li>"
 
 #: erpnext/controllers/accounts_controller.py:2302
 msgid "<li>Item {0} in row(s) {1} billed more than {2}</li>"
-msgstr "{0}"
+msgstr "<li>第 {1} 行的物料 {0} 开票金额超过 {2}</li>"
 
 #: erpnext/accounts/doctype/pos_invoice/pos_invoice.py:424
 msgid "<li>Packed Item {0}: Required {1}, Available {2}</li>"
@@ -6778,7 +6778,7 @@ msgstr "行{0}：物料{1}必须填写序列号"
 msgid ""
 "At row {0}: Serial and Batch Bundle {1} has already created. Please remove "
 "the values from the serial no or batch no fields."
-msgstr "第 {0} 行，序列号/批号已创建，请清空序列号或批号字段"
+msgstr "第 {0} 行：序列号和批次捆绑包 {1} 已创建，请清空序列号或批号字段。"
 
 #: erpnext/manufacturing/doctype/bom_creator/bom_creator.py:123
 msgid "At row {0}: set Parent Row No for item {1}"
@@ -7447,7 +7447,7 @@ msgstr "物料清单1"
 
 #: erpnext/manufacturing/doctype/bom/bom.py:1823
 msgid "BOM 1 {0} and BOM 2 {1} should not be same"
-msgstr "物料清单1 {0} 与物料清单2 {0} 不能相同"
+msgstr "物料清单 1 {0} 与物料清单 2 {1} 不能相同"
 
 #: erpnext/manufacturing/page/bom_comparison_tool/bom_comparison_tool.js:38
 msgid "BOM 2"
@@ -16543,7 +16543,7 @@ msgstr "默认物料清单"
 
 #: erpnext/stock/doctype/item/item.py:488
 msgid "Default BOM ({0}) must be active for this item or its template"
-msgstr "该物料或其模板物料的默认物料清单状态必须是生效"
+msgstr "该物料或其模板物料的默认物料清单（{0}）必须处于生效状态"
 
 #: erpnext/manufacturing/doctype/work_order/work_order.py:2536
 msgid "Default BOM for {0} not found"
@@ -18844,7 +18844,7 @@ msgstr "在5到100之间"
 msgid ""
 "Documents: {0} have deferred revenue/expense enabled for them. Cannot "
 "repost."
-msgstr "不允许更新递延收入/费用相关会计凭证"
+msgstr "单据 {0} 已启用递延收入/费用，无法重新过账。"
 
 #. Label of the dont_create_loyalty_points (Check) field in DocType 'Sales
 #. Invoice'
@@ -25074,7 +25074,7 @@ msgstr "如果科目被冻结，只允许有编辑冻结凭证角色的用户过
 msgid ""
 "If the item is transacting as a Zero Valuation Rate item in this entry, "
 "please enable 'Allow Zero Valuation Rate' in the {0} Item table."
-msgstr "如在交易中允许物料成本价为0，请在明细行中勾选允许成本价为0"
+msgstr "如此单据中的物料按零成本价交易，请在 {0} 物料明细表中勾选“允许零成本价”。"
 
 #. Description of the 'Projected On Hand' (Float) field in DocType 'Material
 #. Request Item'
@@ -29981,7 +29981,7 @@ msgstr "千瓦时"
 #: erpnext/manufacturing/doctype/job_card/job_card.py:1032
 msgid ""
 "Kindly cancel the Manufacturing Entries first against the work order {0}."
-msgstr "请先取消工单入库"
+msgstr "请先取消生产工单 {0} 的制造入库单。"
 
 #: erpnext/public/js/utils/party.js:269
 msgid "Kindly select the company first"
@@ -34308,7 +34308,7 @@ msgstr "无需汇率重估的未付发票"
 msgid ""
 "No outstanding {0} found for the {1} {2} which qualify the filters you have "
 "specified."
-msgstr "没有找到针对{1} {2} 及相关过滤条件的未付发票或订单"
+msgstr "未找到符合所设筛选条件的、属于 {1} {2} 的未完成 {0}。"
 
 #: banking/src/components/features/BankStatementImporter/PDF/PDFTableEditor.tsx:289
 msgid "No page image is available for this page."
@@ -37518,7 +37518,7 @@ msgstr "往来单位银行账号(银行对账)"
 #: erpnext/controllers/accounts_controller.py:2500
 msgid ""
 "Party Account {0} currency ({1}) and document currency ({2}) should be same"
-msgstr "往来单位主数据中定义的结算货币需与业务交易货币相同"
+msgstr "往来单位科目 {0} 的货币（{1}）应与单据货币（{2}）一致"
 
 #. Label of the party_bank_account (Link) field in DocType 'Payment Entry'
 #: erpnext/accounts/doctype/payment_entry/payment_entry.json
@@ -47939,7 +47939,7 @@ msgstr "行号{0}：验收物料{1}必须指定验收仓库"
 
 #: erpnext/controllers/accounts_controller.py:1326
 msgid "Row #{0}: Account {1} does not belong to company {2}"
-msgstr "第 {0} 行 ：科目 {1} 不是公司 {3} 的有效科目"
+msgstr "第 {0} 行：科目 {1} 不属于公司 {2}"
 
 #: erpnext/accounts/doctype/payment_entry/payment_entry.py:399
 msgid ""
@@ -47956,7 +47956,7 @@ msgstr "行＃{0}：已分配金额不能大于未付金额。"
 msgid ""
 "Row #{0}: Allocated amount:{1} is greater than outstanding amount:{2} for "
 "Payment Term {3}"
-msgstr "第 {0} 行：已分配金额 {1} 大于针对付款条款 {3} 的未付金额"
+msgstr "第 {0} 行：付款条款 {3} 的已分配金额 {1} 大于未付金额 {2}"
 
 #: erpnext/assets/doctype/asset_capitalization/asset_capitalization.py:279
 msgid "Row #{0}: Amount must be a positive number"
@@ -48270,7 +48270,7 @@ msgstr "第{0}行：物料{1}不是客户提供物料。"
 msgid ""
 "Row #{0}: Item {1} is not a Serialized/Batched Item. It cannot have a Serial"
 " No/Batch No against it."
-msgstr "第{0}行: 物料未启用序列号/批号，不能为其设置序列号/批号"
+msgstr "第 {0} 行：物料 {1} 未启用序列号/批号管理，不能填写序列号/批号。"
 
 #: erpnext/controllers/subcontracting_inward_controller.py:115
 #: erpnext/controllers/subcontracting_inward_controller.py:496
@@ -48604,7 +48604,7 @@ msgstr "第 {0} 行： 物料 {1} 预留数量不可使用无效批号 {2}"
 
 #: erpnext/stock/doctype/stock_reservation_entry/stock_reservation_entry.py:1648
 msgid "Row #{0}: Stock cannot be reserved for a non-stock Item {1}"
-msgstr "不允许为未勾选允许库存的物料创建库存预留"
+msgstr "第 {0} 行：不允许为非库存物料 {1} 预留库存。"
 
 #: erpnext/stock/doctype/stock_reservation_entry/stock_reservation_entry.py:1661
 msgid "Row #{0}: Stock cannot be reserved in group warehouse {1}."
@@ -48893,7 +48893,7 @@ msgstr "行号{0}：分配金额{1}不能超过剩余付款金额{2}"
 msgid ""
 "Row {0}: As {1} is enabled, raw materials cannot be added to {2} entry. Use "
 "{3} entry to consume raw materials."
-msgstr "第 {0} 行：生产设置中已勾选 入库成品原材料成本取自工单耗用，工单入库中不允许倒扣原材料，请创建工单耗用物料移动消耗原材料"
+msgstr "第 {0} 行：已启用“{1}”，不能在 {2} 中倒扣原材料，请通过 {3} 消耗原材料。"
 
 #: erpnext/stock/doctype/material_request/material_request.py:1052
 msgid "Row {0}: Bill of Materials not found for the Item {1}"
@@ -48913,7 +48913,7 @@ msgstr "行{0}：转换系数必填"
 
 #: erpnext/controllers/accounts_controller.py:3270
 msgid "Row {0}: Cost Center {1} does not belong to Company {2}"
-msgstr "第 {0} 行 ：成本中心 {1} 不是公司 {3} 的有效成本中心"
+msgstr "第 {0} 行：成本中心 {1} 不属于公司 {2}"
 
 #: erpnext/stock/doctype/landed_cost_voucher/landed_cost_voucher.py:175
 msgid "Row {0}: Cost center is required for an item {1}"
@@ -48986,7 +48986,7 @@ msgstr "第{0}行：因物料 {2} 未关联采购入库单，费用科目变更�
 msgid ""
 "Row {0}: Expense Head changed to {1} because account {2} is not linked to "
 "warehouse {3} or it is not the default inventory account"
-msgstr "系统提示：因勾选了更新库存，系统自动将物料明细第 {0} 行的费用科目 {2} 修改为库存科目 {1}"
+msgstr "第 {0} 行：由于科目 {2} 未关联仓库 {3} 或不是默认库存科目，费用科目已更改为 {1}"
 
 #: erpnext/accounts/doctype/purchase_invoice/purchase_invoice.py:522
 msgid ""
@@ -51934,7 +51934,9 @@ msgstr "仓库{1}下物料{0}的序列号不可用，请尝试更换仓库。"
 
 #. Description of the 'Valuation Method' (Select) field in DocType 'Item'
 #: erpnext/stock/doctype/item/item.json
-msgid "Serialized items are valued at Moving Average once stock transactions exist and Serial No Wise Valuation is disabled."
+msgid ""
+"Serialized items are valued at Moving Average once stock transactions exist "
+"and Serial No Wise Valuation is disabled."
 msgstr "当已存在库存交易且未启用序列号计价时，序列号物料按移动平均法计价。"
 
 #. Label of the series_for_depreciation_entry (Data) field in DocType
@@ -54815,7 +54817,7 @@ msgstr "已取消工单{0}的库存预留"
 
 #: erpnext/stock/doctype/stock_reservation_entry/stock_reservation_entry.py:359
 msgid "Stock not available for Item {0} in Warehouse {1}."
-msgstr "物料 {0} 在仓库 {2} 中无可预留数量"
+msgstr "仓库 {1} 中物料 {0} 的库存不足。"
 
 #: erpnext/stock/doctype/stock_reservation_entry/stock_reservation_entry.py:1240
 msgid "Stock not available to reserve for the Item {0} in Warehouse {1}."
@@ -58234,7 +58236,7 @@ msgstr "{0}{1}与{3}{4}中的{0}{2}不匹配"
 msgid ""
 "The {0} {1} is used to calculate the valuation cost for the finished good "
 "{2}."
-msgstr "{0} {1} 用于计算入库成品成本"
+msgstr "{0} {1} 用于计算产成品 {2} 的估值成本。"
 
 #: erpnext/accounts/doctype/pricing_rule/pricing_rule.js:74
 msgid ""
@@ -58507,7 +58509,7 @@ msgstr "本发票已付款。"
 msgid ""
 "This is a Template BOM and will be used to make the work order for {0} of "
 "the item {1}"
-msgstr "本模板物料清单将用于为模板物料 {1} 的多规格物料生成生产工单"
+msgstr "这是模板物料清单，将用于为物料 {1} 的 {0} 生成生产工单。"
 
 #: banking/src/components/features/BankReconciliation/Rules/RuleForm.tsx:466
 msgid "This is a formula based value."
@@ -59410,7 +59412,7 @@ msgstr "要一次选择多个交易，请按住 Shift 键。"
 msgid ""
 "To still proceed with editing this Attribute Value, enable {0} in Item "
 "Variant Settings."
-msgstr "如需修改属性值，请在库存模块的“物料多规格设置”中勾选 允许重命名属性值。"
+msgstr "如需继续编辑该属性值，请在物料多规格设置中启用 {0}。"
 
 #: erpnext/accounts/doctype/purchase_invoice/purchase_invoice.py:637
 msgid ""
@@ -63553,7 +63555,7 @@ msgstr "销售订单{1}不允许使用仓库{0}，应使用{2}"
 msgid ""
 "Warehouse {0} is not linked to any account, please mention the account in "
 "the warehouse record or set default inventory account in company {1}."
-msgstr "仓库 {0} 无库存科目，请在仓库或公司主数据中维护默认库存科目"
+msgstr "仓库 {0} 未关联任何科目，请在仓库记录中填写科目，或在公司 {1} 中设置默认库存科目。"
 
 #: erpnext/stock/report/stock_qty_vs_serial_no_count/stock_qty_vs_serial_no_count.py:26
 msgid "Warehouse: {0} does not belong to {1}"
@@ -64796,7 +64798,8 @@ msgid ""
 "SABB {1}. {2} if you want to inward same serial number multiple times then "
 "enabled 'Allow existing Serial No to be Manufactured/Received again' in the "
 "{3}"
-msgstr "无法处理序列号{0}，因其已在序列和批次凭证{1}中使用。如需多次入库相同序列号，请在{3}启用'允许重复生产/接收现有序列号'"
+msgstr ""
+"无法处理序列号 {0}，因其已在序列和批次捆绑包 {1} 中使用。{2}如需多次入库相同序列号，请在 {3} 中启用“允许重复生产/接收现有序列号”。"
 
 #: erpnext/accounts/doctype/loyalty_program/loyalty_program.py:192
 msgid ""
@@ -66373,3 +66376,2062 @@ msgid ""
 "{0} As the full stock is reserved for other transactions, you're not allowed"
 " to consume the stock."
 msgstr "{0} 由于全部库存已被其他交易预留，不允许消耗该库存。"
+
+msgid "'{0}' is a reserved name and cannot be used as a line reference"
+msgstr "\"{0}\"是保留名称，不能用作行引用"
+
+msgid "(A) Balance Qty"
+msgstr "（A）结存数量"
+
+msgid "(B) Expected Balance Qty"
+msgstr "（B）预期结存数量"
+
+msgid "(C) Change in Stock Value"
+msgstr "（C）库存价值变动"
+
+msgid "(D) Expected Change in Stock Value"
+msgstr "（D）预期库存价值变动"
+
+msgid "(E) Valuation Rate"
+msgstr "（E）估值单价"
+
+msgid "(F) Expected Valuation Rate"
+msgstr "（F）预期估值单价"
+
+msgid "(G) Balance Stock Value"
+msgstr "（G）结存库存价值"
+
+msgid "(H) Expected Balance Stock Value"
+msgstr "（H）预期结存库存价值"
+
+msgid "(none)"
+msgstr "（无）"
+
+msgid "<b>Cannot create asset.</b><br><br>"
+msgstr "<b>无法创建资产。</b><br><br>"
+
+msgid ""
+"<strong>Total qty</strong> of the rows (<strong>{0}</strong>) does not match"
+" the <strong>Qty to Fetch</strong> (<strong>{1}</strong>). Qty of the item "
+"will be changed to <strong>{0}</strong>. Are you sure want to proceed?"
+msgstr ""
+"明细行的<strong>总数量</strong>（<strong>{0}</strong>）与<strong>待获取数量</strong>（<strong>{1}</strong>）不一致。物料数量将被更改为"
+" <strong>{0}</strong>。确定要继续吗？"
+
+msgid "A short code added to account names, like Cash - AC."
+msgstr "添加到科目名称的简短代码，如现金 - AC。"
+
+msgid "A task becomes Overdue on its own once its Expected End Date passes"
+msgstr "任务一旦超过预期结束日期将自动变为逾期"
+
+msgid "API Method Path"
+msgstr "API 方法路径"
+
+msgid "Account Filter"
+msgstr "科目筛选器"
+
+msgid "Account {0} does not belong to Company {1}"
+msgstr "科目 {0} 不属于公司 {1}"
+
+msgid ""
+"Accounts cannot be removed, as user doesn't have access to all the accounts "
+"of {0}"
+msgstr "无法移除科目，因为用户没有 {0} 所有科目的访问权限"
+
+msgid "Actual quantity of the finished good that will be manufactured."
+msgstr "将生产的产成品实际数量。"
+
+msgid "Add Account"
+msgstr "添加科目"
+
+msgid "Add Opening Stock"
+msgstr "添加期初库存"
+
+msgid "Add Price"
+msgstr "添加价格"
+
+msgid "Add Raw Material"
+msgstr "添加原材料"
+
+msgid "Add demo data so you can explore"
+msgstr "添加演示数据以便体验"
+
+msgid "Adding demo data"
+msgstr "正在添加演示数据"
+
+msgid "Additional Discount Amount ({discount_amount}) cannot exceed "
+msgstr "额外折扣金额（{discount_amount}）不能超出"
+
+msgid ""
+"Additional Discount has been removed as Pricing Rule {0} is no longer "
+"applicable"
+msgstr "定价规则 {0} 不再适用，额外折扣已移除"
+
+msgid "Adjusted By"
+msgstr "调整人"
+
+msgid "Adjustment Date"
+msgstr "调整日期"
+
+msgid "Adjustment Entry"
+msgstr "调整分录"
+
+msgid "Adjustment Time"
+msgstr "调整时间"
+
+msgid ""
+"After the adjustment, Item {0} in Warehouse {1} would hold a qty of {2} "
+"worth {3}, instead of {4} worth {5}."
+msgstr "调整后，仓库 {1} 中的物料 {0} 将持有数量 {2}、价值 {3}，而非数量 {4}、价值 {5}。"
+
+msgid "All Differences"
+msgstr "所有差异"
+
+msgid "All Entries"
+msgstr "全部分录"
+
+msgid ""
+"All Stock Ledger Entries and Serial and Batch Bundles of the selected "
+"vouchers will be cancelled and reposting will be queued. Continue?"
+msgstr "所选单据的全部库存分类账分录和序列号批次捆绑包将被取消，重新过账将加入队列。是否继续？"
+
+msgid "All raw materials are already mapped to finished goods"
+msgstr "所有原材料已映射到产成品"
+
+msgid "Applying recommended settings"
+msgstr "正在应用推荐设置"
+
+msgid "Auto Assign"
+msgstr "自动分配"
+
+msgid "Backdated Entry Before Adjustment Entry"
+msgstr "调整分录之前的补录分录"
+
+msgid "Balance Type is required for Account Data"
+msgstr "科目数据必须选择余额类型"
+
+msgid "Bank Transaction {0} added as {1}"
+msgstr "银行交易 {0} 已添加为 {1}"
+
+msgid ""
+"Books are closed till {0} by Period Closing Voucher, remove these rows: {1}"
+msgstr "账簿已由期末结账凭证关闭至 {0}，请移除这些行：{1}"
+
+msgid "Brands"
+msgstr "品牌"
+
+msgid "C - D"
+msgstr "C - D"
+
+msgid "Calculation Formula"
+msgstr "计算公式"
+
+msgid "Cancel Stock Ledger Entries"
+msgstr "取消库存分类账分录"
+
+msgid "Cannot apply taxes"
+msgstr "无法应用税率"
+
+msgid "Cannot apply taxes from this address"
+msgstr "无法从此地址应用税率"
+
+msgid ""
+"Cannot cancel Stock Closing Entry {0} because the later Stock Closing Entry "
+"{1} is built on it. Cancel {1} first."
+msgstr "无法取消库存结账分录 {0}，因为后续的库存结账分录 {1} 基于它生成。请先取消 {1}。"
+
+msgid ""
+"Cannot create Intercompany {0}. All items in the source {1} have already "
+"been fully invoiced. "
+msgstr "无法创建公司间{0}，因为源{1}中的所有物料均已全额开票。"
+
+msgid "Cannot create Material Request for item {0} in group warehouse {1}."
+msgstr "不能为分组仓库 {1} 中的物料 {0} 创建物料需求单。"
+
+msgid "Cannot create Work Orders from a stopped Material Request"
+msgstr "无法从已停止的物料需求单创建生产工单"
+
+msgid "Cannot create {0} from a Bank Transaction"
+msgstr "无法从银行交易创建{0}"
+
+msgid ""
+"Cannot disable Serial and Batch No for Item, as there are items with serial "
+"/ batch enabled."
+msgstr "无法为物料停用序列号和批次号，因为已存在启用序列号/批次的物料。"
+
+msgid "Cannot enable {0} as {1} is disabled in {2}"
+msgstr "无法启用 {0}，因为 {1} 已在 {2} 中禁用"
+
+msgid "Cannot load {0} details"
+msgstr "无法加载 {0} 详情"
+
+msgid ""
+"Choose a bank account in this chart's filters, or set a default bank account"
+" on {0}, to see its balance."
+msgstr "请在此图表的筛选器中选择银行账户，或在 {0} 上设置默认银行账户，以查看其余额。"
+
+msgid "Choose a company in this chart's filters to see its bank balance."
+msgstr "请在此图表的筛选器中选择公司，以查看其银行余额。"
+
+msgid "Circular dependency detected: {0}"
+msgstr "检测到循环依赖：{0}"
+
+msgid "Clear Link"
+msgstr "清除链接"
+
+msgid "Closed Period Rows Selected"
+msgstr "已选择关闭期间内的行"
+
+msgid "Communication {0} is not on the timeline of Issue {1}"
+msgstr "沟通记录 {0} 不在问题 {1}的时间线中"
+
+msgid "Company Abbreviation cannot have more than {0} characters"
+msgstr "公司缩写不能超过 {0} 个字符"
+
+msgid ""
+"Company is required to apply taxes. Set Company, then select {0} again."
+msgstr "应用税率前必须先设置公司。请先设置公司，然后重新选择 {0}。"
+
+msgid ""
+"Company is required to load address, taxes, and payment terms. Set Company, "
+"then select {0} again."
+msgstr "加载地址、税率和付款条款前必须先设置公司。请先设置公司，然后重新选择 {0}。"
+
+msgid ""
+"Completed Quantity ({0}), Pending Quantity ({1}) and Process Loss Quantity "
+"({2}) must add up to the Qty to Manufacture ({3})."
+msgstr "完成数量（{0}）、待处理数量（{1}）和工艺损耗数量（{2}）之和必须等于生产数量（{3}）。"
+
+msgid "Completed Quantity cannot be greater than {0}"
+msgstr "完成数量不能大于 {0}"
+
+msgid "Completed Quantity cannot be negative"
+msgstr "完成数量不能为负数"
+
+msgid "Completed quantity cannot be negative."
+msgstr "完成数量不能为负数。"
+
+msgid "Completed, Pending and Process Loss quantities must add up to this."
+msgstr "完成、待处理和工艺损耗数量之和必须等于此数量。"
+
+msgid ""
+"Completed, Process Loss or Pending Qty is required for Job Card {0}, please "
+"start and complete the job card before submission"
+msgstr "作业单 {0} 必须填写完成、工艺损耗或待处理数量，请先开始并完成作业单再提交"
+
+msgid ""
+"Components can be returned only after Work Order {0} is Completed or Closed"
+msgstr "仅当生产工单 {0} 已完成或已关闭后才能退回组件"
+
+msgid "Convert to Phantom Item"
+msgstr "转换为虚拟物料"
+
+msgid "Convert to Sub Assembly"
+msgstr "转换为半成品组件"
+
+msgid ""
+"Could not detect any tables in this PDF. It may be a scanned or image-based"
+msgstr "无法在此 PDF 中检测到任何表格，可能是扫描件或图像版"
+
+msgid "Could not download the statement. Please try again."
+msgstr "无法下载对账单，请重试。"
+
+msgid "Could not validate {0}: {1}"
+msgstr "无法验证 {0}：{1}"
+
+msgid "Create Material Request"
+msgstr "创建物料需求单"
+
+msgid "Create your first Material Request to get started."
+msgstr "创建您的第一个物料需求单以开始使用。"
+
+msgid "Creating Opening Stock Entry..."
+msgstr "正在创建期初库存分录..."
+
+msgid "Creating your company"
+msgstr "正在创建您的公司"
+
+msgid "Declare opportunities lost one at a time"
+msgstr "请逐个标记丢单商机"
+
+msgid "Default Supplier for {0} not found"
+msgstr "未找到 {0} 的默认供应商"
+
+msgid ""
+"Default Target Warehouse {0} must be a Transit warehouse when Add to Transit"
+" is enabled."
+msgstr "启用“加入在途”后，默认目标仓库 {0} 必须是在途仓库。"
+
+msgid "Default warehouse from Item Defaults."
+msgstr "取自物料默认值的默认仓库。"
+
+msgid "Defaults to the company's Stock Adjustment Account"
+msgstr "默认为公司的库存调整科目"
+
+msgid "Delete Item"
+msgstr "删除物料"
+
+msgid "Delivered"
+msgstr "已交付"
+
+msgid "Disabled Item {0} cannot be used in BOMs."
+msgstr "已禁用的物料 {0} 不能用于物料清单。"
+
+msgid "Disabled Price List"
+msgstr "已禁用的价格表"
+
+msgid "Discount Removed"
+msgstr "折扣已移除"
+
+msgid "Do you want to continue?"
+msgstr "是否继续？"
+
+msgid "Documentation"
+msgstr "文档"
+
+msgid "Duplicate POS Search Fields"
+msgstr "重复的 POS 搜索字段"
+
+msgid "Duplicate line reference: '{0}'"
+msgstr "重复的行引用：'{0}'"
+
+msgid "E - F"
+msgstr "E - F"
+
+msgid ""
+"Enter the Operation, the table will fetch the Operation details like Hourly "
+"Rate, Workstation automatically.\\n\\n After that, set the Operation Time in"
+" minutes and the table will calculate the Operation Costs based on the "
+"Hourly Rate and Operation Time."
+msgstr "输入工序后，表格将自动获取工序详情，如小时费率和工作站。\\n\\n 然后以分钟为单位设置工序时间，表格将根据小时费率和工序时间计算工序成本。"
+
+msgid ""
+"Exchange rate {0} does not match the exchange rate of Purchase Receipt {1}. "
+"Use the same exchange rate as the Purchase Receipt or enable {2} in {3} to "
+"adjust the landed cost based on this invoice."
+msgstr "汇率 {0} 与采购收货单 {1} 的汇率不一致。请使用与采购收货单相同的汇率，或在 {3} 中启用 {2}，以根据本发票调整到岸成本。"
+
+msgid "Expand / Collapse All"
+msgstr "全部展开/折叠"
+
+msgid "Expected Value Based On"
+msgstr "预期价值依据"
+
+msgid "Field '{0}' is not a valid Account field"
+msgstr "字段 '{0}' 不是有效的科目字段"
+
+msgid "Field and operator must be strings"
+msgstr "字段和运算符必须是字符串"
+
+msgid "Fieldname {0} already exists in the following doctypes: {1}. "
+msgstr "字段名 {0} 已存在于以下单据类型中：{1}。"
+
+msgid "Filter must be [field, operator, value]"
+msgstr "筛选条件格式必须为 [字段, 运算符, 值]"
+
+msgid "Filter must be a list or dict"
+msgstr "筛选条件必须是列表或字典"
+
+msgid "Finished Good Serial / Batch No"
+msgstr "产成品序列号/批次号"
+
+msgid "Finished good mapping can't be changed for a cancelled entry"
+msgstr "已取消单据的产成品映射无法更改"
+
+msgid ""
+"Finished good mapping is only allowed for Manufacture and Repack entries"
+msgstr "仅允许生产入库和重新包装单据进行产成品映射"
+
+msgid ""
+"Finished good quantity being consumed ({0} in stock UOM) must equal the "
+"quantity "
+msgstr "正在消耗的产成品数量（库存计量单位 {0}）必须等于数量"
+
+msgid "First Difference per Item-Warehouse"
+msgstr "每物料-仓库的首个差异"
+
+msgid "Fix Differences"
+msgstr "修复差异"
+
+msgid "For Qty"
+msgstr "按数量"
+
+msgid "For Warehouse {0} must be a non-group warehouse under {1}."
+msgstr "仓库 {0} 必须是 {1} 下的非分组仓库。"
+
+msgid ""
+"For item <b>{0}</b>, only <b>{1}</b> asset have been created or linked to "
+"<b>{2}</b>. "
+msgstr "物料 <b>{0}</b> 仅有 <b>{1}</b> 项资产已创建或关联到 <b>{2}</b>。"
+
+msgid "Formula evaluation error: {0}"
+msgstr "公式计算错误：{0}"
+
+msgid "Formula has unbalanced parentheses"
+msgstr "公式括号不匹配"
+
+msgid "Formula must return a numeric value, got {0}"
+msgstr "公式必须返回数值，实际得到 {0}"
+
+msgid "Formula references itself ('{0}')"
+msgstr "公式引用了自身（'{0}'）"
+
+msgid "From Date cannot be after As On Date"
+msgstr "开始日期不能晚于截至日期"
+
+msgid "From Reference Date cannot be greater than To Reference Date"
+msgstr "参考开始日期不能晚于参考结束日期"
+
+msgid "Frozen - entries restricted"
+msgstr "已冻结 - 分录受限"
+
+msgid "G - H"
+msgstr "G - H"
+
+msgid "GL Reposting Entries"
+msgstr "总账重新过账分录"
+
+msgid "GL reposting entries created: {0}"
+msgstr "总账重新过账分录已创建：{0}"
+
+msgid "GL reposting is not allowed against the voucher type {0}."
+msgstr "不允许对单据类型 {0} 进行总账重新过账。"
+
+msgid "Group by Item"
+msgstr "按物料分组"
+
+msgid "Group the report by Sales Order or by Item, not both."
+msgstr "请按销售订单或按物料分组报表，不能同时按两者分组。"
+
+msgid "If you have any questions, please get back to us."
+msgstr "如有任何疑问，请与我们联系。"
+
+msgid "Ignore Differences Below"
+msgstr "忽略以下差异"
+
+msgid "Include Revaluation Journals"
+msgstr "包含重估日记账"
+
+msgid "Incorrect Inventory Dimension"
+msgstr "库存维度不正确"
+
+msgid "Internal Customer Already Exists"
+msgstr "内部客户已存在"
+
+msgid ""
+"Internal Customer {0} already exists for {1}. Disable it to make this "
+"Customer internal."
+msgstr "{1} 的内部客户 {0} 已存在。请先禁用它，才能将此客户设为内部客户。"
+
+msgid "Internal Supplier Already Exists"
+msgstr "内部供应商已存在"
+
+msgid ""
+"Internal Supplier {0} already exists for {1}. Disable it to make this "
+"Supplier internal."
+msgstr "{1} 的内部供应商 {0} 已存在。请先禁用它，才能将此供应商设为内部供应商。"
+
+msgid "Invalid JSON format: {0}"
+msgstr "JSON 格式无效：{0}"
+
+msgid "Invalid POS Field"
+msgstr "无效的 POS 字段"
+
+msgid "Invalid POS Fields"
+msgstr "无效的 POS 字段"
+
+msgid "Invalid POS Search Field"
+msgstr "无效的 POS 搜索字段"
+
+msgid "Invalid Price List"
+msgstr "无效的价格表"
+
+msgid "Invalid Sample Size"
+msgstr "无效的样本数量"
+
+msgid "Invalid Shipping Account"
+msgstr "无效的运费科目"
+
+msgid "Invalid Valuation Method"
+msgstr "无效的估值方法"
+
+msgid "Invalid address"
+msgstr "无效的地址"
+
+msgid "Invalid doctype"
+msgstr "无效的单据类型"
+
+msgid "Invalid doctype {0}"
+msgstr "无效的单据类型 {0}"
+
+msgid "Invalid document type"
+msgstr "无效的单据类型"
+
+msgid "Invalid filter"
+msgstr "无效的筛选条件"
+
+msgid ""
+"Invalid line reference format: '{0}'. Must start with a letter and contain "
+"only letters, numbers and underscores"
+msgstr "行引用格式无效：'{0}'。必须以字母开头，且只能包含字母、数字和下划线"
+
+msgid "Invalid name"
+msgstr "无效的名称"
+
+msgid "Invalid operator '{0}'"
+msgstr "无效的运算符 '{0}'"
+
+msgid "Invalid operator {0}"
+msgstr "无效的运算符 {0}"
+
+msgid "Invalid reference"
+msgstr "无效的引用"
+
+msgid "Invalid sort order"
+msgstr "无效的排序方式"
+
+msgid "Invalid tax master doctype"
+msgstr "无效的税种主数据单据类型"
+
+msgid "Invalid type"
+msgstr "无效的类型"
+
+msgid "It has no stock transactions by then."
+msgstr "届时该记录没有任何库存交易。"
+
+msgid "Item Restricted for Party"
+msgstr "物料对该往来单位受限"
+
+msgid "Item {0} in Warehouse {1} cannot be adjusted on {2}: {3}"
+msgstr "仓库 {1} 中的物料 {0} 无法在 {2} 调整：{3}"
+
+msgid ""
+"Item {0} in Warehouse {1} was adjusted by {2} on {3}, so no stock "
+"transaction dated before it can be posted or cancelled. Post it on or after "
+"that date, or cancel the Adjustment Entry first."
+msgstr ""
+"仓库 {1} 中的物料 {0} 已于 {3} 由 {2} 调整，因此不能过账或取消早于该日期的库存交易。请在该日期或之后过账，或先取消调整分录。"
+
+msgid ""
+"Item {0}: Ordered qty {1} {2} exceeds the minimum order qty {3} {2} by {4} "
+"{2} due to purchase UOM rounding."
+msgstr "物料 {0}：订购数量 {1} {2} 因采购计量单位取整超出最小订购量 {3} {2} 共 {4} {2}。"
+
+msgid "Items must be a list of Item codes"
+msgstr "物料必须是物料编码列表"
+
+msgid "Its difference on {0} is not before the adjustment date."
+msgstr "其在 {0} 的差异不在调整日期之前。"
+
+msgid "Its stock qty and value are already right on this date."
+msgstr "该日期的库存数量和价值已经正确。"
+
+msgid "Its stock should be negative on this date, which cannot be counted in."
+msgstr "该日期的库存为负数，无法计入。"
+
+msgid ""
+"Job Card {0}: As per the sequence of the operations in the work order {1}, "
+"submit the manufacturing entry for the operation {2} before the operation "
+"{3}."
+msgstr "作业单 {0}：按照生产工单 {1} 的工序顺序，请先为工序 {2} 提交生产入库单，再处理工序 {3}。"
+
+msgid "Later Stock Closing Entry Exists"
+msgstr "存在更晚的库存结账分录"
+
+msgid "Leave as 0 to allow zero valuation rate."
+msgstr "保留为 0 以允许零估值单价。"
+
+msgid ""
+"Link the Serial and Batch Bundles of the raw materials and finished goods "
+"first. Serial / batch nos picked on submit can be mapped after the entry is "
+"submitted."
+msgstr "请先关联原材料和产成品的序列号和批次捆绑包。提交时选取的序列号/批次号可在单据提交后映射。"
+
+msgid "Logical condition must have exactly one operator"
+msgstr "逻辑条件必须只包含一个运算符"
+
+msgid "Logical conditions need at least 1 sub-condition"
+msgstr "逻辑条件至少需要 1 个子条件"
+
+msgid "Logical operators must be 'and' or 'or'"
+msgstr "逻辑运算符必须是 'and' 或 'or'"
+
+msgid "Make Adjustment Entry"
+msgstr "生成调整分录"
+
+msgid "Make Payment"
+msgstr "发起付款"
+
+msgid "Manage"
+msgstr "管理"
+
+msgid "Manufactured Qty (including Process Loss)"
+msgstr "已生产数量（含工艺损耗）"
+
+msgid "Map Raw Materials to Finished Goods"
+msgstr "映射原材料到产成品"
+
+msgid "Mapping must be a dictionary of raw material entries to finished goods"
+msgstr "映射必须是原材料明细行到产成品的字典"
+
+msgid "Mapping saved"
+msgstr "映射已保存"
+
+msgid "Material Request must be submitted to create Work Orders"
+msgstr "创建生产工单前必须先提交物料需求单"
+
+msgid "Method '{0}' must be whitelisted and permit GET requests"
+msgstr "方法 '{0}' 必须在白名单中且允许 GET 请求"
+
+msgid "Method {0} must permit GET requests"
+msgstr "方法 {0} 必须允许 GET 请求"
+
+msgid "Missing Accounting Dimension"
+msgstr "缺少会计维度"
+
+msgid "Missing Company"
+msgstr "缺少公司"
+
+msgid "My Filter"
+msgstr "我的筛选器"
+
+msgid "No Company Found"
+msgstr "未找到公司"
+
+msgid "No Matching Vouchers Found"
+msgstr "未找到匹配的单据"
+
+msgid "No Material Request created"
+msgstr "未创建物料需求单"
+
+msgid ""
+"No default warehouse set for this company. Entry will use Stock Settings "
+"default."
+msgstr "未设置此公司的默认仓库，单据将使用库存设置中的默认仓库。"
+
+msgid "No new GL reposting entries were created for the selected rows."
+msgstr "所选行未创建新的总账重新过账分录。"
+
+msgid ""
+"No warehouse found for company {0}. Please set a Default Warehouse in Item "
+"Defaults or Stock Settings."
+msgstr "未找到公司 {0} 的仓库。请在物料默认值或库存设置中设置默认仓库。"
+
+msgid "No {0} linked to this Work Order."
+msgstr "没有关联到此生产工单的{0}。"
+
+msgid "Not permitted for {0}"
+msgstr "不允许用于 {0}"
+
+msgid ""
+"Note: System will not check over-delivery and over-booking for Item {0} as "
+"quantity or amount is 0"
+msgstr "注意：物料 {0} 的数量或金额为 0，系统将不检查超额交付和超额预订"
+
+msgid "Nothing to order from the selected rows"
+msgstr "所选行没有可订购的内容"
+
+msgid ""
+"Nothing to order, the selected rows are already covered by stock or existing"
+" orders"
+msgstr "无需订购，所选行已被现有库存或已有订单覆盖"
+
+msgid "Only records belonging to {0} will be deleted"
+msgstr "仅删除属于 {0} 的记录"
+
+msgid "Only users with the {0} role can repost GL entries"
+msgstr "仅具有 {0} 角色的用户可以重新过账总账分录"
+
+msgid "Opening Stock can only be set for stock items."
+msgstr "仅库存物料可设置期初库存。"
+
+msgid ""
+"Opening Stock cannot be created as stock transactions already exist for item"
+" {0}."
+msgstr "物料 {0} 已存在库存交易，无法创建期初库存。"
+
+msgid ""
+"Opening Stock for serialised or batch items must be set via the Stock "
+"Reconciliation form."
+msgstr "序列号或批次物料的期初库存必须通过库存盘点单设置。"
+
+msgid "Opening Stock reconciliation created with zero valuation rate: {0}"
+msgstr "已按零估值单价创建期初库存盘点单：{0}"
+
+msgid "Opening Stock reconciliation created: {0}"
+msgstr "期初库存盘点单已创建：{0}"
+
+msgid ""
+"Opening stock creation has been queued and will be created in the "
+"background. Please check the Stock Reconciliation after some time."
+msgstr "期初库存创建已加入队列，将在后台处理。请稍后查看库存盘点单。"
+
+msgid "Operator '{0}' requires a list value"
+msgstr "运算符 '{0}' 需要列表值"
+
+msgid "Owner"
+msgstr "负责人"
+
+msgid ""
+"Paid From and Paid To accounts must be different for an Internal Transfer."
+msgstr "内部调拨的付款方科目和收款方科目必须不同。"
+
+msgid "Parent document is required to search child rows"
+msgstr "搜索子行需要提供父级单据"
+
+msgid "Pending Repost"
+msgstr "待重新过账"
+
+msgid ""
+"Pick the finished good serial / batch each raw material went into. The "
+"Serial No and Batch Traceability report uses this mapping."
+msgstr "请选择每种原材料进入的产成品序列号/批次。序列号和批次可追溯报表将使用此映射。"
+
+msgid ""
+"Please add at least one row in Item Defaults with a Company before setting "
+"opening stock."
+msgstr "设置期初库存前，请在物料默认值中添加至少一行并指定公司。"
+
+msgid "Please contact any of the following users for this transaction."
+msgstr "此交易请联系以下任一用户。"
+
+msgid "Please enter a valid date for when your financial year begins."
+msgstr "请输入有效的会计年度开始日期。"
+
+msgid "Please pick a company name other than Company."
+msgstr "请选择“Company”以外的公司名称。"
+
+msgid "Please select rows to create GL Reposting Entries"
+msgstr "请选择行以创建总账重新过账分录"
+
+msgid "Please select rows to create {0}"
+msgstr "请选择行以创建{0}"
+
+msgid ""
+"Please set a Temporary Opening account for company {0} to create an Opening "
+"Stock reconciliation."
+msgstr "请为公司 {0} 设置临时期初科目，以创建期初库存盘点单。"
+
+msgid "Please set a primary email ID for the Contact {0}"
+msgstr "请为联系人 {0} 设置首选邮箱地址"
+
+msgid "Please set company on the Document before requesting for invoices."
+msgstr "申请发票前请在单据上设置公司。"
+
+msgid "Price List {0} cannot be used on a buying transaction"
+msgstr "价格表 {0} 不能用于采购交易"
+
+msgid "Price List {0} cannot be used on a selling transaction"
+msgstr "价格表 {0} 不能用于销售交易"
+
+msgid "Price List {0} is disabled"
+msgstr "价格表 {0} 已禁用"
+
+msgid "Price List {0} is not enabled for {1}"
+msgstr "价格表 {0} 未对 {1} 启用"
+
+msgid "Pricing Rule {0} is disabled"
+msgstr "定价规则 {0} 已禁用"
+
+msgid "Process Loss Quantity cannot be greater than {0}"
+msgstr "工艺损耗数量不能大于 {0}"
+
+msgid "Process loss booked against the operations of this work order."
+msgstr "已计入此生产工单各工序的工艺损耗。"
+
+msgid "Production Plan Quantity Exceeded"
+msgstr "超出生产计划数量"
+
+msgid ""
+"Qty for Manufacture must be greater than the process loss of {0} to produce "
+"a finished good."
+msgstr "生产数量必须大于工艺损耗 {0} 才能产出产成品。"
+
+msgid "Qty left for a later cycle or for another job card."
+msgstr "留给下一周期或其他作业单的数量。"
+
+msgid "Qty scrapped in this cycle, nobody will produce it."
+msgstr "本周期报废的数量，将不再生产。"
+
+msgid "Qty to Manufacture in this Cycle"
+msgstr "本周期生产数量"
+
+msgid "Quantity must be greater than zero."
+msgstr "数量必须大于零。"
+
+msgid "Raw Material Group Warehouse"
+msgstr "原材料分组仓库"
+
+msgid ""
+"Raw material {0} is already mapped and can't be changed after {1} is "
+"submitted"
+msgstr "原材料 {0} 已映射，{1} 提交后无法更改"
+
+msgid ""
+"Raw material {0} is mapped to {1}, which is not a finished good of this "
+"entry"
+msgstr "原材料 {0} 已映射到 {1}，但 {1} 不是此单据的产成品"
+
+msgid "Reconciliation Failed"
+msgstr "对账失败"
+
+msgid "Repost GL Entries"
+msgstr "重新过账总账分录"
+
+msgid "Repost Item Valuation will be made for:"
+msgstr "以下记录将进行物料估值重新过账："
+
+msgid "Repost Stock & GL Entries"
+msgstr "重新过账库存和总账分录"
+
+msgid "Repost {0} is already pending."
+msgstr "{0} 的重新过账已在等待处理。"
+
+msgid "Reposting Entries"
+msgstr "重新过账分录"
+
+msgid "Reposting could not be queued for:"
+msgstr "以下记录无法加入重新过账队列："
+
+msgid "Reposting has been queued for:"
+msgstr "以下记录已加入重新过账队列："
+
+msgid "Requesting payment against {0} {1} for amount {2}"
+msgstr "正在针对 {0} {1} 申请付款，金额 {2}"
+
+msgid ""
+"Row #{0}: % of Component Cost needs a BOM secondary item. Choose Valuation "
+"Rate or Manual for {1}."
+msgstr "行 #{0}：%组件成本需要物料清单次要物料。请为 {1} 选择估值单价或手动。"
+
+msgid "Row #{0}: '{1}' cannot be used to search items."
+msgstr "行 #{0}：'{1}' 不能用于搜索物料。"
+
+msgid "Row #{0}: '{1}' does not match {2}."
+msgstr "行 #{0}：'{1}' 与 {2} 不匹配。"
+
+msgid "Row #{0}: '{1}' is not a valid field of {2}."
+msgstr "行 #{0}：'{1}' 不是 {2} 的有效字段。"
+
+msgid ""
+"Row #{0}: Cannot return {1} of Batch {2}, only {3} was delivered and not "
+"returned yet."
+msgstr "行 #{0}：批次 {2} 无法退货 {1}，已交付且未退货的数量仅有 {3}。"
+
+msgid "Row #{0}: Cannot transfer {1} {2} of Item {3}. "
+msgstr "行 #{0}：无法转移物料 {3} 的 {1} {2}。"
+
+msgid ""
+"Row #{0}: Company {1} does not match with the company {2} in Serial and "
+"Batch Bundle {3}."
+msgstr "行 #{0}：公司 {1} 与序列号批次捆绑包 {3} 中的公司 {2} 不一致。"
+
+msgid ""
+"Row #{0}: Delivery of Item {1} is ensured by produced Serial No, but no "
+"Serial No is reserved against Sales Order {2}. Reserve the produced Serial "
+"Nos from the Sales Order."
+msgstr "行 #{0}：物料 {1} 的交付由已生产的序列号保证，但销售订单 {2} 未预留任何序列号。请从销售订单预留已生产的序列号。"
+
+msgid "Row #{0}: Expense account {1} is not valid for Purchase Invoice {2}. "
+msgstr "行 #{0}：费用科目 {1} 对采购发票 {2} 无效。"
+
+msgid ""
+"Row #{0}: FG / Semi FG Item is required for the operation {1} as 'Track Semi"
+" Finished Goods' is enabled."
+msgstr "行 #{0}：已启用“跟踪半成品”，工序 {1} 必须填写产成品/半成品物料。"
+
+msgid ""
+"Row #{0}: Item {1} is already added with the same Type in the Secondary "
+"Items table."
+msgstr "行 #{0}：次要物料表中已添加相同类型的物料 {1}。"
+
+msgid ""
+"Row #{0}: Item {1} is not part of the source manufacture entry and cannot be"
+" "
+msgstr "行 #{0}：物料 {1} 不是源生产入库单的组成部分，无法"
+
+msgid ""
+"Row #{0}: Item {1} quantity ({2} in stock UOM) does not match the quantity "
+msgstr "行 #{0}：物料 {1} 的数量（库存计量单位 {2}）与数量不匹配"
+
+msgid "Row #{0}: Planned Qty must be greater than 0 for Item {1}."
+msgstr "行 #{0}：物料 {1} 的计划数量必须大于 0。"
+
+msgid ""
+"Row #{0}: Serial No {1} is not reserved against Sales Order {2}. Deliver "
+"only the Serial Nos produced and reserved for it."
+msgstr "行 #{0}：序列号 {1} 未针对销售订单 {2} 预留。仅可交付为其生产并预留的序列号。"
+
+msgid ""
+"Row #{0}: Stock cannot be reserved for the Item {1} as its delivery is "
+"ensured based on the produced Serial Nos. The Work Order will reserve them "
+"on manufacture."
+msgstr "行 #{0}：无法为物料 {1} 预留库存，因为其交付基于已生产的序列号保证。生产工单将在生产时预留这些序列号。"
+
+msgid ""
+"Row #{0}: Target Warehouse {1} must be a Transit warehouse when Add to "
+"Transit is enabled."
+msgstr "行 #{0}：启用“加入在途”后，目标仓库 {1} 必须是在途仓库。"
+
+msgid ""
+"Row #{0}: The operation {1} has 'Is Final Finished Good' checked, so its FG "
+"/ Semi FG Item must be {2}."
+msgstr "行 #{0}：工序 {1} 已勾选“是最终产成品”，其产成品/半成品物料必须为 {2}。"
+
+msgid ""
+"Row {0} in {1} {2}: Work Order quantity after process loss {3} exceeds the "
+"remaining allowed quantity {4}."
+msgstr "{1} {2} 中的行 {0}：扣除工艺损耗 {3} 后的生产工单数量超出剩余允许数量 {4}。"
+
+msgid "Row {0} is not a raw material serial / batch entry of {1}"
+msgstr "行 {0} 不是 {1} 的原材料序列号/批次明细行"
+
+msgid "Row {0}: Accounting Dimension {1} is mandatory for account {2}."
+msgstr "行 {0}：科目 {2} 必须填写会计维度 {1}。"
+
+msgid "Row {0}: Item {1} is not allowed for {2} {3}."
+msgstr "行 {0}：物料 {1} 不允许用于 {2} {3}。"
+
+msgid ""
+"Row {0}: Serial/Batch has been reset to values linked with Work Order {1}"
+msgstr "行 {0}：序列号/批次已重置为与生产工单 {1} 关联的值"
+
+msgid "Row {0}: {1}"
+msgstr "行 {0}：{1}"
+
+msgid "Row {0}: {1} {2} must be submitted"
+msgstr "行 {0}：{1} {2} 必须先提交"
+
+msgid "Sales Order Item {0} does not belong to {1}"
+msgstr "销售订单物料 {0} 不属于 {1}"
+
+msgid "Sample Size must be greater than zero"
+msgstr "样本数量必须大于零"
+
+msgid "Save the Work Order to view linked documents."
+msgstr "请保存生产工单后查看关联单据。"
+
+msgid "Select the differences to fix."
+msgstr "选择要修复的差异。"
+
+msgid ""
+"Select whether to get items from a Sales Order or a Material Request. For "
+"now select <b>Sales Order</b>.\\n A Production Plan can also be created "
+"manually where you can select the Items to manufacture."
+msgstr "选择从销售订单还是物料需求单获取物料。当前请选择 <b>销售订单</b>。\\n 也可以手动创建生产计划，直接选择要生产的物料。"
+
+msgid "Serial / Batch No Not Activated"
+msgstr "序列号/批次号未启用"
+
+msgid "Serial No Not Reserved"
+msgstr "序列号未预留"
+
+msgid ""
+"Serial No Wise Valuation cannot be enabled for Item {0} because Serial Nos "
+"already exist for it. Valuation for those Serial Nos was not tracked, so "
+"enabling it now would value outward entries incorrectly."
+msgstr "物料 {0} 已存在序列号，无法启用按序列号估值。这些序列号此前未跟踪估值，现在启用将导致出库分录估值错误。"
+
+msgid ""
+"Serial No {0} is not available in the selected inventory dimensions: {1}"
+msgstr "序列号 {0} 在所选库存维度中不可用：{1}"
+
+msgid "Serial Nos Exist"
+msgstr "序列号已存在"
+
+msgid "Set Opening Stock"
+msgstr "设置期初库存"
+
+msgid "Set up your company"
+msgstr "设置您的公司"
+
+msgid "Setting up the basics"
+msgstr "正在设置基础信息"
+
+msgid "Shipping Account {0} does not belong to Company {1}"
+msgstr "运费科目 {0} 不属于公司 {1}"
+
+msgid "Show Differences Settled by Adjustment Entries"
+msgstr "显示已由调整分录结平的差异"
+
+msgid ""
+"Since you are reposting transactions from the previous fiscal year {0}, the "
+"closing balances of that fiscal year can change. The reposting might also "
+"take time to complete."
+msgstr "由于您正在重新过账上一会计年度 {0} 的交易，该年度的期末余额可能发生变化。重新过账可能需要一些时间才能完成。"
+
+msgid ""
+"Some of its serial nos or batches should be short of stock on this date."
+msgstr "该日期其部分序列号或批次应出现库存短缺。"
+
+msgid "Source Warehouse is required for item {0}"
+msgstr "物料 {0} 必须填写来源仓库"
+
+msgid "Spending for Account {0} ({1}) between {2} and {3} "
+msgstr "科目 {0}（{1}）在 {2} 至 {3} 期间的花费"
+
+msgid "Standard Cost"
+msgstr "标准成本"
+
+msgid ""
+"Stock Ledger Entries of the selected vouchers have been cancelled and "
+"reposting has been queued."
+msgstr "所选单据的库存分类账分录已取消，重新过账已加入队列。"
+
+msgid "Stock Value Difference"
+msgstr "库存价值差异"
+
+msgid ""
+"Supplier Quotation {0} already exists against Request for Quotation {1}"
+msgstr "询价单 {1} 已存在供应商报价单 {0}"
+
+msgid "Target Warehouse is required for item {0}"
+msgstr "物料 {0} 必须填写目标仓库"
+
+msgid "Thank you for your business!"
+msgstr "感谢惠顾！"
+
+msgid ""
+"The Job Card {0} has only {1} left to produce, but this entry books {2} ({3}"
+" finished goods and {4} process loss). Cancel or update its other "
+"manufacture entries first."
+msgstr "作业单 {0} 仅剩 {1} 待生产，但此单据记账 {2}（其中产成品 {3}、工艺损耗 {4}）。请先取消或更新其其他生产入库单。"
+
+msgid ""
+"The Serial and Batch Bundle {0} does not belong to Item {1} or Warehouse {2}"
+" or {3} no {4}"
+msgstr "序列号和批次捆绑包 {0} 不属于物料 {1}、仓库 {2} 或 {3} 编号 {4}"
+
+msgid ""
+"The completed quantity {0} of an operation {1} cannot be greater than the "
+"manufactured quantity {2} of a previous operation {3}. Submit the "
+"manufacturing entry for the operation {3} first."
+msgstr "工序 {1} 的完成数量 {0} 不能大于上一道工序 {3} 的生产数量 {2}。请先为工序 {3} 提交生产入库单。"
+
+msgid ""
+"The cost of the secondary items cannot exceed the raw material cost of {0}."
+msgstr "次要物料的成本不能超过 {0} 的原材料成本。"
+
+msgid ""
+"The following cancelled repost entries exist for "
+"<b>{0}</b>:<br><br>{1}<br><br>"
+msgstr "<b>{0}</b> 存在以下已取消的重新过账分录：<br><br>{1}<br><br>"
+
+msgid "The following payment schedule(s) already exist:\\n{0}"
+msgstr "以下付款计划已存在：\\\\n{0}"
+
+msgid ""
+"The following rows are not valid fields of {0} and have to be removed: {1}"
+msgstr "以下行不是 {0} 的有效字段，必须移除：{1}"
+
+msgid ""
+"The rows of Item {0} in Warehouse {1} are not the stock it should hold on "
+"this date. Make the Adjustment Entry again from the Stock Valuation "
+"Comparison report."
+msgstr "仓库 {1} 中物料 {0} 的这些行不是该日期应有的库存。请从库存估值对比报表重新生成调整分录。"
+
+msgid "The standard chart for your country works for most businesses."
+msgstr "您所在国家的标准科目表适用于大多数企业。"
+
+msgid ""
+"The stock qty and value of the selected items are set right on this date, "
+"without reposting. Stock and accounting reports before it keep the old "
+"values, and no stock transaction can be posted before it for these items "
+"afterwards."
+msgstr "所选物料的库存数量和价值将在此日期直接更正，无需重新过账。此前的库存和会计报表保留原值，之后这些物料不能过账早于该日期的库存交易。"
+
+msgid ""
+"The user can not change value of the field {0} because stock transactions "
+"exists against the dimension {1}."
+msgstr "用户无法更改字段 {0} 的值，因为维度 {1} 已存在库存交易。"
+
+msgid "There are no differences to fix."
+msgstr "没有需要修复的差异。"
+
+msgid ""
+"There are no serial / batch tracked raw materials or finished goods to map"
+msgstr "没有可映射的序列号/批次跟踪的原材料或产成品"
+
+msgid "These already have a pending repost and are left out:"
+msgstr "以下记录已有待处理的重新过账，已跳过："
+
+msgid "These cannot be settled by an Adjustment Entry and need a repost:"
+msgstr "以下差异无法通过调整分录结平，需要重新过账："
+
+msgid "These rows fall in a closed Accounting Period, remove them: {0}"
+msgstr "以下行位于已关闭的会计期间内，请移除：{0}"
+
+msgid "This Job Card has no raw materials to transfer."
+msgstr "此作业单没有可转移的原材料。"
+
+msgid ""
+"This PDF is password protected. Please set the correct statement password on"
+" the"
+msgstr "此 PDF 受密码保护，请设置正确的对账单密码"
+
+msgid "Tip"
+msgstr "提示"
+
+msgid "Tip: Select report lines to view their accounts"
+msgstr "提示：选择报表行以查看其对应科目"
+
+msgid ""
+"To Date must be after {0}, the To Date of the last Stock Closing Entry {1}"
+msgstr "结束日期必须晚于 {0}（上一个库存结账分录 {1} 的结束日期）"
+
+msgid "To use Serial / Batch feature, enable {0} in {1}."
+msgstr "要使用序列号/批次功能，请在 {1} 中启用 {0}。"
+
+msgid ""
+"Total Completed Qty ({0}), Process Loss Qty ({1}) and Pending Qty ({2}) must"
+" add up to the Qty to Manufacture ({3})."
+msgstr "完成数量合计（{0}）、工艺损耗数量（{1}）和待处理数量（{2}）之和必须等于生产数量（{3}）。"
+
+msgid "Total {0} of all items is zero, charges cannot be distributed on it."
+msgstr "所有物料的 {0} 合计为零，费用无法分摊。"
+
+msgid ""
+"Total {0} of all items is zero. Set 'Distribute Charges Based On' to {1}."
+msgstr "所有物料的 {0} 合计为零。请将“费用分摊依据”设置为 {1}。"
+
+msgid "Uncancelled Serial and Batch Bundle"
+msgstr "未取消的序列号和批次捆绑包"
+
+msgid ""
+"Valuation Method for Item {0} must be Moving Average because Serial No Wise "
+"Valuation is disabled. Enable Serial No Wise Valuation to use FIFO or LIFO."
+msgstr "物料 {0} 的估值方法必须为移动平均法，因为已禁用按序列号估值。启用按序列号估值后才能使用先进先出或后进先出法。"
+
+msgid "Valuation Rate cannot be negative."
+msgstr "估值单价不能为负数。"
+
+msgid "We couldn't add the demo data"
+msgstr "无法添加演示数据"
+
+msgid "We couldn't apply the recommended settings"
+msgstr "无法应用推荐设置"
+
+msgid "We couldn't create your company"
+msgstr "无法创建您的公司"
+
+msgid "We couldn't personalize your setup"
+msgstr "无法个性化您的设置"
+
+msgid "We couldn't set up the basics"
+msgstr "无法完成基础设置"
+
+msgid "We'll use these to create your company and its accounts."
+msgstr "我们将使用这些信息创建您的公司及其科目。"
+
+msgid "Work Order Not Finished"
+msgstr "生产工单未完成"
+
+msgid "Work Order must reference a row in Production Plan {0}."
+msgstr "生产工单必须引用生产计划 {0} 中的一行。"
+
+msgid "Work Order must reference only one Production Plan row."
+msgstr "生产工单只能引用一行生产计划。"
+
+msgid ""
+"You are about to permanently delete data for {0} entries for company {1}."
+msgstr "您即将永久删除公司 {1} 的 {0} 条单据数据。"
+
+msgid "You are not permitted to access Company {0}"
+msgstr "您无权访问公司 {0}"
+
+msgid "You are not permitted to repair the Stock Ledger Entries of {0} {1}"
+msgstr "您无权修复 {0} {1} 的库存分类账分录"
+
+msgid "You can delete it anytime."
+msgstr "您可以随时删除它。"
+
+msgid "[{0}] {1}"
+msgstr "[{0}] {1}"
+
+msgid "account_currency"
+msgstr "科目币种"
+
+msgid "account_name"
+msgstr "科目名称"
+
+msgid "accumulated_amount"
+msgstr "累计金额"
+
+msgid "accumulated_depreciation_as_on_from_date"
+msgstr "起始日期累计折旧"
+
+msgid "activity_type"
+msgstr "活动类型"
+
+msgid "actual_qty"
+msgstr "实际数量"
+
+msgid "address"
+msgstr "地址"
+
+msgid "adhoc_qty"
+msgstr "临时数量"
+
+msgid "adjustment_amount"
+msgstr "调整金额"
+
+msgid "against_account"
+msgstr "对方科目"
+
+msgid "against_order"
+msgstr "关联订单"
+
+msgid "allocated_amount"
+msgstr "已分配金额"
+
+msgid "amount"
+msgstr "金额"
+
+msgid "amount_in_account_currency"
+msgstr "按科目币种计的金额"
+
+msgid "asset"
+msgstr "资产"
+
+msgid "asset_category"
+msgstr "资产类别"
+
+msgid "available_qty"
+msgstr "可用数量"
+
+msgid "balance"
+msgstr "余额"
+
+msgid "balance_in_account_currency"
+msgstr "按科目币种计的余额"
+
+msgid "balance_qty"
+msgstr "结存数量"
+
+msgid "base_amount"
+msgstr "基本金额"
+
+msgid "base_billing_amount"
+msgstr "基本开票金额"
+
+msgid "base_costing_amount"
+msgstr "基本成本金额"
+
+msgid "base_grand_total"
+msgstr "基本价税合计"
+
+msgid "base_net_amount"
+msgstr "基本净额"
+
+msgid "base_net_total"
+msgstr "基本净额合计"
+
+msgid "base_rate"
+msgstr "基本单价"
+
+msgid "base_total"
+msgstr "基本合计"
+
+msgid "batch_expiry_date"
+msgstr "批次有效期至"
+
+msgid "batch_no"
+msgstr "批次号"
+
+msgid "batch_qty"
+msgstr "批次数量"
+
+msgid "batch_value"
+msgstr "批次价值"
+
+msgid "billed_amount"
+msgstr "已开票金额"
+
+msgid "billed_amt"
+msgstr "已开票金额"
+
+msgid "billed_qty"
+msgstr "已开票数量"
+
+msgid "billing_amount"
+msgstr "开票金额"
+
+msgid "billing_hours"
+msgstr "计费小时数"
+
+msgid "blanket_order"
+msgstr "总括订单"
+
+msgid "blanket_order_rate"
+msgstr "总括订单单价"
+
+msgid "bom_no"
+msgstr "物料清单编号"
+
+msgid "bom_rate"
+msgstr "BOM 单价"
+
+msgid "brand"
+msgstr "品牌"
+
+msgid "budget_against"
+msgstr "预算对象"
+
+msgid "build_qty"
+msgstr "组装数量"
+
+msgid "bundle_serial_no"
+msgstr "捆绑包序列号"
+
+msgid "buying_amount"
+msgstr "采购金额"
+
+msgid "cheque_date"
+msgstr "支票日期"
+
+msgid "cheque_no"
+msgstr "支票号码"
+
+msgid "cheque_number"
+msgstr "支票号码"
+
+msgid "child_docname"
+msgstr "子单据名称"
+
+msgid "commission"
+msgstr "佣金"
+
+msgid "consumed_cost"
+msgstr "消耗成本"
+
+msgid "consumed_qty"
+msgstr "已消耗数量"
+
+msgid "contribution_amt"
+msgstr "贡献金额"
+
+msgid "cost_center"
+msgstr "成本中心"
+
+msgid "costing_amount"
+msgstr "成本金额"
+
+msgid "count"
+msgstr "计数"
+
+msgid "credit"
+msgstr "贷方"
+
+msgid "credit_in_account_currency"
+msgstr "按科目币种计的贷方"
+
+msgid "credit_in_reporting_currency"
+msgstr "按报告币种计的贷方"
+
+msgid "credit_note_returned_qty"
+msgstr "贷项通知单已退货数量"
+
+msgid "cumulative_lead_time"
+msgstr "累计提前期"
+
+msgid "currency"
+msgstr "币种"
+
+msgid "customer_group"
+msgstr "客户分组"
+
+msgid "date"
+msgstr "日期"
+
+msgid "days_since_last_order"
+msgstr "距上次订单天数"
+
+msgid "debit"
+msgstr "借方"
+
+msgid "debit_in_account_currency"
+msgstr "按科目币种计的借方"
+
+msgid "debit_in_reporting_currency"
+msgstr "按报告币种计的借方"
+
+msgid "default_bom"
+msgstr "默认物料清单"
+
+msgid "delivered_qty"
+msgstr "已交付数量"
+
+msgid "delivery_date"
+msgstr "交付日期"
+
+msgid "depreciation_amount"
+msgstr "折旧金额"
+
+msgid "depreciation_amount_during_the_period"
+msgstr "本期折旧金额"
+
+msgid "depreciation_eliminated_during_the_period"
+msgstr "本期已消除折旧"
+
+msgid "depreciation_eliminated_via_reversal"
+msgstr "通过冲销消除的折旧"
+
+msgid "detail_name"
+msgstr "明细名称"
+
+msgid "dimension"
+msgstr "维度"
+
+msgid "dn"
+msgstr "交货单"
+
+msgid "dn_item"
+msgstr "交货单物料"
+
+msgid "dn_qty"
+msgstr "交货单数量"
+
+msgid "doc"
+msgstr "单据"
+
+msgid "doctype"
+msgstr "单据类型"
+
+msgid "elapsed_seconds"
+msgstr "已用秒数"
+
+msgid "end_date"
+msgstr "结束日期"
+
+msgid "end_time"
+msgstr "结束时间"
+
+msgid "entity"
+msgstr "实体"
+
+msgid "entity_name"
+msgstr "实体名称"
+
+msgid "exchange_rate"
+msgstr "汇率"
+
+msgid "expiry_date"
+msgstr "有效期至"
+
+msgid "from {0}"
+msgstr "从 {0} 起"
+
+msgid "from_bom_no"
+msgstr "来源物料清单编号"
+
+msgid "from_time"
+msgstr "开始时间"
+
+msgid "future_amount"
+msgstr "未来金额"
+
+msgid "future_amount_in_base_currency"
+msgstr "按基本币种计的未来金额"
+
+msgid "future_date"
+msgstr "未来日期"
+
+msgid "future_ref"
+msgstr "未来参考"
+
+msgid "gle_posting_date"
+msgstr "分录过账日期"
+
+msgid "grand_total"
+msgstr "价税合计"
+
+msgid "i_item_group"
+msgstr "物料分组"
+
+msgid "i_item_name"
+msgstr "物料名称"
+
+msgid "incoming_rate"
+msgstr "入库单价"
+
+msgid "indented_qty"
+msgstr "已申请数量"
+
+msgid "invoice"
+msgstr "发票"
+
+msgid "invoice_amount"
+msgstr "发票金额"
+
+msgid "invoice_amount_in_account_currency"
+msgstr "按科目币种计的发票金额"
+
+msgid "invoice_base_net_total"
+msgstr "发票基本净额合计"
+
+msgid "invoice_date"
+msgstr "发票日期"
+
+msgid "invoice_no"
+msgstr "发票编号"
+
+msgid "is_sub_contracted"
+msgstr "是否委外加工"
+
+msgid "item"
+msgstr "物料"
+
+msgid "item_code"
+msgstr "物料编码"
+
+msgid "item_image"
+msgstr "物料图片"
+
+msgid "item_row"
+msgstr "物料行"
+
+msgid "landed_cost"
+msgstr "到岸成本"
+
+msgid "last_order_date"
+msgstr "最近订单日期"
+
+msgid "latest_creation"
+msgstr "最新创建时间"
+
+msgid "latest_posting"
+msgstr "最近过账"
+
+msgid "legacy_serial_nos"
+msgstr "旧版序列号"
+
+msgid "limit_consumed"
+msgstr "已用额度"
+
+msgid "loyalty_points"
+msgstr "积分"
+
+msgid "main_bom"
+msgstr "主物料清单"
+
+msgid "main_bom_item"
+msgstr "主物料清单物料"
+
+msgid "main_item_code"
+msgstr "主要物料编码"
+
+msgid "manufacturing_date"
+msgstr "生产日期"
+
+msgid "material_request"
+msgstr "物料需求单"
+
+msgid "max_allowed_qty"
+msgstr "最大允许数量"
+
+msgid "max_creation"
+msgstr "最大创建时间"
+
+msgid "max_posting_dt"
+msgstr "最大过账日期"
+
+msgid "min_order_qty"
+msgstr "最小订购量"
+
+msgid "missing_qty"
+msgstr "缺失数量"
+
+msgid "month"
+msgstr "月份"
+
+msgid "month_name"
+msgstr "月份名称"
+
+msgid "movement"
+msgstr "变动"
+
+msgid "num_of_order"
+msgstr "订单数"
+
+msgid "opening_credit"
+msgstr "期初贷方"
+
+msgid "opening_debit"
+msgstr "期初借方"
+
+msgid "operating_cost"
+msgstr "运营成本"
+
+msgid "ordered_qty"
+msgstr "已订购数量"
+
+msgid "outstanding"
+msgstr "未清金额"
+
+msgid "outstanding_in_account_currency"
+msgstr "按科目币种计的未清金额"
+
+msgid "p"
+msgstr "页码"
+
+msgid "paid_amount_in_account_currency"
+msgstr "按科目币种计的已付金额"
+
+msgid "parent"
+msgstr "父级"
+
+msgid "parent_account"
+msgstr "上级科目"
+
+msgid "parent_docname"
+msgstr "父单据名称"
+
+msgid "parent_group"
+msgstr "上级分组"
+
+msgid "parent_item"
+msgstr "父级物料"
+
+msgid "party"
+msgstr "往来单位"
+
+msgid "party_entity_type"
+msgstr "往来单位实体类型"
+
+msgid "party_name"
+msgstr "往来单位名称"
+
+msgid "party_type"
+msgstr "往来单位类型"
+
+msgid "payable"
+msgstr "应付"
+
+msgid "payment_amount"
+msgstr "付款金额"
+
+msgid "payment_document"
+msgstr "付款单据"
+
+msgid "payment_request"
+msgstr "付款申请"
+
+msgid "payment_term"
+msgstr "付款条款"
+
+msgid "pending_amount"
+msgstr "待处理金额"
+
+msgid "pending_qty"
+msgstr "待处理数量"
+
+msgid "pi_item_group"
+msgstr "采购发票物料分组"
+
+msgid "pi_item_name"
+msgstr "采购发票物料名称"
+
+msgid "picked_qty"
+msgstr "已拣货数量"
+
+msgid "planned_qty"
+msgstr "计划数量"
+
+msgid "portal_user"
+msgstr "门户用户"
+
+msgid "posting_date"
+msgstr "过账日期"
+
+msgid "posting_datetime"
+msgstr "过账时间"
+
+msgid "posting_time"
+msgstr "过账时间"
+
+msgid "price_list_name"
+msgstr "价格表名称"
+
+msgid "priority"
+msgstr "优先级"
+
+msgid "process_loss_qty"
+msgstr "工艺损耗数量"
+
+msgid "produced_qty"
+msgstr "已生产数量"
+
+msgid "production_item"
+msgstr "生产物料"
+
+msgid "production_item_name"
+msgstr "生产物料名称"
+
+msgid "production_plan"
+msgstr "生产计划"
+
+msgid "project_name"
+msgstr "项目名称"
+
+msgid "projected_qty"
+msgstr "预计数量"
+
+msgid "purchase_order"
+msgstr "采购订单"
+
+msgid "qty"
+msgstr "数量"
+
+msgid "qty_after_transaction"
+msgstr "交易后数量"
+
+msgid "qty_per_unit"
+msgstr "单位用量"
+
+msgid "qty_to_manufacture"
+msgstr "待生产数量"
+
+msgid "qty_to_order"
+msgstr "待订购数量"
+
+msgid "qty_to_receive"
+msgstr "待收货数量"
+
+msgid "quantity"
+msgstr "数量"
+
+msgid "quarter"
+msgstr "季度"
+
+msgid "rank"
+msgstr "排名"
+
+msgid "ranked"
+msgstr "已排名"
+
+msgid "ranked_prices"
+msgstr "排序后价格"
+
+msgid "rate"
+msgstr "单价"
+
+msgid "raw_material_name"
+msgstr "原材料名称"
+
+msgid "receipt_document"
+msgstr "收货单据"
+
+msgid "receipt_document_type"
+msgstr "收货单据类型"
+
+msgid "received_qty"
+msgstr "已收货数量"
+
+msgid "received_qty_amount"
+msgstr "已收货数量金额"
+
+msgid "ref_date"
+msgstr "参考日期"
+
+msgid "ref_no"
+msgstr "参考编号"
+
+msgid "reference_date"
+msgstr "参考日期"
+
+msgid "reference_doctype"
+msgstr "引用单据类型"
+
+msgid "reference_name"
+msgstr "引用名称"
+
+msgid "reference_no"
+msgstr "参考编号"
+
+msgid "reference_row"
+msgstr "参考行"
+
+msgid "reference_type"
+msgstr "引用类型"
+
+msgid "remarks"
+msgstr "备注"
+
+msgid "required_date"
+msgstr "需求日期"
+
+msgid "required_qty_per_unit"
+msgstr "单位需求量"
+
+msgid "reserved_qty"
+msgstr "预留数量"
+
+msgid "reserved_qty_for_production"
+msgstr "生产预留数量"
+
+msgid "reserved_qty_for_production_plan"
+msgstr "生产计划预留数量"
+
+msgid "reserved_qty_for_sub_contract"
+msgstr "委外加工预留数量"
+
+msgid "returned_amount"
+msgstr "已退货金额"
+
+msgid "rm_item_code"
+msgstr "原材料物料编码"
+
+msgid "rn"
+msgstr "行号"
+
+msgid "row_name"
+msgstr "行名称"
+
+msgid "row_no"
+msgstr "行号"
+
+msgid "s_warehouse"
+msgstr "来源仓库"
+
+msgid "sabb_batch_no"
+msgstr "捆绑包批次号"
+
+msgid "sabb_delivered_qty"
+msgstr "已交付数量"
+
+msgid "sabb_qty"
+msgstr "捆绑包数量"
+
+msgid "sabb_stock_value_difference"
+msgstr "捆绑包库存价值差异"
+
+msgid "safety_stock"
+msgstr "安全库存"
+
+msgid "sales_forecast"
+msgstr "销售预测"
+
+msgid "sales_invoice"
+msgstr "销售发票"
+
+msgid "sales_order"
+msgstr "销售订单"
+
+msgid "sbe_name"
+msgstr "序列号批次捆绑包名称"
+
+msgid "secondary_item_type"
+msgstr "次要物料类型"
+
+msgid "serial_and_batch_bundle"
+msgstr "序列号和批次捆绑包"
+
+msgid "serial_no"
+msgstr "序列号"
+
+msgid "si"
+msgstr "销售发票"
+
+msgid "si_item"
+msgstr "销售发票物料"
+
+msgid "si_item_group"
+msgstr "销售发票物料分组"
+
+msgid "si_item_name"
+msgstr "销售发票物料名称"
+
+msgid "si_qty"
+msgstr "销售发票数量"
+
+msgid "so_item_code"
+msgstr "销售订单物料编码"
+
+msgid "source_warehouse"
+msgstr "来源仓库"
+
+msgid "sre_name"
+msgstr "库存预留单名称"
+
+msgid "start_date"
+msgstr "开始日期"
+
+msgid "start_time"
+msgstr "开始时间"
+
+msgid "status"
+msgstr "状态"
+
+msgid "stock_balance"
+msgstr "库存结存"
+
+msgid "stock_qty"
+msgstr "库存数量"
+
+msgid "stock_reservation_entry"
+msgstr "库存预留单"
+
+msgid "stock_uom"
+msgstr "库存计量单位"
+
+msgid "stock_value"
+msgstr "库存价值"
+
+msgid "stock_value_difference"
+msgstr "库存价值差异"
+
+msgid "submitted"
+msgstr "已提交"
+
+msgid "supplier_invoice_date"
+msgstr "供应商发票日期"
+
+msgid "supplier_invoice_no"
+msgstr "供应商发票编号"
+
+msgid "supplier_name"
+msgstr "供应商名称"
+
+msgid "tax_amount"
+msgstr "税额"
+
+msgid "tax_id"
+msgstr "纳税人识别号"
+
+msgid "taxable_amount"
+msgstr "应税金额"
+
+msgid "territory"
+msgstr "区域"
+
+msgid "time"
+msgstr "时间"
+
+msgid "time_sheet"
+msgstr "工时单"
+
+msgid "timesheet"
+msgstr "工时单"
+
+msgid "timestamp"
+msgstr "时间戳"
+
+msgid "to_time"
+msgstr "结束时间"
+
+msgid "total"
+msgstr "合计"
+
+msgid "total_amount"
+msgstr "总金额"
+
+msgid "total_billing_amount"
+msgstr "开票金额合计"
+
+msgid "total_costing_amount"
+msgstr "成本金额合计"
+
+msgid "total_fg_value"
+msgstr "产成品价值合计"
+
+msgid "total_incoming_value"
+msgstr "入库价值合计"
+
+msgid "total_order_considered"
+msgstr "已考虑订单合计"
+
+msgid "total_order_value"
+msgstr "订单总额"
+
+msgid "total_qty"
+msgstr "总数量"
+
+msgid "total_return_discount"
+msgstr "退货折扣合计"
+
+msgid "total_rm_value"
+msgstr "原材料价值合计"
+
+msgid "total_row"
+msgstr "合计行"
+
+msgid "total_spent"
+msgstr "累计消费"
+
+msgid "total_stock_value"
+msgstr "库存价值合计"
+
+msgid "transaction_date"
+msgstr "交易日期"
+
+msgid "transaction_type"
+msgstr "交易类型"
+
+msgid "transfer_qty"
+msgstr "转移数量"
+
+msgid "transferred_qty"
+msgstr "已转移数量"
+
+msgid "type"
+msgstr "类型"
+
+msgid "unclaimed_amount"
+msgstr "未认领金额"
+
+msgid "uom"
+msgstr "计量单位"
+
+msgid "val_rate"
+msgstr "估值单价"
+
+msgid "valuation_rate"
+msgstr "估值单价"
+
+msgid "value_adjustment_before_from_date"
+msgstr "起始日期前的价值调整"
+
+msgid "value_adjustment_till_to_date"
+msgstr "截至今日的价值调整"
+
+msgid "value_as_on_from_date"
+msgstr "起始日期价值"
+
+msgid "value_field"
+msgstr "取值字段"
+
+msgid "value_of_capitalized_asset"
+msgstr "资本化资产价值"
+
+msgid "value_of_new_purchase"
+msgstr "新购资产价值"
+
+msgid "value_of_scrapped_asset"
+msgstr "报废资产价值"
+
+msgid "value_of_sold_asset"
+msgstr "已售资产价值"
+
+msgid "voucher_detail_no"
+msgstr "单据明细编号"
+
+msgid "warehouse"
+msgstr "仓库"
+
+msgid "withholding_doctype"
+msgstr "预扣税单据类型"
+
+msgid "withholding_name"
+msgstr "预扣税名称"
+
+msgid "work_order"
+msgstr "生产工单"
+
+msgid "year_end_date"
+msgstr "年度结束日期"
+
+msgid "year_start_date"
+msgstr "年度开始日期"
+
+msgid "zero_balance"
+msgstr "零余额"
